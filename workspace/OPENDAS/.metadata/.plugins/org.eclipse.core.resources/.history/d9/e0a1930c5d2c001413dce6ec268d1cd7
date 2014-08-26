@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties">
+  <TalendProperties:Property xmi:id="_dpvUkIkFEd-XVoGqkCmBJQ" id="_sPP5gD28EeChMvws1TF8eg" label="GET" creationDate="2010-07-06T15:50:40.216+0200" modificationDate="2014-08-20T17:21:54.033+0200" version="0.1" statusCode="" item="_dpvUkokFEd-XVoGqkCmBJQ" maxInformationLevel="ERROR">
+    <author href="../talend.project#_NCuPwki3EeCz-azX6p-UCg"/>
+    <informations xmi:id="_56W-kCxcEeSmyJVNTviNXA" level="ERROR" text="Non concordance de types : impossible de convertir de void en XmlRpcStruct"/>
+    <informations xmi:id="_56W-kSxcEeSmyJVNTviNXA" level="ERROR" text="La méthode getString() est indéfinie pour le type Object"/>
+    <informations xmi:id="_56W-kixcEeSmyJVNTviNXA" level="ERROR" text="Non concordance de types : impossible de convertir de void en XmlRpcStruct"/>
+    <informations xmi:id="_56W-kyxcEeSmyJVNTviNXA" level="ERROR" text="La méthode getString() est indéfinie pour le type Object"/>
+    <informations xmi:id="_56W-lCxcEeSmyJVNTviNXA" level="ERROR" text="Non concordance de types : impossible de convertir de void en XmlRpcStruct"/>
+    <informations xmi:id="_56W-lSxcEeSmyJVNTviNXA" level="ERROR" text="La méthode getString() est indéfinie pour le type Object"/>
+    <informations xmi:id="_56W-lixcEeSmyJVNTviNXA" level="ERROR" text="Non concordance de types : impossible de convertir de void en XmlRpcStruct"/>
+    <informations xmi:id="_56W-lyxcEeSmyJVNTviNXA" level="ERROR" text="La méthode getString() est indéfinie pour le type Object"/>
+    <informations xmi:id="_56W-mCxcEeSmyJVNTviNXA" level="ERROR" text="Non concordance de types : impossible de convertir de void en XmlRpcStruct"/>
+    <informations xmi:id="_56W-mSxcEeSmyJVNTviNXA" level="ERROR" text="La méthode getString() est indéfinie pour le type Object"/>
+    <informations xmi:id="_56W-mixcEeSmyJVNTviNXA" level="ERROR" text="Non concordance de types : impossible de convertir de void en XmlRpcStruct"/>
+    <informations xmi:id="_56W-myxcEeSmyJVNTviNXA" level="ERROR" text="La méthode getString() est indéfinie pour le type Object"/>
+    <informations xmi:id="_56W-nCxcEeSmyJVNTviNXA" level="ERROR" text="Non concordance de types : impossible de convertir de void en XmlRpcStruct"/>
+    <informations xmi:id="_56W-nSxcEeSmyJVNTviNXA" level="ERROR" text="La méthode getString() est indéfinie pour le type Object"/>
+    <informations xmi:id="_56W-nixcEeSmyJVNTviNXA" level="ERROR" text="Non concordance de types : impossible de convertir de void en XmlRpcStruct"/>
+    <informations xmi:id="_56W-nyxcEeSmyJVNTviNXA" level="ERROR" text="La méthode getString() est indéfinie pour le type Object"/>
+    <informations xmi:id="_56W-oCxcEeSmyJVNTviNXA" level="ERROR" text="Non concordance de types : impossible de convertir de void en XmlRpcStruct"/>
+    <informations xmi:id="_56W-oSxcEeSmyJVNTviNXA" level="ERROR" text="La méthode getString() est indéfinie pour le type Object"/>
+    <informations xmi:id="_56W-oixcEeSmyJVNTviNXA" level="ERROR" text="Non concordance de types : impossible de convertir de void en XmlRpcStruct"/>
+    <informations xmi:id="_56W-oyxcEeSmyJVNTviNXA" level="ERROR" text="La méthode getString() est indéfinie pour le type Object"/>
+    <informations xmi:id="_56W-pCxcEeSmyJVNTviNXA" level="ERROR" text="Non concordance de types : impossible de convertir de void en XmlRpcStruct"/>
+    <informations xmi:id="_56W-pSxcEeSmyJVNTviNXA" level="ERROR" text="La méthode getString() est indéfinie pour le type Object"/>
+    <informations xmi:id="_56W-pixcEeSmyJVNTviNXA" level="ERROR" text="Non concordance de types : impossible de convertir de void en XmlRpcStruct"/>
+    <informations xmi:id="_56W-pyxcEeSmyJVNTviNXA" level="ERROR" text="La méthode getString() est indéfinie pour le type Object"/>
+    <informations xmi:id="_56W-qCxcEeSmyJVNTviNXA" level="ERROR" text="Non concordance de types : impossible de convertir de void en XmlRpcStruct"/>
+    <informations xmi:id="_56W-qSxcEeSmyJVNTviNXA" level="ERROR" text="La méthode getString() est indéfinie pour le type Object"/>
+    <informations xmi:id="_56W-qixcEeSmyJVNTviNXA" level="ERROR" text="Non concordance de types : impossible de convertir de void en XmlRpcStruct"/>
+    <informations xmi:id="_56W-qyxcEeSmyJVNTviNXA" level="ERROR" text="La méthode getString() est indéfinie pour le type Object"/>
+    <informations xmi:id="_56W-rCxcEeSmyJVNTviNXA" level="ERROR" text="Non concordance de types : impossible de convertir de void en XmlRpcStruct"/>
+    <informations xmi:id="_56W-rSxcEeSmyJVNTviNXA" level="ERROR" text="La méthode getString() est indéfinie pour le type Object"/>
+  </TalendProperties:Property>
+  <TalendProperties:ItemState xmi:id="_ix-xgEi3EeCz-azX6p-UCg" path=""/>
+  <TalendProperties:ProcessItem xmi:id="_dpvUkokFEd-XVoGqkCmBJQ" property="_dpvUkIkFEd-XVoGqkCmBJQ" state="_ix-xgEi3EeCz-azX6p-UCg">
+    <process href="GET_0.1.item#/"/>
+  </TalendProperties:ProcessItem>
+</xmi:XMI>

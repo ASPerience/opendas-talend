@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties">
+  <TalendProperties:Property xmi:id="_dpvUkIkFEd-XVoGqkCmBJQ" id="_sPP5gD28EeChMvws1TF8eg" label="GET" creationDate="2010-07-06T15:50:40.216+0200" modificationDate="2014-08-20T17:21:54.033+0200" version="0.1" statusCode="" item="_dpvUkokFEd-XVoGqkCmBJQ" maxInformationLevel="ERROR">
+    <author href="../talend.project#_NCuPwki3EeCz-azX6p-UCg"/>
+    <informations xmi:id="_nD3c4CxgEeSBzeqw9MBrIA" level="ERROR" text="Erreur de syntaxe, insérez &quot;;&quot; pour effectuer LocalVariableDeclarationStatement"/>
+    <informations xmi:id="_nD3c4SxgEeSBzeqw9MBrIA" level="ERROR" text="Erreur de syntaxe, insérez &quot;;&quot; pour effectuer LocalVariableDeclarationStatement"/>
+    <informations xmi:id="_nD3c4ixgEeSBzeqw9MBrIA" level="ERROR" text="Erreur de syntaxe, insérez &quot;;&quot; pour effectuer LocalVariableDeclarationStatement"/>
+    <informations xmi:id="_nD3c4yxgEeSBzeqw9MBrIA" level="ERROR" text="Erreur de syntaxe, insérez &quot;;&quot; pour effectuer LocalVariableDeclarationStatement"/>
+    <informations xmi:id="_nD3c5CxgEeSBzeqw9MBrIA" level="ERROR" text="Erreur de syntaxe, insérez &quot;;&quot; pour effectuer LocalVariableDeclarationStatement"/>
+    <informations xmi:id="_nD3c5SxgEeSBzeqw9MBrIA" level="ERROR" text="Erreur de syntaxe, insérez &quot;;&quot; pour effectuer LocalVariableDeclarationStatement"/>
+    <informations xmi:id="_nD3c5ixgEeSBzeqw9MBrIA" level="ERROR" text="Erreur de syntaxe, insérez &quot;;&quot; pour effectuer LocalVariableDeclarationStatement"/>
+    <informations xmi:id="_nD3c5yxgEeSBzeqw9MBrIA" level="ERROR" text="Erreur de syntaxe, insérez &quot;;&quot; pour effectuer LocalVariableDeclarationStatement"/>
+    <informations xmi:id="_nD3c6CxgEeSBzeqw9MBrIA" level="ERROR" text="Erreur de syntaxe, insérez &quot;;&quot; pour effectuer LocalVariableDeclarationStatement"/>
+    <informations xmi:id="_nD3c6SxgEeSBzeqw9MBrIA" level="ERROR" text="Erreur de syntaxe, insérez &quot;;&quot; pour effectuer LocalVariableDeclarationStatement"/>
+    <informations xmi:id="_nD3c6ixgEeSBzeqw9MBrIA" level="ERROR" text="Erreur de syntaxe, insérez &quot;;&quot; pour effectuer LocalVariableDeclarationStatement"/>
+    <informations xmi:id="_nD3c6yxgEeSBzeqw9MBrIA" level="ERROR" text="Erreur de syntaxe, insérez &quot;;&quot; pour effectuer LocalVariableDeclarationStatement"/>
+    <informations xmi:id="_nD3c7CxgEeSBzeqw9MBrIA" level="ERROR" text="Erreur de syntaxe, insérez &quot;;&quot; pour effectuer LocalVariableDeclarationStatement"/>
+    <informations xmi:id="_nD3c7SxgEeSBzeqw9MBrIA" level="ERROR" text="Erreur de syntaxe, insérez &quot;;&quot; pour effectuer LocalVariableDeclarationStatement"/>
+    <informations xmi:id="_nD3c7ixgEeSBzeqw9MBrIA" level="ERROR" text="Erreur de syntaxe, insérez &quot;;&quot; pour effectuer LocalVariableDeclarationStatement"/>
+  </TalendProperties:Property>
+  <TalendProperties:ItemState xmi:id="_ix-xgEi3EeCz-azX6p-UCg" path=""/>
+  <TalendProperties:ProcessItem xmi:id="_dpvUkokFEd-XVoGqkCmBJQ" property="_dpvUkIkFEd-XVoGqkCmBJQ" state="_ix-xgEi3EeCz-azX6p-UCg">
+    <process href="GET_0.1.item#/"/>
+  </TalendProperties:ProcessItem>
+</xmi:XMI>

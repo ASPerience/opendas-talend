@@ -1,0 +1,6 @@
+#Tue Aug 05 16:25:34 CEST 2014
+version=1
+eclipse.preferences.version=1
+pathvariable.external_lib_perl_path=/home/opendas/install/TOS-All-r60995-V4.2.1/lib/perl
+description.autobuilding=false
+pathvariable.external_lib_java_path=/home/opendas/install/TOS-All-r60995-V4.2.1/lib/java

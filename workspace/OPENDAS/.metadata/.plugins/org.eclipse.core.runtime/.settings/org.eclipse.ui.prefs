@@ -1,0 +1,10 @@
+#Tue Aug 26 14:33:58 CEST 2014
+lastUSedConnection=Local
+CLOSE_EDITORS_ON_EXIT=true
+REGISTRATION_TRIES=-98
+SHOW_TRADITIONAL_STYLE_TABS=false
+lastUSedProject=OPENDAS
+workspaceTasksDone=org.talend.designer.core.ui.preferences.migration.AddQuotesForStatLogsPreference|org.talend.migrationTool.InitWorkspaceMigrationTask|org.talend.core.InitConnectionsMigrationTask
+showIntro=false
+eclipse.preferences.version=1
+PERSPECTIVE_BAR_SIZE=300

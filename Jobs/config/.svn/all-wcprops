@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/opendas/!svn/ver/173/talend/trunk/config
+END
+SET.conf
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/opendas/!svn/ver/151/talend/trunk/config/SET.conf
+END
+GET.conf
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/opendas/!svn/ver/151/talend/trunk/config/GET.conf
+END
+SET_demo.conf
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/opendas/!svn/ver/173/talend/trunk/config/SET_demo.conf
+END
+GET_demo.conf
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/opendas/!svn/ver/173/talend/trunk/config/GET_demo.conf
+END

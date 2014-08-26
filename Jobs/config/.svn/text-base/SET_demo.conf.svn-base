@@ -1,0 +1,17 @@
+adresseActiveMQ;127.0.0.1
+destinataireClientActiveMQ;DAS_CLIENT
+destinataireServeurActiveMQ;DAS_SERVER
+expediteurActiveMQ;TALEND_DEMO
+portActiveMQ;61616
+station;SET_demo
+host;opendas-magento
+port;80
+username;opendas
+pwd;opendas
+uid;1
+hostASPerpgi;127.0.0.1
+portASPerpgi;8069
+usernameASPerpgi;admin
+pwdASPerpgi;admin
+dbnameASPerpgi;opendas_data
+

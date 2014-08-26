@@ -1,0 +1,336 @@
+<%@ jet 
+imports="
+    org.talend.core.model.process.INode
+    org.talend.core.model.process.ElementParameterParser
+    org.talend.core.model.metadata.IMetadataTable 
+    org.talend.designer.codegen.config.CodeGeneratorArgument
+    org.talend.commons.utils.StringUtils
+    org.talend.core.model.process.IConnection
+    org.talend.core.model.metadata.IMetadataColumn
+  	org.talend.core.model.process.EConnectionType
+  	org.talend.core.model.metadata.types.JavaTypesManager
+	org.talend.core.model.metadata.types.JavaType
+	org.talend.core.model.process.IConnectionCategory
+    java.util.*
+"
+%>
+<%
+CodeGeneratorArgument codeGenArgument = (CodeGeneratorArgument) argument;
+INode node = (INode)codeGenArgument.getArgument();
+List<IMetadataTable> metadatas = node.getMetadataList();
+if ((metadatas!=null)&&(metadatas.size()>0)) {
+    IMetadataTable metadata = metadatas.get(0);
+    if (metadata!=null) {
+        String cid = node.getUniqueName();
+        List<IMetadataColumn> listColumns = metadata.getListColumns(); 
+        String needAuth = ElementParameterParser.getValue(node, "__NEED_AUTH__");
+		String host = ElementParameterParser.getValue(node,"__SERVER-HOST__");
+		String port = ElementParameterParser.getValue(node,"__SERVER-PORT__");
+		String dbname = ElementParameterParser.getValue(node,"__AUTH_DBNAME__");
+		String username = ElementParameterParser.getValue(node,"__AUTH_USERNAME__");
+		String uid = ElementParameterParser.getValue(node,"__AUTH_UID__");
+		String password = ElementParameterParser.getValue(node,"__AUTH_PASSWORD__");
+        String  method = ElementParameterParser.getValue(node,"__METHOD__");
+        String  model = ElementParameterParser.getValue(node,"__MODEL__");
+        String  type = ElementParameterParser.getValue(node,"__TYPE__");
+        List<Map<String, String>> mapping = (List<Map<String,String>>)ElementParameterParser.getObjectValue(node,"__MAPPING__");
+        List<Map<String, String>> out_mapping = (List<Map<String,String>>)ElementParameterParser.getObjectValue(node,"__OUT_MAPPING__");
+        List<Map<String, String>> filter = (List<Map<String,String>>)ElementParameterParser.getObjectValue(node,"__FILTER__");
+        List<Map<String, String>> filter_const = (List<Map<String,String>>)ElementParameterParser.getObjectValue(node,"__FILTER_CONST__");
+%>
+
+//DEBUG AFFICHAGE
+java.io.PrintStream consoleOut_<%=cid%> = null;
+if (globalMap.get("tLogRow_CONSOLE")!=null)
+{
+   	consoleOut_<%=cid%> = (java.io.PrintStream) globalMap.get("tLogRow_CONSOLE");
+}
+else
+{
+	consoleOut_<%=cid%> = new java.io.PrintStream(new java.io.BufferedOutputStream(System.out));
+	globalMap.put("tLogRow_CONSOLE",consoleOut_<%=cid%>);
+}
+
+<%
+        List< ? extends IConnection> inConns = node.getIncomingConnections();
+		String inputRowName = new String("input_row");
+        if (inConns != null && !inConns.isEmpty()) {
+            IConnection inConn = inConns.get(0);
+            inputRowName = inConn.getName();
+%>
+<%
+		List<IMetadataColumn> columns=metadata.getListColumns();
+		int columnSize = columns.size();
+
+%>
+    consoleOut_<%=cid%>.println("<%=cid%>" + " paramètres reçus : " + <%=inConn.getName() %>.toString());consoleOut_<%=cid%>.flush();
+
+	//Récupération des paramètres en entrée (ces paramètres viennent de tMomObjectInput)
+	String title_<%=cid%> = <%=inConn.getName()%>.title;
+	String sendUrl_<%=cid%> = <%=inConn.getName()%>.sendUrl;
+	String fromUrl_<%=cid%> = <%=inConn.getName()%>.fromUrl;	
+	Date sendedDate_<%=cid%> = <%=inConn.getName()%>.sendedDate;
+	String station_<%=cid%> = <%=inConn.getName()%>.station;
+	java.util.Map pointageMap = (java.util.Map) <%=inConn.getName()%>.attachement;
+	
+	Object[] tab = pointageMap.keySet().toArray();
+	redstone.xmlrpc.XmlRpcStruct vals = new redstone.xmlrpc.XmlRpcStruct();
+	for(int i = 0; i < tab.length; i++) {
+<%
+		for (Map<String, String> mappingline : mapping){
+			String field_name = (String)mappingline.get("NAME");
+			String field = (String)mappingline.get("FIELD");
+%>
+			if(<%=field_name%>.equals(tab[i]))
+			{
+				vals.put(<%=field%>,pointageMap.get(tab[i]));
+			}
+<%
+		}
+%>
+	}
+	
+	//Initialisation des paramètres en sortie
+	String title_out_<%=cid%> = null;
+	String sendUrl_out_<%=cid%> = null;
+	String fromUrl_out_<%=cid%> = null;
+	Date sendedDate_out_<%=cid%> = null;
+	String station_out_<%=cid%> = null;
+	Object attachement_out_<%=cid%> = null;
+	org.opendas.modele.DASError result = new org.opendas.modele.DASError();
+	
+	try
+	{
+<%
+		if(type.equals("magento"))
+		{
+%>
+			consoleOut_<%=cid%>.println("<%=cid%>" + " Connexion Magento ");consoleOut_<%=cid%>.flush();
+			ASPerpgi_xmlrpc.Magento_connect connexion<%=cid%> = new ASPerpgi_xmlrpc.Magento_connect(<%=username%>,<%=password%>,<%=host%>,<%=port%>);
+<%
+		}
+		else
+		{
+%>
+			consoleOut_<%=cid%>.println("<%=cid%>" + " Connexion ASPerpgi ");consoleOut_<%=cid%>.flush();
+			ASPerpgi_xmlrpc.ASPerpgi_connect connexion<%=cid%> = new ASPerpgi_xmlrpc.ASPerpgi_connect(<%=dbname%>,<%=username%>,<%=password%>,<%=host%>,<%=port%>);
+<%
+		}
+%>
+
+<%
+		int nb_filter = filter.size();
+%>
+
+		java.util.List<Object[]> context_search_tmp = new java.util.ArrayList<Object[]>();
+<%		
+		for (Map<String, String> filterline : filter){
+			String key = (String)filterline.get("NAME");
+			String val = (String)filterline.get("FIELD");
+			String ope = (String)filterline.get("OPERATOR");
+%>
+			if(pointageMap.get(<%=key%>) != null && <%=ope%> != null)
+			{
+				context_search_tmp.add(new Object[]{<%=val%>,<%=ope%>,pointageMap.get(<%=key%>)});
+			}
+<%
+		}
+%>
+
+<%		
+		for (Map<String, String> filterline : filter_const){
+			String value = (String)filterline.get("VALUE");
+			String val = (String)filterline.get("FIELD");
+			String ope = (String)filterline.get("OPERATOR");
+%>
+			context_search_tmp.add(new Object[]{<%=val%>,<%=ope%>,<%=value%>});
+<%
+		}
+%>
+
+		Object[] context_search = new Object[context_search_tmp.size()];
+		for(int i=0; i < context_search_tmp.size(); ++i)
+		{
+			context_search[i] = context_search_tmp.get(i);
+		}
+
+
+
+		consoleOut_<%=cid%>.println("<%=cid%>" + " XMLRpc : "+<%=model%>+" "+<%=method%>);consoleOut_<%=cid%>.flush();
+		redstone.xmlrpc.XmlRpcStruct response<%=cid%> = (redstone.xmlrpc.XmlRpcStruct)connexion<%=cid%>.exec(<%=model%>,<%=method%>, vals, context_search);
+		if(response<%=cid%> != null)
+		{
+			System.out.println("response<%=cid%> : "+response<%=cid%>);
+			result.setCode(response<%=cid%>.getInteger("code"));
+			result.setString(response<%=cid%>.getString("string"));
+			java.util.List<org.opendas.modele.DASGeneric> listgen = new java.util.ArrayList<org.opendas.modele.DASGeneric>();
+			
+			redstone.xmlrpc.XmlRpcArray res_array = null;
+			res_array = (redstone.xmlrpc.XmlRpcArray)response<%=cid%>.get("object");
+			
+			Object retour = null;
+			for(int i=0; i < res_array.size(); ++i)
+			{
+				org.opendas.modele.DASGeneric tmp_generic = new org.opendas.modele.DASGeneric();
+				redstone.xmlrpc.XmlRpcStruct tmp_dict = null;
+				tmp_dict = (redstone.xmlrpc.XmlRpcStruct) res_array.get(i);
+				tmp_generic.setInfos(connexion<%=cid%>.convert(tmp_dict));
+<%				
+				for (Map<String, String> out_mappingline : out_mapping){
+					String field_ext = (String)out_mappingline.get("FIELD");
+					String method_das = (String)out_mappingline.get("METHOD");
+					String type_ext = (String)out_mappingline.get("TYPE_EXT");
+					String type_das = (String)out_mappingline.get("TYPE_DAS");
+%>
+					if("<%=type_ext%>".equals("Integer")) {
+						if("<%=type_das%>".equals("Integer")) {
+							retour = (Object)new Integer(tmp_dict.getInteger(<%=field_ext%>));
+						} else if("<%=type_das%>".equals("String")) {
+							retour = (Object)new Integer(tmp_dict.getInteger(<%=field_ext%>));
+							retour = (Object) ((Integer)retour).toString();
+						}
+					}
+					else if("<%=type_ext%>".equals("String")) {
+						if("<%=type_das%>".equals("Integer")) {
+							retour = (Object)new Integer(-1);
+						} else if("<%=type_das%>".equals("String")) {
+							retour = (Object)new String(tmp_dict.getString(<%=field_ext%>));
+						}
+					}
+					if (retour != null && (retour instanceof Integer || retour instanceof String) ) {
+						tmp_generic.<%=method_das%>((<%=type_das%>)retour);
+						tmp_generic.setPage(0);
+						tmp_generic.setPosition(0);
+					}
+<%
+				}
+%>
+				listgen.add(tmp_generic);
+			}
+			result.setObject(listgen);
+		}
+		else							
+		{
+			System.out.println("ERREUR : Sur retour ASPerpgi");
+			result.setCode(1);
+			result.setString("ERREUR : Sur retour ASPerpgi");
+		}
+	
+	}
+	catch(redstone.xmlrpc.XmlRpcException e)
+	{
+		System.out.println("ERREUR XMLRPC : "+e.toString());
+		result.setCode(2);
+		result.setString("ERREUR XMLRPC : "+e.toString());
+	}
+	catch(Exception e)
+	{
+		System.out.println("ERREUR : "+e.toString());
+		result.setCode(3);
+		result.setString("ERREUR : "+e.toString());
+	}
+	System.out.println("result :"+result);
+	
+	
+	//transmission des paramètres au composant tMomObjectOutput (pas de sortie ici)
+	Object[] results_<%=cid %> = {title_<%=cid%>, sendUrl_<%=cid%>, fromUrl_<%=cid%>, sendedDate_<%=cid%>, <%=inConn.getName()%>.attachement, station_<%=cid%>,
+		   	 title_out_<%=cid%>, sendUrl_out_<%=cid%>, fromUrl_out_<%=cid%>, sendedDate_out_<%=cid%>, result , station_out_<%=cid%>};
+
+      for (int i_<%=cid %> = 0; i_<%=cid %> < results_<%=cid %>.length ; i_<%=cid %>++) {
+
+
+// for output
+<%
+//
+	List< ? extends IConnection> conns = node.getOutgoingSortedConnections();
+
+	
+	String firstConnName = "";
+	//si l'on a des connexions
+	if (conns!=null) {//1
+		if (conns.size()>0) {//2
+		
+			IConnection conn = conns.get(0); //the first connection
+			firstConnName = conn.getName();			
+			if (conn.getLineStyle().hasConnectionCategory(IConnectionCategory.MAIN)) {//3
+
+
+				%>
+
+			
+<%			//pour chaque valeur attendue dans la connexion de sortie
+			for (int i=0;i<columnSize;i++) {//4
+					IMetadataColumn column=columns.get(i);
+					String typeToGenerate = JavaTypesManager.getTypeToGenerate(column.getTalendType(), column.isNullable());
+					JavaType javaType = JavaTypesManager.getJavaTypeFromId(column.getTalendType());
+					String patternValue = column.getPattern() == null || column.getPattern().trim().length() == 0 ? null : column.getPattern();
+			%>
+	
+			//on place les résultats dans les connexions de sortie
+			if(<%=i %> < results_<%=cid %>.length && results_<%=cid %>[<%=i %>]!=null){				
+<%
+					if(javaType == JavaTypesManager.STRING ) { //String or Object
+%>
+					<%=conn.getName() %>.<%=column.getLabel() %> = (String) results_<%=cid %>[<%=i %>];
+<%
+					} else if(javaType == JavaTypesManager.OBJECT) { //Date
+%>
+					<%=conn.getName() %>.<%=column.getLabel() %> = (Object) results_<%=cid %>[<%=i %>];
+<%
+					} else if(javaType == JavaTypesManager.DATE) { //Date
+%>
+					<%=conn.getName() %>.<%=column.getLabel() %> = (Date) results_<%=cid %>[<%=i %>];
+<%
+					} else if(javaType == JavaTypesManager.BYTE_ARRAY) { //byte[]
+%>
+					<%=conn.getName() %>.<%=column.getLabel() %> = results_<%=cid %>[<%=i %>].getBytes();
+<%
+					} else if(javaType == JavaTypesManager.INTEGER) { //int
+%>
+					<%=conn.getName() %>.<%=column.getLabel() %> = (Integer) results_<%=cid %>[<%=i %>];	
+<%
+					} else  { //other
+%>						
+					<%=conn.getName() %>.<%=column.getLabel() %> = ParserUtils.parseTo_<%= typeToGenerate %> ((String) results_<%=cid %>[<%=i %>]);
+<%
+					}
+%>
+			
+			} else {
+					<%=conn.getName() %>.<%=column.getLabel() %> = <%=JavaTypesManager.getDefaultValueFromJavaType(typeToGenerate)%>;
+			}
+			
+			
+			
+<%			
+			} //4
+		}//3
+		
+		//pour chacune des connexions après la première, on recopie les champs de sortie
+		if (conns.size()>1) {
+			for (int i=1;i<conns.size();i++) {
+				IConnection conn2 = conns.get(i);
+				if ((conn2.getName().compareTo(firstConnName)!=0)&&(conn.getLineStyle().hasConnectionCategory(IConnectionCategory.MAIN))) {
+			    	for (IMetadataColumn column: metadata.getListColumns()) {%>
+      			<%=conn2.getName() %>.<%=column.getLabel() %> = <%=firstConnName %>.<%=column.getLabel() %>;
+				 <%
+				 	}
+				}
+			}
+		}
+		
+		
+	}//2
+	
+}//1 (fin connexion sortante)
+
+}//1 bis (fin connexion entrante)
+%>
+
+ <%}
+ }
+
+ %>  
+}
+
+

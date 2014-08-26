@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties">
+  <TalendProperties:Property xmi:id="_dpvUkIkFEd-XVoGqkCmBJQ" id="_sPP5gD28EeChMvws1TF8eg" label="GET" creationDate="2010-07-06T15:50:40.216+0200" modificationDate="2014-08-20T17:21:54.033+0200" version="0.1" statusCode="" item="_dpvUkokFEd-XVoGqkCmBJQ" maxInformationLevel="ERROR">
+    <author href="../talend.project#_NCuPwki3EeCz-azX6p-UCg"/>
+    <informations xmi:id="_Cx74sCxcEeSUcOAIxS2feg" level="ERROR" text="La méthode getName() est indéfinie pour le type Object"/>
+    <informations xmi:id="_Cx74sSxcEeSUcOAIxS2feg" level="ERROR" text="Non concordance de types : impossible de convertir de void en XmlRpcStruct"/>
+    <informations xmi:id="_Cx74sixcEeSUcOAIxS2feg" level="ERROR" text="La méthode getName() est indéfinie pour le type Object"/>
+    <informations xmi:id="_Cx74syxcEeSUcOAIxS2feg" level="ERROR" text="Non concordance de types : impossible de convertir de void en XmlRpcStruct"/>
+    <informations xmi:id="_Cx74tCxcEeSUcOAIxS2feg" level="ERROR" text="La méthode getName() est indéfinie pour le type Object"/>
+    <informations xmi:id="_Cx74tSxcEeSUcOAIxS2feg" level="ERROR" text="Non concordance de types : impossible de convertir de void en XmlRpcStruct"/>
+    <informations xmi:id="_Cx74tixcEeSUcOAIxS2feg" level="ERROR" text="La méthode getName() est indéfinie pour le type Object"/>
+    <informations xmi:id="_Cx74tyxcEeSUcOAIxS2feg" level="ERROR" text="Non concordance de types : impossible de convertir de void en XmlRpcStruct"/>
+    <informations xmi:id="_Cx74uCxcEeSUcOAIxS2feg" level="ERROR" text="La méthode getName() est indéfinie pour le type Object"/>
+    <informations xmi:id="_Cx74uSxcEeSUcOAIxS2feg" level="ERROR" text="Non concordance de types : impossible de convertir de void en XmlRpcStruct"/>
+    <informations xmi:id="_Cx74uixcEeSUcOAIxS2feg" level="ERROR" text="La méthode getName() est indéfinie pour le type Object"/>
+    <informations xmi:id="_Cx74uyxcEeSUcOAIxS2feg" level="ERROR" text="Non concordance de types : impossible de convertir de void en XmlRpcStruct"/>
+    <informations xmi:id="_Cx74vCxcEeSUcOAIxS2feg" level="ERROR" text="La méthode getName() est indéfinie pour le type Object"/>
+    <informations xmi:id="_Cx74vSxcEeSUcOAIxS2feg" level="ERROR" text="Non concordance de types : impossible de convertir de void en XmlRpcStruct"/>
+    <informations xmi:id="_Cx74vixcEeSUcOAIxS2feg" level="ERROR" text="La méthode getName() est indéfinie pour le type Object"/>
+    <informations xmi:id="_Cx74vyxcEeSUcOAIxS2feg" level="ERROR" text="Non concordance de types : impossible de convertir de void en XmlRpcStruct"/>
+    <informations xmi:id="_Cx74wCxcEeSUcOAIxS2feg" level="ERROR" text="La méthode getName() est indéfinie pour le type Object"/>
+    <informations xmi:id="_Cx74wSxcEeSUcOAIxS2feg" level="ERROR" text="Non concordance de types : impossible de convertir de void en XmlRpcStruct"/>
+    <informations xmi:id="_Cx74wixcEeSUcOAIxS2feg" level="ERROR" text="La méthode getName() est indéfinie pour le type Object"/>
+    <informations xmi:id="_Cx74wyxcEeSUcOAIxS2feg" level="ERROR" text="Non concordance de types : impossible de convertir de void en XmlRpcStruct"/>
+    <informations xmi:id="_Cx74xCxcEeSUcOAIxS2feg" level="ERROR" text="La méthode getName() est indéfinie pour le type Object"/>
+    <informations xmi:id="_Cx74xSxcEeSUcOAIxS2feg" level="ERROR" text="Non concordance de types : impossible de convertir de void en XmlRpcStruct"/>
+    <informations xmi:id="_Cx74xixcEeSUcOAIxS2feg" level="ERROR" text="La méthode getName() est indéfinie pour le type Object"/>
+    <informations xmi:id="_Cx74xyxcEeSUcOAIxS2feg" level="ERROR" text="Non concordance de types : impossible de convertir de void en XmlRpcStruct"/>
+    <informations xmi:id="_Cx74yCxcEeSUcOAIxS2feg" level="ERROR" text="La méthode getName() est indéfinie pour le type Object"/>
+    <informations xmi:id="_Cx74ySxcEeSUcOAIxS2feg" level="ERROR" text="Non concordance de types : impossible de convertir de void en XmlRpcStruct"/>
+    <informations xmi:id="_Cx74yixcEeSUcOAIxS2feg" level="ERROR" text="La méthode getName() est indéfinie pour le type Object"/>
+    <informations xmi:id="_Cx74yyxcEeSUcOAIxS2feg" level="ERROR" text="Non concordance de types : impossible de convertir de void en XmlRpcStruct"/>
+    <informations xmi:id="_Cx74zCxcEeSUcOAIxS2feg" level="ERROR" text="La méthode getName() est indéfinie pour le type Object"/>
+    <informations xmi:id="_Cx74zSxcEeSUcOAIxS2feg" level="ERROR" text="Non concordance de types : impossible de convertir de void en XmlRpcStruct"/>
+  </TalendProperties:Property>
+  <TalendProperties:ItemState xmi:id="_ix-xgEi3EeCz-azX6p-UCg" path="" locked="true" lockDate="2014-08-25T15:36:52.538+0200">
+    <locker href="../talend.project#_UxRO8RysEeShwtk8AZ3e7g"/>
+  </TalendProperties:ItemState>
+  <TalendProperties:ProcessItem xmi:id="_dpvUkokFEd-XVoGqkCmBJQ" property="_dpvUkIkFEd-XVoGqkCmBJQ" state="_ix-xgEi3EeCz-azX6p-UCg">
+    <process href="GET_0.1.item#/"/>
+  </TalendProperties:ProcessItem>
+</xmi:XMI>
