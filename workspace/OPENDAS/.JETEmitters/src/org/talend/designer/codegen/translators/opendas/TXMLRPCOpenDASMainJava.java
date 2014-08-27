@@ -67,7 +67,7 @@ public class TXMLRPCOpenDASMainJava
   protected final String TEXT_40 = ");";
   protected final String TEXT_41 = NL + "\t\t\tconsoleOut_";
   protected final String TEXT_42 = ".println(\"";
-  protected final String TEXT_43 = "\" + \" Connexion ASPerpgi \");consoleOut_";
+  protected final String TEXT_43 = "\" + \" Connexion OpenERP_V5 \");consoleOut_";
   protected final String TEXT_44 = ".flush();" + NL + "\t\t\tOpenDAS_xmlrpc.OpenERP_V5_connect connexion";
   protected final String TEXT_45 = " = new OpenDAS_xmlrpc.OpenERP_V5_connect(";
   protected final String TEXT_46 = ",";
