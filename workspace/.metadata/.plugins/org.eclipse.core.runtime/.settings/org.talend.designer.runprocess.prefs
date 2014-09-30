@@ -1,0 +1,6 @@
+#Mon Sep 29 14:37:22 CEST 2014
+eclipse.preferences.version=1
+vmarguments=\ -Xms256M -Xmx1024M 
+tos_count_debug_runs=1
+CONSOLE_LINE_LIMIT_COUNT=100
+tos_count_runs=101

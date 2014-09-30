@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties">
+  <TalendProperties:Property xmi:id="_5ptLED2BEeSLPYJqz4qftA" id="_5o-yUD2BEeSLPYJqz4qftA" label="Magento" creationDate="2014-09-16T11:14:45.697+0200" modificationDate="2014-09-16T11:11:56.857+0200" version="0.1" statusCode="" item="_5ptLEj2BEeSLPYJqz4qftA" displayName="Magento">
+    <author href="../talend.project#_we92cC6yEeSUstqRnSKZpA"/>
+  </TalendProperties:Property>
+  <TalendProperties:ItemState xmi:id="_5ptLET2BEeSLPYJqz4qftA" path="" locked="true" lockDate="2014-09-24T14:35:36.083+0200">
+    <locker href="../talend.project#_we92cC6yEeSUstqRnSKZpA"/>
+  </TalendProperties:ItemState>
+  <TalendProperties:ContextItem xmi:id="_5ptLEj2BEeSLPYJqz4qftA" property="_5ptLED2BEeSLPYJqz4qftA" state="_5ptLET2BEeSLPYJqz4qftA" defaultContext="Default">
+    <context href="Magento_0.1.item#/"/>
+  </TalendProperties:ContextItem>
+</xmi:XMI>

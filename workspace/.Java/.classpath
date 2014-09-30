@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="/home/opendas/workspace/opendas/talend/workspace/.Java/lib/talend_file_enhanced_20070724.jar"/>
+	<classpathentry kind="lib" path="/home/opendas/workspace/opendas/talend/workspace/.Java/lib/xmlrpc-1.1.1.jar"/>
+	<classpathentry kind="lib" path="/home/opendas/workspace/opendas/talend/workspace/.Java/lib/OpenDAS_xmlrpc1.jar"/>
+	<classpathentry kind="lib" path="/home/opendas/workspace/opendas/talend/workspace/.Java/lib/talendcsv.jar"/>
+	<classpathentry kind="lib" path="/home/opendas/workspace/opendas/talend/workspace/.Java/lib/log4j-1.2.13.jar"/>
+	<classpathentry kind="lib" path="/home/opendas/workspace/opendas/talend/workspace/.Java/lib/javassist.jar"/>
+	<classpathentry kind="lib" path="/home/opendas/workspace/opendas/talend/workspace/.Java/lib/jnp-client.jar"/>
+	<classpathentry kind="lib" path="/home/opendas/workspace/opendas/talend/workspace/.Java/lib/toplink-essentials.jar"/>
+	<classpathentry kind="lib" path="/home/opendas/workspace/opendas/talend/workspace/.Java/lib/das_server.jar"/>
+	<classpathentry kind="lib" path="/home/opendas/workspace/opendas/talend/workspace/.Java/lib/dom4j-1.6.1.jar"/>
+	<classpathentry kind="lib" path="/home/opendas/workspace/opendas/talend/workspace/.Java/lib/jboss-messaging-client.jar"/>
+	<classpathentry kind="lib" path="/home/opendas/workspace/opendas/talend/workspace/.Java/lib/trove.jar"/>
+	<classpathentry kind="lib" path="/home/opendas/workspace/opendas/talend/workspace/.Java/lib/slf4j-simple-1.5.4.jar"/>
+	<classpathentry kind="lib" path="/home/opendas/workspace/opendas/talend/workspace/.Java/lib/activemq-all-5.5.0.jar"/>
+	<classpathentry kind="output" path="classes"/>
+</classpath>
