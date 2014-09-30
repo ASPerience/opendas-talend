@@ -1,4 +1,0 @@
-#Wed Aug 27 10:40:07 CEST 2014
-workspaceTasksDone=org.talend.designer.core.ui.preferences.migration.AddQuotesForStatLogsPreference|org.talend.migrationTool.InitWorkspaceMigrationTask|org.talend.core.InitConnectionsMigrationTask
-REGISTRATION_TRIES=-1
-eclipse.preferences.version=1

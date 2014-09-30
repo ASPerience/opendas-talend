@@ -5,9 +5,9 @@ DAS_SERVER="/home/opendas/workspace/opendas/server"
 DAS="/home/opendas/workspace/opendas/client"
 
 # CHEMINS RELATIFS
-TALEND="/home/opendas/install/TOS-All-r60995-V4.2.1"
-WORKSPACE="/home/opendas/install/TOS-All-r60995-V4.2.1/workspace"
-VERSION="4.2.1.r60995"
+TALEND="/home/opendas/install/TOS_DI-r118616-V5.5.1"
+WORKSPACE="/home/opendas/install/TOS_DI-r118616-V5.5.1/workspace"
+VERSION="5.5.1.r118616"
 
 COMPOSANTS="composants"
 LIB="OpenDAS_xmlrpc/build/lib"
@@ -96,6 +96,7 @@ if [ -e $DAS_SERVER/bin/das_server.jar ]; then
 	ln -sf $DAS_SERVER/bin/das_server.jar $TALEND/lib/java/
 	echo "OK      : $DAS_SERVER/bin/lib/toplink-essentials.jar ----> $TALEND/lib/java/"
 	ln -sf $DAS_SERVER/bin/lib/toplink-essentials.jar $TALEND/lib/java/
+	ln -sf $DAS_SERVER/bin/lib/activemq-all-5.5.0.jar $TALEND/lib/java/
 else
 	echo "ERREUR  : $DAS_SERVER/bin/das_server.jar n'existe pas"
 	OK=false

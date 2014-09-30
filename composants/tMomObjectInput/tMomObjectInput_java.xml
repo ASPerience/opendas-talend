@@ -165,13 +165,13 @@
   <CODEGENERATION>
      <IMPORTS>
 	     <IMPORT NAME="JNP-CLIENT" MODULE="jnp-client.jar" REQUIRED="true" />
-	     <IMPORT NAME="ACTIVEMQ LIB" MODULE="activemq-all-5.3.0.jar" REQUIRED="false" />
 	     <IMPORT NAME="JBOSS MESSAGING CLIENT" MODULE="jboss-messaging-client.jar" REQUIRED="true" />
 	     <IMPORT NAME="JAVA_SSIST" MODULE="javassist.jar" REQUIRED="true" /> 
 	     <IMPORT NAME="TROVE" MODULE="trove.jar" REQUIRED="true" />   
 	     <IMPORT NAME="LOG4J" MODULE="log4j-1.2.13.jar" REQUIRED="true" />
 	     <IMPORT NAME="das_server" MODULE="das_server.jar" REQUIRED="true" />
 	     <IMPORT NAME="TOPLINK" MODULE="toplink-essentials.jar" REQUIRED="true" />
+	     <IMPORT NAME="ACTIVEMQ LIB" MODULE="activemq-all-5.5.0.jar" REQUIRED_IF="(USE_CONNECTION=='false' AND SERVER == 'ACTIVEMQ')" />
      </IMPORTS>
   </CODEGENERATION>
 

@@ -5,15 +5,19 @@
 // ============================================================================
 package routines;
 
+import java.text.DateFormat;
 import java.text.FieldPosition;
 import java.text.ParseException;
+import java.text.ParsePosition;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.GregorianCalendar;
+import java.util.TimeZone;
 
 import routines.system.FastDateParser;
 import routines.system.LocaleProvider;
+import routines.system.TalendTimestampWithTZ;
 
 public class TalendDate {
 
@@ -36,8 +40,9 @@ public class TalendDate {
      */
     public static int getPartOfDate(String partName, Date date) {
 
-        if (partName == null || date == null)
+        if (partName == null || date == null) {
             return 0;
+        }
         int ret = 0;
         String[] fieldsName = { "YEAR", "MONTH", "HOUR", "MINUTE", "SECOND", "DAY_OF_WEEK", "DAY_OF_MONTH", "DAY_OF_YEAR",
                 "WEEK_OF_MONTH", "DAY_OF_WEEK_IN_MONTH", "WEEK_OF_YEAR", "TIMEZONE" };
@@ -110,7 +115,13 @@ public class TalendDate {
      */
 
     public synchronized static String formatDate(String pattern, java.util.Date date) {
-        return FastDateParser.getInstance(pattern).format(date);
+        DateFormat format = FastDateParser.getInstance(pattern);
+        if (date instanceof TalendTimestampWithTZ) {
+            format.setTimeZone(((TalendTimestampWithTZ) date).getTimeZone());
+        } else {
+            format.setTimeZone(TimeZone.getDefault());
+        }
+        return format.format(date);
     }
 
     /**
@@ -159,6 +170,57 @@ public class TalendDate {
         }
 
         return true;
+    }
+    /**
+     * test string value as a date with right pattern.
+     * </br>examples:
+     * </br>TimeZone:+0100
+     * </br>2011/03/27 01:00:00 begin to carry out the daylight saving time. So parse dateString "20110327 021711"
+     * with TimeZone is wrong
+     * </br> <code>isDate("20110327 021711", "yyyyMMdd HHmmss",false)</code> return <code>false</code>
+     * 
+     * </br> <code>isDate("20110327 021711", "yyyyMMdd HHmmss",true)</code> return <code>true</code>
+     * 
+     * </br> <code>isDate("2008-11-32 12:15:25", "yyyy-MM-dd HH:mm:ss",true)</code> return <code>false</code> 
+     * 
+     * </br> <code>isDate("2008-11-32 12:15:25", "yyyy-MM-dd HH:mm:ss",false)</code> return <code>false</code>
+     * @param stringDate (A <code>String</code> whose beginning should be parsed)
+     * @param pattern (the pattern to format, like: "yyyy-MM-dd HH:mm:ss")
+     * @param ignoreTimeZone (if true ignore TimeZone when pare date with pattern)
+     * @return the result whether the stringDate is a date string that with a right pattern
+     * 
+     */
+    public static boolean isDate(String stringDate, String pattern, boolean ignoreTimeZone) {
+        TimeZone tz = TimeZone.getDefault();
+        if(ignoreTimeZone) {
+            tz = TimeZone.getTimeZone("UTC");
+        }
+        
+        if (stringDate == null) {
+            return false;
+        }
+        if (pattern == null) {
+            pattern = "yyyy-MM-dd HH:mm:ss";
+        }
+
+        java.text.SimpleDateFormat sdf = new java.text.SimpleDateFormat(pattern);
+        sdf.setTimeZone(tz);
+        sdf.setLenient(false);
+        
+        java.util.Date testDate = null;
+
+        try {
+			testDate = sdf.parse(stringDate);
+		} catch (ParseException e) {
+			return false;
+		}
+		
+        String formatDate = sdf.format(testDate);
+        if(formatDate.equalsIgnoreCase(stringDate) || formatDate.length()== stringDate.length()) {
+            return true;
+        }
+
+        return false;
     }
 
     /**
@@ -357,6 +419,35 @@ public class TalendDate {
      * ->> diffDate(2008/11/24 12:15:25, 2008/10/14 16:10:35, "dd") : return 41 #
      */
     public static long diffDate(Date date1, Date date2, String dateType) {
+        return diffDate(date1, date2, dateType, false);
+    }
+
+    /**
+     * return difference between two dates
+     * 
+     * @param Date1 ( first date )
+     * @param Date1 ( second date )
+     * @param dateType value=("yyyy","MM","dd","HH","mm","ss","SSS") for type of return
+     * @param ignoreDST
+     * @return a number of years, months, days ... date1 - date2
+     * 
+     * {talendTypes} Long
+     * 
+     * {Category} TalendDate
+     * 
+     * {param} date(myDate) date1 : the first date to compare
+     * 
+     * {param} date(myDate2) date2 : the second date to compare
+     * 
+     * {param} String("MM") dateType : the difference on the specified part
+     * 
+     * {examples}
+     * 
+     * ->> diffDate(2012/03/26 00:00:00, 2012/03/24 00:00:00, "dd", true) : return 2 not 1 in GMT+1#
+     * 
+     * ->> diffDate(2012/03/26 00:00:00, 2012/03/24 00:00:00, "dd", false) : return 1 not 2 in GMT+1#
+     */
+    public static long diffDate(Date date1, Date date2, String dateType, boolean ignoreDST) {
 
         if (date1 == null) {
             date1 = new Date(0);
@@ -369,6 +460,20 @@ public class TalendDate {
             dateType = "SSS";
         }
 
+        // ignore DST
+        int addDSTSavings = 0;
+        if (ignoreDST) {
+            boolean d1In = TimeZone.getDefault().inDaylightTime(date1);
+            boolean d2In = TimeZone.getDefault().inDaylightTime(date2);
+            if (d1In != d2In) {
+                if (d1In) {
+                    addDSTSavings = TimeZone.getDefault().getDSTSavings();
+                } else if (d2In) {
+                    addDSTSavings = -TimeZone.getDefault().getDSTSavings();
+                }
+            }
+        }
+
         Calendar c1 = Calendar.getInstance();
         Calendar c2 = Calendar.getInstance();
         c1.setTime(date1);
@@ -378,19 +483,74 @@ public class TalendDate {
             return c1.get(Calendar.YEAR) - c2.get(Calendar.YEAR);
         } else if (dateType.equals("MM")) { //$NON-NLS-1$
             return (c1.get(Calendar.YEAR) - c2.get(Calendar.YEAR)) * 12 + (c1.get(Calendar.MONTH) - c2.get(Calendar.MONTH));
-        } else if (dateType.equalsIgnoreCase("HH")) { //$NON-NLS-1$
-            return (date1.getTime() - date2.getTime()) / (1000 * 60 * 60);
-        } else if (dateType.equals("mm")) { //$NON-NLS-1$
-            return (date1.getTime() - date2.getTime()) / (1000 * 60);
-        } else if (dateType.equalsIgnoreCase("ss")) { //$NON-NLS-1$
-            return (date1.getTime() - date2.getTime()) / 1000;
-        } else if (dateType.equalsIgnoreCase("SSS")) { //$NON-NLS-1$
-            return date1.getTime() - date2.getTime();
-        } else if (dateType.equalsIgnoreCase("dd")) {
-            return (date1.getTime() - date2.getTime()) / (1000 * 60 * 60 * 24);
         } else {
-            throw new RuntimeException("Can't support the dateType: " + dateType);
+            long diffTime = date1.getTime() - date2.getTime() + addDSTSavings;
+
+            if (dateType.equalsIgnoreCase("HH")) { //$NON-NLS-1$
+                return diffTime / (1000 * 60 * 60);
+            } else if (dateType.equals("mm")) { //$NON-NLS-1$
+                return diffTime / (1000 * 60);
+            } else if (dateType.equalsIgnoreCase("ss")) { //$NON-NLS-1$
+                return diffTime / 1000;
+            } else if (dateType.equalsIgnoreCase("SSS")) { //$NON-NLS-1$
+                return diffTime;
+            } else if (dateType.equalsIgnoreCase("dd")) {
+                return diffTime / (1000 * 60 * 60 * 24);
+            } else {
+                throw new RuntimeException("Can't support the dateType: " + dateType);
+            }
         }
+    }
+
+    /**
+     * return difference between two dates ignore DST
+     * 
+     * @param Date1 ( first date )
+     * @param Date1 ( second date )
+     * @param dateType value=("yyyy","MM","dd","HH","mm","ss","SSS") for type of return
+     * @return a number of years, months, days ... date1 - date2
+     * 
+     * {talendTypes} Long
+     * 
+     * {Category} TalendDate
+     * 
+     * {param} date(myDate) date1 : the first date to compare
+     * 
+     * {param} date(myDate2) date2 : the second date to compare
+     * 
+     * {param} String("MM") dateType : the difference on the specified part
+     * 
+     * {examples}
+     * 
+     * ->> diffDate(2012/03/26 00:00:00, 2012/03/24 00:00:00, "dd") : return 2 not 1 in GMT+1#
+     */
+    public static long diffDateIgnoreDST(Date date1, Date date2, String dateType) {
+        return diffDate(date1, date2, dateType, true);
+    }
+
+    /**
+     * return difference between two dates ignore DST
+     * 
+     * @param Date1 ( first date )
+     * @param Date1 ( second date )
+     * @return a number of years, months, days ... date1 - date2
+     * 
+     * {talendTypes} Long
+     * 
+     * {Category} TalendDate
+     * 
+     * {param} date(myDate) date1 : the first date to compare
+     * 
+     * {param} date(myDate2) date2 : the second date to compare
+     * 
+     * {param} String("MM") dateType : the difference on the specified part
+     * 
+     * {examples}
+     * 
+     * ->> diffDate(2012/03/26 00:00:00, 2012/03/24 00:00:00) : return 2 not 1 in GMT+1#
+     */
+    public static long diffDateIgnoreDST(Date date1, Date date2) {
+        return diffDateIgnoreDST(date1, date2, "dd");
     }
 
     /**
@@ -577,6 +737,8 @@ public class TalendDate {
             c.set(Calendar.DATE, nb);
         } else if (dateType.equalsIgnoreCase("HH")) { //$NON-NLS-1$
             c.set(Calendar.HOUR_OF_DAY, nb);
+        } else if (dateType.equals("mm")) { //$NON-NLS-1$
+            c.set(Calendar.MINUTE, nb);
         } else {
             throw new RuntimeException("Can't support the dateType: " + dateType);
         }
@@ -631,8 +793,61 @@ public class TalendDate {
      * {example} parseDate("yyyy-MMM-dd HH:mm:ss", "23-Mar-1979 23:59:59") #
      */
     public synchronized static Date parseDate(String pattern, String stringDate) {
+    	return parseDate( pattern,  stringDate, true);
+    }
+    
+    /**
+     * Parses text from the beginning of the given string to produce a date using the given pattern and the default date
+     * format symbols for the given locale. The method may not use the entire text of the given string.
+     * <p>
+     * 
+     * @param pattern the pattern to parse.
+     * @param stringDate A <code>String</code> whose beginning should be parsed.
+     * @param isLenient A <code>boolean</code>judge DateFormat parse the date Lenient or not.
+     * @return A <code>Date</code> parsed from the string.
+     * @throws ParseException
+     * @exception ParseException if the beginning of the specified string cannot be parsed.
+     * 
+     * {talendTypes} Date
+     * 
+     * {Category} TalendDate
+     * 
+     * {param} string("yyyy-MM-dd HH:mm:ss") pattern : the pattern to parse
+     * 
+     * {param} string("") stringDate : A <code>String</code> whose beginning should be parsed
+     * 
+     * {param} boolean(true) isLenient : Judge DateFormat parse the date Lenient or not.
+     * 
+     * {example} parseDate("yyyy-MM-dd HH:mm:ss", "29-02-1979 23:59:59",false) #
+     */
+    public synchronized static Date parseDate(String pattern, String stringDate, boolean isLenient) {
         try {
-            return FastDateParser.getInstance(pattern).parse(stringDate);
+            boolean hasZone = false;
+            boolean inQuote = false;
+            char[] ps = pattern.toCharArray();
+            for (char p : ps) {
+                if (p == '\'') {
+                    inQuote = !inQuote;
+                } else if (!inQuote && (p == 'Z' || p == 'z')) {
+                    hasZone = true;
+                    break;
+                }
+            }
+            DateFormat df = FastDateParser.getInstance(pattern);
+            df.setLenient(isLenient);
+            Date d = df.parse(stringDate);
+            if (hasZone) {
+                int offset = df.getCalendar().get(Calendar.ZONE_OFFSET);
+                char sign = offset >= 0 ? '+' : '-';
+                int hour = Math.abs(offset) / 1000 / 60 / 60;
+                int min = Math.abs(offset) / 1000 / 60 % 60;
+                String minStr = min < 10 ? "0" + min : min + "";
+                TalendTimestampWithTZ tstz = new TalendTimestampWithTZ(new java.sql.Timestamp(d.getTime()),
+                        TimeZone.getTimeZone("GMT" + sign + hour + ":" + minStr));
+                return tstz;
+            } else {
+                return d;
+            }
         } catch (ParseException e) {
             throw new RuntimeException(e);
         }
@@ -824,6 +1039,18 @@ public class TalendDate {
      */
     public static void test_isDate() {
         System.out.println("isDate: " + Boolean.toString(TalendDate.isDate("2008-11-35 12:15:25", "yyyy-MM-dd HH:mm") == false)); //$NON-NLS-1$ //$NON-NLS-2$ //$NON-NLS-3$       
+    }
+    
+    /**
+     * format date to mssql 2008 type datetimeoffset ISO 8601 string with local time zone
+     * format string : yyyy-MM-dd HH:mm:ss.SSSXXX(JDK7 support it)
+     */
+    public static String formatDatetimeoffset(Date date) {
+        String dateString = formatDate("yyyy-MM-dd HH:mm:ss.SSSZ", date);//keep the max precision in java
+        StringBuilder sb = new StringBuilder(30);
+        sb.append(dateString);
+        sb.insert(dateString.length()-2,':');
+        return sb.toString();
     }
 
     /**

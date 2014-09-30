@@ -45,8 +45,8 @@
     <PARAMETER NAME="AUTH_PASSWORD" FIELD="TEXT" REQUIRED="true" NUM_ROW="4" > <DEFAULT>"password"</DEFAULT> </PARAMETER>
     
 	<PARAMETER NAME="TYPE" FIELD="CLOSED_LIST" NUM_ROW="5" >
-        <ITEMS DEFAULT="OpenERP_V5">
-          <ITEM NAME="OpenERP_V5" VALUE="asperpgi"/>
+        <ITEMS DEFAULT="Odoo">
+          <ITEM NAME="Odoo" VALUE="odoo"/>
           <ITEM NAME="Magento" VALUE="magento"/>
         </ITEMS>
     </PARAMETER> 
