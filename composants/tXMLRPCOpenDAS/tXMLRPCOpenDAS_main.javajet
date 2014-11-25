@@ -80,6 +80,8 @@ else
 		for (Map<String, String> mappingline : mapping){
 			String field_name = (String)mappingline.get("NAME");
 			String field = (String)mappingline.get("FIELD");
+			System.out.println("NAME : ");
+			System.out.println("FIELD : ");
 %>
 			if(<%=field_name%>.equals(tab[i]))
 			{

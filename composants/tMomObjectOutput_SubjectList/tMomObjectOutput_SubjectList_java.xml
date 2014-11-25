@@ -161,7 +161,7 @@
        <IMPORT NAME="TROVE" MODULE="trove.jar" REQUIRED="true" />   
        <IMPORT NAME="LOG4J" MODULE="log4j-1.2.13.jar" REQUIRED="false" />
        <IMPORT NAME="ACTIVEMQ LIB" MODULE="activemq-all-5.5.0.jar" />
-       <IMPORT NAME="DAS_SERVER" MODULE="das_server.jar" />
+       <IMPORT NAME="DAS_SERVER" MODULE="opendas-server.jar" />
      </IMPORTS>
   </CODEGENERATION>
 
