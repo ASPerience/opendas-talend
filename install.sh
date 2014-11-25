@@ -88,17 +88,17 @@ echo "******************************************"
 echo "------ LINK DAS_SERVER DANS TALEND ET DAS"
 echo "******************************************"
 
-if [ -e $DAS_SERVER/bin/das_server.jar ]; then
-	echo "OK      : $DAS_SERVER/bin/das_server.jar"
-	echo "OK      : $DAS_SERVER/bin/das_server.jar ----> $DAS/lib/"
-	ln -sf $DAS_SERVER/bin/das_server.jar $DAS/lib/
-	echo "OK      : $DAS_SERVER/bin/das_server.jar ----> $TALEND/lib/java/"
-	ln -sf $DAS_SERVER/bin/das_server.jar $TALEND/lib/java/
+if [ -e $DAS_SERVER/bin/opendas-server.jar ]; then
+	echo "OK      : $DAS_SERVER/bin/opendas-server.jar"
+	echo "OK      : $DAS_SERVER/bin/opendas-server.jar ----> $DAS/lib/"
+	ln -sf $DAS_SERVER/bin/opendas-server.jar $DAS/lib/
+	echo "OK      : $DAS_SERVER/bin/opendas-server.jar ----> $TALEND/lib/java/"
+	ln -sf $DAS_SERVER/bin/opendas-server.jar $TALEND/lib/java/
 	echo "OK      : $DAS_SERVER/bin/lib/toplink-essentials.jar ----> $TALEND/lib/java/"
 	ln -sf $DAS_SERVER/bin/lib/toplink-essentials.jar $TALEND/lib/java/
 	ln -sf $DAS_SERVER/bin/lib/activemq-all-5.5.0.jar $TALEND/lib/java/
 else
-	echo "ERREUR  : $DAS_SERVER/bin/das_server.jar n'existe pas"
+	echo "ERREUR  : $DAS_SERVER/bin/opendas-server.jar n'existe pas"
 	OK=false
 fi
 
