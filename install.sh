@@ -1,12 +1,12 @@
 #!/bin/bash
 ERREUR="FIN AVEC ERREUR"
 # CHEMINS ABSOLUS
-DAS_SERVER="/home/opendas/workspace/opendas/server"
-DAS="/home/opendas/workspace/opendas/client"
+DAS_SERVER="/home/alex/workspace/opendas/server"
+DAS="/home/alex/workspace/opendas/client"
 
 # CHEMINS RELATIFS
-TALEND="/home/opendas/install/TOS_DI-r118616-V5.5.1"
-WORKSPACE="/home/opendas/install/TOS_DI-r118616-V5.5.1/workspace"
+TALEND="/home/alex/install/TOS_DI-r118616-V5.5.1"
+WORKSPACE="/home/alex/install/TOS_DI-r118616-V5.5.1/workspace"
 VERSION="5.5.1.r118616"
 
 COMPOSANTS="composants"
@@ -97,6 +97,11 @@ if [ -e $DAS_SERVER/bin/opendas-server.jar ]; then
 	echo "OK      : $DAS_SERVER/bin/lib/toplink-essentials.jar ----> $TALEND/lib/java/"
 	ln -sf $DAS_SERVER/bin/lib/toplink-essentials.jar $TALEND/lib/java/
 	ln -sf $DAS_SERVER/bin/lib/activemq-all-5.5.0.jar $TALEND/lib/java/
+	echo "OK      : $DAS_SERVER/bin/lib/log4j-1.2.13.jar ----> $TALEND/lib/java/"
+	ln -sf $DAS_SERVER/bin/lib/log4j-1.2.13.jar $TALEND/lib/java/
+	echo "OK      : $DAS_SERVER/bin/lib/slf4j-simple-1.5.4.jar ----> $TALEND/lib/java/"
+	ln -sf $DAS_SERVER/bin/lib/slf4j-simple-1.5.4.jar $TALEND/lib/java/
+	
 else
 	echo "ERREUR  : $DAS_SERVER/bin/opendas-server.jar n'existe pas"
 	OK=false
