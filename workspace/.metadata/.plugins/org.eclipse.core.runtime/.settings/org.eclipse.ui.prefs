@@ -1,9 +1,10 @@
-#Tue Sep 16 14:18:27 CEST 2014
+#Wed Dec 03 12:28:55 CET 2014
 CLOSE_EDITORS_ON_EXIT=true
 lastUSedProject=OPENDAS
 LOGINCOUNT=10
 workspaceTasksDone=org.talend.migrationTool.InitWorkspaceMigrationTask|org.talend.repository.model.migration.ChangeProjectTechinicalName|org.talend.core.InitConnectionsMigrationTask|org.talend.core.EmptyConnectionsMigrationTask|org.talend.designer.core.ui.preferences.migration.AddQuotesForStatLogsPreference
 showIntro=false
+LICENSE_VALIDATION_DONE=1
 exchange_downloaded_check_updates=true
 presentationFactoryId=org.talend.rcp.presentationfactory
 eclipse.preferences.version=1

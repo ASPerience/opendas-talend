@@ -267,6 +267,8 @@ if ((metadatas!=null)&&(metadatas.size()>0)) {
 		for (Map<String, String> mappingline : mapping){
 			String field_name = (String)mappingline.get("NAME");
 			String field = (String)mappingline.get("FIELD");
+			System.out.println("NAME : ");
+			System.out.println("FIELD : ");
 
     stringBuffer.append(TEXT_22);
     stringBuffer.append(field_name);

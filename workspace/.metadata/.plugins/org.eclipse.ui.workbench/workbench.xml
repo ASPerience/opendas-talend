@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workbench progressCount="8" version="2.0">
 <workbenchAdvisor/>
-<window height="750" maximized="true" width="984" x="271" y="180">
+<window height="750" maximized="true" width="980" x="412" y="289">
 <fastViewData fastViewLocation="1024"/>
 <perspectiveBar>
 <itemSize x="160"/>
@@ -17,6 +17,11 @@
 <coolItem id="org.talend.repository.actionSet" itemType="typeToolBarContribution" x="96" y="30"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
 <coolItem id="org.talend.designer.core.ui.MultiPageTalendEditor" itemType="typePlaceholder" x="285" y="30"/>
+<coolItem id="org.eclipse.ui.edit.text.actionSet.annotationNavigation" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.talend.repository.bootTalendActionSet" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.ui.edit.text.actionSet.navigation" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.talend.rcp.CoolItemLinks" itemType="typeToolBarContribution" x="334" y="30"/>
 </coolbarLayout>
 <page focus="true" label="Espace de travail - Integration">
@@ -108,8 +113,8 @@
 </presentation>
 </folder>
 </info>
-<info folder="true" part="bottomLayout" ratio="0.3548387" ratioLeft="363" ratioRight="660" relationship="4" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.talend.designer.core.ui.views.properties.ComponentSettingsView" appearance="2" expanded="2">
+<info folder="true" part="bottomLayout" ratio="0.52934664" ratioLeft="478" ratioRight="425" relationship="4" relative="org.eclipse.ui.editorss">
+<folder activePageID="org.talend.designer.runprocess.ui.views.processview" appearance="2" expanded="2">
 <page content="org.talend.designer.core.ui.views.jobsettings.JobSettingsView" label="Job"/>
 <page content="org.talend.designer.core.ui.views.ContextsView" label="Contexts"/>
 <page content="org.talend.designer.core.ui.views.properties.ComponentSettingsView" label="Composant"/>
@@ -147,24 +152,28 @@
 <workbenchWindowAdvisor/>
 <actionBarAdvisor/>
 <trimLayout>
-<trimArea IMemento.internal.id="16384">
-<trimItem IMemento.internal.id="navigatorLayout"/>
-</trimArea>
-<trimArea IMemento.internal.id="131072">
-<trimItem IMemento.internal.id="paletteLayout"/>
-</trimArea>
 <trimArea IMemento.internal.id="128">
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
 </trimArea>
 <trimArea IMemento.internal.id="1024">
 <trimItem IMemento.internal.id="org.eclipse.jface.action.StatusLineManager"/>
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.progress.ProgressRegion"/>
-<trimItem IMemento.internal.id="outlineCodeLayout"/>
-<trimItem IMemento.internal.id="bottomLayout"/>
 </trimArea>
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.talend.designer.core.ui.MultiPageTalendEditor">
+<persistable path="/OPENDAS/temp/tmpPROCESS_IIXJoC6zEeSUstqRnSKZpA"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.talend.designer.core.ui.MultiPageTalendEditor">
+<persistable path="/OPENDAS/temp/tmpPROCESS_Eqsv8C6zEeSUstqRnSKZpA"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.talend.designer.core.ui.MultiPageTalendEditor">
+<persistable path="/OPENDAS/temp/tmpPROCESS_8dtn0Gd4EeGs7-HjDy1x2A"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.talend.designer.core.ui.MultiPageTalendEditor">
+<persistable path="/OPENDAS/temp/tmpPROCESS_3I77gGd4EeGs7-HjDy1x2A"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.talend.designer.core.ui.MultiPageTalendEditor">
 <persistable path="/OPENDAS/temp/tmpPROCESS_Eqsv8C6zEeSUstqRnSKZpA"/>
 </file>

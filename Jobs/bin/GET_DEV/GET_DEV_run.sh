@@ -1,0 +1,4 @@
+#!/bin/sh
+cd `dirname $0`
+ ROOT_PATH=`pwd`
+ java -Xms256M -Xmx1024M -cp $ROOT_PATH/../lib/jnp-client.jar:$ROOT_PATH/../lib/opendas-server.jar:$ROOT_PATH/../lib/slf4j-simple-1.5.4.jar:$ROOT_PATH/../lib/javassist.jar:$ROOT_PATH/../lib/log4j-1.2.13.jar:$ROOT_PATH/../lib/talend_file_enhanced_20070724.jar:$ROOT_PATH/../lib/trove.jar:$ROOT_PATH/../lib/jboss-messaging-client.jar:$ROOT_PATH/../lib/toplink-essentials.jar:$ROOT_PATH/../lib/dom4j-1.6.1.jar:$ROOT_PATH/../lib/xmlrpc-1.1.1.jar:$ROOT_PATH/../lib/talendcsv.jar:$ROOT_PATH/../lib/activemq-all-5.5.0.jar:$ROOT_PATH/../lib/OpenDAS_xmlrpc1.jar:$ROOT_PATH:$ROOT_PATH/../lib/systemRoutines.jar::$ROOT_PATH/../lib/userRoutines.jar::.:$ROOT_PATH/get_dev_0_1.jar: opendas.get_dev_0_1.GET_DEV --context=Default "$@" 
