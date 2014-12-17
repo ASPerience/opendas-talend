@@ -533,7 +533,7 @@ public class SET_DEV implements TalendJob {
 		tMomObjectInput_1_onSubJobError(exception, errorComponent, globalMap);
 	}
 
-	public void tXMLRPCOpenDAS_8_error(java.lang.Exception exception,
+	public void tXMLRPCOpenDAS_7_error(java.lang.Exception exception,
 			String errorComponent, final java.util.Map<String, Object> globalMap)
 			throws TalendException {
 
@@ -544,7 +544,7 @@ public class SET_DEV implements TalendJob {
 		tMomObjectInput_1_onSubJobError(exception, errorComponent, globalMap);
 	}
 
-	public void tMomObjectOutput_8_error(java.lang.Exception exception,
+	public void tMomObjectOutput_7_error(java.lang.Exception exception,
 			String errorComponent, final java.util.Map<String, Object> globalMap)
 			throws TalendException {
 
@@ -599,28 +599,6 @@ public class SET_DEV implements TalendJob {
 		tMomObjectInput_1_onSubJobError(exception, errorComponent, globalMap);
 	}
 
-	public void tXMLRPCOpenDAS_7_error(java.lang.Exception exception,
-			String errorComponent, final java.util.Map<String, Object> globalMap)
-			throws TalendException {
-
-		end_Hash.put(errorComponent, System.currentTimeMillis());
-
-		status = "failure";
-
-		tMomObjectInput_1_onSubJobError(exception, errorComponent, globalMap);
-	}
-
-	public void tMomObjectOutput_7_error(java.lang.Exception exception,
-			String errorComponent, final java.util.Map<String, Object> globalMap)
-			throws TalendException {
-
-		end_Hash.put(errorComponent, System.currentTimeMillis());
-
-		status = "failure";
-
-		tMomObjectInput_1_onSubJobError(exception, errorComponent, globalMap);
-	}
-
 	public void tXMLRPCOpenDAS_5_error(java.lang.Exception exception,
 			String errorComponent, final java.util.Map<String, Object> globalMap)
 			throws TalendException {
@@ -655,6 +633,28 @@ public class SET_DEV implements TalendJob {
 	}
 
 	public void tMomObjectOutput_6_error(java.lang.Exception exception,
+			String errorComponent, final java.util.Map<String, Object> globalMap)
+			throws TalendException {
+
+		end_Hash.put(errorComponent, System.currentTimeMillis());
+
+		status = "failure";
+
+		tMomObjectInput_1_onSubJobError(exception, errorComponent, globalMap);
+	}
+
+	public void tXMLRPCOpenDAS_8_error(java.lang.Exception exception,
+			String errorComponent, final java.util.Map<String, Object> globalMap)
+			throws TalendException {
+
+		end_Hash.put(errorComponent, System.currentTimeMillis());
+
+		status = "failure";
+
+		tMomObjectInput_1_onSubJobError(exception, errorComponent, globalMap);
+	}
+
+	public void tMomObjectOutput_8_error(java.lang.Exception exception,
 			String errorComponent, final java.util.Map<String, Object> globalMap)
 			throws TalendException {
 
@@ -924,7 +924,7 @@ public class SET_DEV implements TalendJob {
 				org.talend.fileprocess.FileInputDelimited fid_tFileInputDelimited_1 = null;
 				try {
 
-					Object filename_tFileInputDelimited_1 = "/home/alex/workspace/opendas/talend/Jobs/config/SET.conf";
+					Object filename_tFileInputDelimited_1 = "/home/opendas/workspace/opendas/talend/Jobs/config/SET.conf";
 					if (filename_tFileInputDelimited_1 instanceof java.io.InputStream) {
 
 						int footer_value_tFileInputDelimited_1 = 0, random_value_tFileInputDelimited_1 = -1;
@@ -938,7 +938,7 @@ public class SET_DEV implements TalendJob {
 					}
 					try {
 						fid_tFileInputDelimited_1 = new org.talend.fileprocess.FileInputDelimited(
-								"/home/alex/workspace/opendas/talend/Jobs/config/SET.conf",
+								"/home/opendas/workspace/opendas/talend/Jobs/config/SET.conf",
 								"ISO-8859-15", ";", "\n", true, 0, 0, -1, -1,
 								false);
 					} catch (java.lang.Exception e) {
@@ -1177,7 +1177,7 @@ public class SET_DEV implements TalendJob {
 
 					}
 				} finally {
-					if (!((Object) ("/home/alex/workspace/opendas/talend/Jobs/config/SET.conf") instanceof java.io.InputStream)) {
+					if (!((Object) ("/home/opendas/workspace/opendas/talend/Jobs/config/SET.conf") instanceof java.io.InputStream)) {
 						if (fid_tFileInputDelimited_1 != null) {
 							fid_tFileInputDelimited_1.close();
 						}
@@ -1464,6 +1464,296 @@ public class SET_DEV implements TalendJob {
 		}
 
 		globalMap.put("tMomObjectOutput_SubjectList_1_SUBPROCESS_STATE", 1);
+	}
+
+	public static class row10Struct implements
+			routines.system.IPersistableRow<row10Struct> {
+		final static byte[] commonByteArrayLock_OPENDAS_SET_DEV = new byte[0];
+		static byte[] commonByteArray_OPENDAS_SET_DEV = new byte[0];
+
+		public String title;
+
+		public String getTitle() {
+			return this.title;
+		}
+
+		public String sendUrl;
+
+		public String getSendUrl() {
+			return this.sendUrl;
+		}
+
+		public String fromUrl;
+
+		public String getFromUrl() {
+			return this.fromUrl;
+		}
+
+		public java.util.Date sendedDate;
+
+		public java.util.Date getSendedDate() {
+			return this.sendedDate;
+		}
+
+		public Object attachement;
+
+		public Object getAttachement() {
+			return this.attachement;
+		}
+
+		public String station;
+
+		public String getStation() {
+			return this.station;
+		}
+
+		public String title_out;
+
+		public String getTitle_out() {
+			return this.title_out;
+		}
+
+		public String send_out;
+
+		public String getSend_out() {
+			return this.send_out;
+		}
+
+		public String from_out;
+
+		public String getFrom_out() {
+			return this.from_out;
+		}
+
+		public java.util.Date sendedDate_out;
+
+		public java.util.Date getSendedDate_out() {
+			return this.sendedDate_out;
+		}
+
+		public Object attachement_out;
+
+		public Object getAttachement_out() {
+			return this.attachement_out;
+		}
+
+		public String station_out;
+
+		public String getStation_out() {
+			return this.station_out;
+		}
+
+		private String readString(ObjectInputStream dis) throws IOException {
+			String strReturn = null;
+			int length = 0;
+			length = dis.readInt();
+			if (length == -1) {
+				strReturn = null;
+			} else {
+				if (length > commonByteArray_OPENDAS_SET_DEV.length) {
+					if (length < 1024
+							&& commonByteArray_OPENDAS_SET_DEV.length == 0) {
+						commonByteArray_OPENDAS_SET_DEV = new byte[1024];
+					} else {
+						commonByteArray_OPENDAS_SET_DEV = new byte[2 * length];
+					}
+				}
+				dis.readFully(commonByteArray_OPENDAS_SET_DEV, 0, length);
+				strReturn = new String(commonByteArray_OPENDAS_SET_DEV, 0,
+						length, utf8Charset);
+			}
+			return strReturn;
+		}
+
+		private void writeString(String str, ObjectOutputStream dos)
+				throws IOException {
+			if (str == null) {
+				dos.writeInt(-1);
+			} else {
+				byte[] byteArray = str.getBytes(utf8Charset);
+				dos.writeInt(byteArray.length);
+				dos.write(byteArray);
+			}
+		}
+
+		private java.util.Date readDate(ObjectInputStream dis)
+				throws IOException {
+			java.util.Date dateReturn = null;
+			int length = 0;
+			length = dis.readByte();
+			if (length == -1) {
+				dateReturn = null;
+			} else {
+				dateReturn = new Date(dis.readLong());
+			}
+			return dateReturn;
+		}
+
+		private void writeDate(java.util.Date date1, ObjectOutputStream dos)
+				throws IOException {
+			if (date1 == null) {
+				dos.writeByte(-1);
+			} else {
+				dos.writeByte(0);
+				dos.writeLong(date1.getTime());
+			}
+		}
+
+		public void readData(ObjectInputStream dis) {
+
+			synchronized (commonByteArrayLock_OPENDAS_SET_DEV) {
+
+				try {
+
+					int length = 0;
+
+					this.title = readString(dis);
+
+					this.sendUrl = readString(dis);
+
+					this.fromUrl = readString(dis);
+
+					this.sendedDate = readDate(dis);
+
+					this.attachement = (Object) dis.readObject();
+
+					this.station = readString(dis);
+
+					this.title_out = readString(dis);
+
+					this.send_out = readString(dis);
+
+					this.from_out = readString(dis);
+
+					this.sendedDate_out = readDate(dis);
+
+					this.attachement_out = (Object) dis.readObject();
+
+					this.station_out = readString(dis);
+
+				} catch (IOException e) {
+					throw new RuntimeException(e);
+
+				} catch (ClassNotFoundException eCNFE) {
+					throw new RuntimeException(eCNFE);
+
+				}
+
+			}
+
+		}
+
+		public void writeData(ObjectOutputStream dos) {
+			try {
+
+				// String
+
+				writeString(this.title, dos);
+
+				// String
+
+				writeString(this.sendUrl, dos);
+
+				// String
+
+				writeString(this.fromUrl, dos);
+
+				// java.util.Date
+
+				writeDate(this.sendedDate, dos);
+
+				// Object
+
+				dos.writeObject(this.attachement);
+
+				// String
+
+				writeString(this.station, dos);
+
+				// String
+
+				writeString(this.title_out, dos);
+
+				// String
+
+				writeString(this.send_out, dos);
+
+				// String
+
+				writeString(this.from_out, dos);
+
+				// java.util.Date
+
+				writeDate(this.sendedDate_out, dos);
+
+				// Object
+
+				dos.writeObject(this.attachement_out);
+
+				// String
+
+				writeString(this.station_out, dos);
+
+			} catch (IOException e) {
+				throw new RuntimeException(e);
+			}
+
+		}
+
+		public String toString() {
+
+			StringBuilder sb = new StringBuilder();
+			sb.append(super.toString());
+			sb.append("[");
+			sb.append("title=" + title);
+			sb.append(",sendUrl=" + sendUrl);
+			sb.append(",fromUrl=" + fromUrl);
+			sb.append(",sendedDate=" + String.valueOf(sendedDate));
+			sb.append(",attachement=" + String.valueOf(attachement));
+			sb.append(",station=" + station);
+			sb.append(",title_out=" + title_out);
+			sb.append(",send_out=" + send_out);
+			sb.append(",from_out=" + from_out);
+			sb.append(",sendedDate_out=" + String.valueOf(sendedDate_out));
+			sb.append(",attachement_out=" + String.valueOf(attachement_out));
+			sb.append(",station_out=" + station_out);
+			sb.append("]");
+
+			return sb.toString();
+		}
+
+		/**
+		 * Compare keys
+		 */
+		public int compareTo(row10Struct other) {
+
+			int returnValue = -1;
+
+			return returnValue;
+		}
+
+		private int checkNullsAndCompare(Object object1, Object object2) {
+			int returnValue = 0;
+			if (object1 instanceof Comparable && object2 instanceof Comparable) {
+				returnValue = ((Comparable) object1).compareTo(object2);
+			} else if (object1 != null && object2 != null) {
+				returnValue = compareStrings(object1.toString(),
+						object2.toString());
+			} else if (object1 == null && object2 != null) {
+				returnValue = 1;
+			} else if (object1 != null && object2 == null) {
+				returnValue = -1;
+			} else {
+				returnValue = 0;
+			}
+
+			return returnValue;
+		}
+
+		private int compareStrings(String string1, String string2) {
+			return string1.compareTo(string2);
+		}
+
 	}
 
 	public static class row8Struct implements
@@ -2016,296 +2306,6 @@ public class SET_DEV implements TalendJob {
 		 * Compare keys
 		 */
 		public int compareTo(row6Struct other) {
-
-			int returnValue = -1;
-
-			return returnValue;
-		}
-
-		private int checkNullsAndCompare(Object object1, Object object2) {
-			int returnValue = 0;
-			if (object1 instanceof Comparable && object2 instanceof Comparable) {
-				returnValue = ((Comparable) object1).compareTo(object2);
-			} else if (object1 != null && object2 != null) {
-				returnValue = compareStrings(object1.toString(),
-						object2.toString());
-			} else if (object1 == null && object2 != null) {
-				returnValue = 1;
-			} else if (object1 != null && object2 == null) {
-				returnValue = -1;
-			} else {
-				returnValue = 0;
-			}
-
-			return returnValue;
-		}
-
-		private int compareStrings(String string1, String string2) {
-			return string1.compareTo(string2);
-		}
-
-	}
-
-	public static class row9Struct implements
-			routines.system.IPersistableRow<row9Struct> {
-		final static byte[] commonByteArrayLock_OPENDAS_SET_DEV = new byte[0];
-		static byte[] commonByteArray_OPENDAS_SET_DEV = new byte[0];
-
-		public String title;
-
-		public String getTitle() {
-			return this.title;
-		}
-
-		public String sendUrl;
-
-		public String getSendUrl() {
-			return this.sendUrl;
-		}
-
-		public String fromUrl;
-
-		public String getFromUrl() {
-			return this.fromUrl;
-		}
-
-		public java.util.Date sendedDate;
-
-		public java.util.Date getSendedDate() {
-			return this.sendedDate;
-		}
-
-		public Object attachement;
-
-		public Object getAttachement() {
-			return this.attachement;
-		}
-
-		public String station;
-
-		public String getStation() {
-			return this.station;
-		}
-
-		public String title_out;
-
-		public String getTitle_out() {
-			return this.title_out;
-		}
-
-		public String send_out;
-
-		public String getSend_out() {
-			return this.send_out;
-		}
-
-		public String from_out;
-
-		public String getFrom_out() {
-			return this.from_out;
-		}
-
-		public java.util.Date sendedDate_out;
-
-		public java.util.Date getSendedDate_out() {
-			return this.sendedDate_out;
-		}
-
-		public Object attachement_out;
-
-		public Object getAttachement_out() {
-			return this.attachement_out;
-		}
-
-		public String station_out;
-
-		public String getStation_out() {
-			return this.station_out;
-		}
-
-		private String readString(ObjectInputStream dis) throws IOException {
-			String strReturn = null;
-			int length = 0;
-			length = dis.readInt();
-			if (length == -1) {
-				strReturn = null;
-			} else {
-				if (length > commonByteArray_OPENDAS_SET_DEV.length) {
-					if (length < 1024
-							&& commonByteArray_OPENDAS_SET_DEV.length == 0) {
-						commonByteArray_OPENDAS_SET_DEV = new byte[1024];
-					} else {
-						commonByteArray_OPENDAS_SET_DEV = new byte[2 * length];
-					}
-				}
-				dis.readFully(commonByteArray_OPENDAS_SET_DEV, 0, length);
-				strReturn = new String(commonByteArray_OPENDAS_SET_DEV, 0,
-						length, utf8Charset);
-			}
-			return strReturn;
-		}
-
-		private void writeString(String str, ObjectOutputStream dos)
-				throws IOException {
-			if (str == null) {
-				dos.writeInt(-1);
-			} else {
-				byte[] byteArray = str.getBytes(utf8Charset);
-				dos.writeInt(byteArray.length);
-				dos.write(byteArray);
-			}
-		}
-
-		private java.util.Date readDate(ObjectInputStream dis)
-				throws IOException {
-			java.util.Date dateReturn = null;
-			int length = 0;
-			length = dis.readByte();
-			if (length == -1) {
-				dateReturn = null;
-			} else {
-				dateReturn = new Date(dis.readLong());
-			}
-			return dateReturn;
-		}
-
-		private void writeDate(java.util.Date date1, ObjectOutputStream dos)
-				throws IOException {
-			if (date1 == null) {
-				dos.writeByte(-1);
-			} else {
-				dos.writeByte(0);
-				dos.writeLong(date1.getTime());
-			}
-		}
-
-		public void readData(ObjectInputStream dis) {
-
-			synchronized (commonByteArrayLock_OPENDAS_SET_DEV) {
-
-				try {
-
-					int length = 0;
-
-					this.title = readString(dis);
-
-					this.sendUrl = readString(dis);
-
-					this.fromUrl = readString(dis);
-
-					this.sendedDate = readDate(dis);
-
-					this.attachement = (Object) dis.readObject();
-
-					this.station = readString(dis);
-
-					this.title_out = readString(dis);
-
-					this.send_out = readString(dis);
-
-					this.from_out = readString(dis);
-
-					this.sendedDate_out = readDate(dis);
-
-					this.attachement_out = (Object) dis.readObject();
-
-					this.station_out = readString(dis);
-
-				} catch (IOException e) {
-					throw new RuntimeException(e);
-
-				} catch (ClassNotFoundException eCNFE) {
-					throw new RuntimeException(eCNFE);
-
-				}
-
-			}
-
-		}
-
-		public void writeData(ObjectOutputStream dos) {
-			try {
-
-				// String
-
-				writeString(this.title, dos);
-
-				// String
-
-				writeString(this.sendUrl, dos);
-
-				// String
-
-				writeString(this.fromUrl, dos);
-
-				// java.util.Date
-
-				writeDate(this.sendedDate, dos);
-
-				// Object
-
-				dos.writeObject(this.attachement);
-
-				// String
-
-				writeString(this.station, dos);
-
-				// String
-
-				writeString(this.title_out, dos);
-
-				// String
-
-				writeString(this.send_out, dos);
-
-				// String
-
-				writeString(this.from_out, dos);
-
-				// java.util.Date
-
-				writeDate(this.sendedDate_out, dos);
-
-				// Object
-
-				dos.writeObject(this.attachement_out);
-
-				// String
-
-				writeString(this.station_out, dos);
-
-			} catch (IOException e) {
-				throw new RuntimeException(e);
-			}
-
-		}
-
-		public String toString() {
-
-			StringBuilder sb = new StringBuilder();
-			sb.append(super.toString());
-			sb.append("[");
-			sb.append("title=" + title);
-			sb.append(",sendUrl=" + sendUrl);
-			sb.append(",fromUrl=" + fromUrl);
-			sb.append(",sendedDate=" + String.valueOf(sendedDate));
-			sb.append(",attachement=" + String.valueOf(attachement));
-			sb.append(",station=" + station);
-			sb.append(",title_out=" + title_out);
-			sb.append(",send_out=" + send_out);
-			sb.append(",from_out=" + from_out);
-			sb.append(",sendedDate_out=" + String.valueOf(sendedDate_out));
-			sb.append(",attachement_out=" + String.valueOf(attachement_out));
-			sb.append(",station_out=" + station_out);
-			sb.append("]");
-
-			return sb.toString();
-		}
-
-		/**
-		 * Compare keys
-		 */
-		public int compareTo(row9Struct other) {
 
 			int returnValue = -1;
 
@@ -2916,8 +2916,8 @@ public class SET_DEV implements TalendJob {
 
 	}
 
-	public static class row10Struct implements
-			routines.system.IPersistableRow<row10Struct> {
+	public static class row9Struct implements
+			routines.system.IPersistableRow<row9Struct> {
 		final static byte[] commonByteArrayLock_OPENDAS_SET_DEV = new byte[0];
 		static byte[] commonByteArray_OPENDAS_SET_DEV = new byte[0];
 
@@ -3175,7 +3175,7 @@ public class SET_DEV implements TalendJob {
 		/**
 		 * Compare keys
 		 */
-		public int compareTo(row10Struct other) {
+		public int compareTo(row9Struct other) {
 
 			int returnValue = -1;
 
@@ -3788,876 +3788,6 @@ public class SET_DEV implements TalendJob {
 
 	}
 
-	public static class pointing_change_jobStruct implements
-			routines.system.IPersistableRow<pointing_change_jobStruct> {
-		final static byte[] commonByteArrayLock_OPENDAS_SET_DEV = new byte[0];
-		static byte[] commonByteArray_OPENDAS_SET_DEV = new byte[0];
-
-		public String title;
-
-		public String getTitle() {
-			return this.title;
-		}
-
-		public String sendUrl;
-
-		public String getSendUrl() {
-			return this.sendUrl;
-		}
-
-		public String fromUrl;
-
-		public String getFromUrl() {
-			return this.fromUrl;
-		}
-
-		public java.util.Date sendedDate;
-
-		public java.util.Date getSendedDate() {
-			return this.sendedDate;
-		}
-
-		public Object attachement;
-
-		public Object getAttachement() {
-			return this.attachement;
-		}
-
-		public String station;
-
-		public String getStation() {
-			return this.station;
-		}
-
-		public String title_out;
-
-		public String getTitle_out() {
-			return this.title_out;
-		}
-
-		public String send_out;
-
-		public String getSend_out() {
-			return this.send_out;
-		}
-
-		public String from_out;
-
-		public String getFrom_out() {
-			return this.from_out;
-		}
-
-		public java.util.Date sendedDate_out;
-
-		public java.util.Date getSendedDate_out() {
-			return this.sendedDate_out;
-		}
-
-		public Object attachement_out;
-
-		public Object getAttachement_out() {
-			return this.attachement_out;
-		}
-
-		public String station_out;
-
-		public String getStation_out() {
-			return this.station_out;
-		}
-
-		private String readString(ObjectInputStream dis) throws IOException {
-			String strReturn = null;
-			int length = 0;
-			length = dis.readInt();
-			if (length == -1) {
-				strReturn = null;
-			} else {
-				if (length > commonByteArray_OPENDAS_SET_DEV.length) {
-					if (length < 1024
-							&& commonByteArray_OPENDAS_SET_DEV.length == 0) {
-						commonByteArray_OPENDAS_SET_DEV = new byte[1024];
-					} else {
-						commonByteArray_OPENDAS_SET_DEV = new byte[2 * length];
-					}
-				}
-				dis.readFully(commonByteArray_OPENDAS_SET_DEV, 0, length);
-				strReturn = new String(commonByteArray_OPENDAS_SET_DEV, 0,
-						length, utf8Charset);
-			}
-			return strReturn;
-		}
-
-		private void writeString(String str, ObjectOutputStream dos)
-				throws IOException {
-			if (str == null) {
-				dos.writeInt(-1);
-			} else {
-				byte[] byteArray = str.getBytes(utf8Charset);
-				dos.writeInt(byteArray.length);
-				dos.write(byteArray);
-			}
-		}
-
-		private java.util.Date readDate(ObjectInputStream dis)
-				throws IOException {
-			java.util.Date dateReturn = null;
-			int length = 0;
-			length = dis.readByte();
-			if (length == -1) {
-				dateReturn = null;
-			} else {
-				dateReturn = new Date(dis.readLong());
-			}
-			return dateReturn;
-		}
-
-		private void writeDate(java.util.Date date1, ObjectOutputStream dos)
-				throws IOException {
-			if (date1 == null) {
-				dos.writeByte(-1);
-			} else {
-				dos.writeByte(0);
-				dos.writeLong(date1.getTime());
-			}
-		}
-
-		public void readData(ObjectInputStream dis) {
-
-			synchronized (commonByteArrayLock_OPENDAS_SET_DEV) {
-
-				try {
-
-					int length = 0;
-
-					this.title = readString(dis);
-
-					this.sendUrl = readString(dis);
-
-					this.fromUrl = readString(dis);
-
-					this.sendedDate = readDate(dis);
-
-					this.attachement = (Object) dis.readObject();
-
-					this.station = readString(dis);
-
-					this.title_out = readString(dis);
-
-					this.send_out = readString(dis);
-
-					this.from_out = readString(dis);
-
-					this.sendedDate_out = readDate(dis);
-
-					this.attachement_out = (Object) dis.readObject();
-
-					this.station_out = readString(dis);
-
-				} catch (IOException e) {
-					throw new RuntimeException(e);
-
-				} catch (ClassNotFoundException eCNFE) {
-					throw new RuntimeException(eCNFE);
-
-				}
-
-			}
-
-		}
-
-		public void writeData(ObjectOutputStream dos) {
-			try {
-
-				// String
-
-				writeString(this.title, dos);
-
-				// String
-
-				writeString(this.sendUrl, dos);
-
-				// String
-
-				writeString(this.fromUrl, dos);
-
-				// java.util.Date
-
-				writeDate(this.sendedDate, dos);
-
-				// Object
-
-				dos.writeObject(this.attachement);
-
-				// String
-
-				writeString(this.station, dos);
-
-				// String
-
-				writeString(this.title_out, dos);
-
-				// String
-
-				writeString(this.send_out, dos);
-
-				// String
-
-				writeString(this.from_out, dos);
-
-				// java.util.Date
-
-				writeDate(this.sendedDate_out, dos);
-
-				// Object
-
-				dos.writeObject(this.attachement_out);
-
-				// String
-
-				writeString(this.station_out, dos);
-
-			} catch (IOException e) {
-				throw new RuntimeException(e);
-			}
-
-		}
-
-		public String toString() {
-
-			StringBuilder sb = new StringBuilder();
-			sb.append(super.toString());
-			sb.append("[");
-			sb.append("title=" + title);
-			sb.append(",sendUrl=" + sendUrl);
-			sb.append(",fromUrl=" + fromUrl);
-			sb.append(",sendedDate=" + String.valueOf(sendedDate));
-			sb.append(",attachement=" + String.valueOf(attachement));
-			sb.append(",station=" + station);
-			sb.append(",title_out=" + title_out);
-			sb.append(",send_out=" + send_out);
-			sb.append(",from_out=" + from_out);
-			sb.append(",sendedDate_out=" + String.valueOf(sendedDate_out));
-			sb.append(",attachement_out=" + String.valueOf(attachement_out));
-			sb.append(",station_out=" + station_out);
-			sb.append("]");
-
-			return sb.toString();
-		}
-
-		/**
-		 * Compare keys
-		 */
-		public int compareTo(pointing_change_jobStruct other) {
-
-			int returnValue = -1;
-
-			return returnValue;
-		}
-
-		private int checkNullsAndCompare(Object object1, Object object2) {
-			int returnValue = 0;
-			if (object1 instanceof Comparable && object2 instanceof Comparable) {
-				returnValue = ((Comparable) object1).compareTo(object2);
-			} else if (object1 != null && object2 != null) {
-				returnValue = compareStrings(object1.toString(),
-						object2.toString());
-			} else if (object1 == null && object2 != null) {
-				returnValue = 1;
-			} else if (object1 != null && object2 == null) {
-				returnValue = -1;
-			} else {
-				returnValue = 0;
-			}
-
-			return returnValue;
-		}
-
-		private int compareStrings(String string1, String string2) {
-			return string1.compareTo(string2);
-		}
-
-	}
-
-	public static class pointing_change_folderStruct implements
-			routines.system.IPersistableRow<pointing_change_folderStruct> {
-		final static byte[] commonByteArrayLock_OPENDAS_SET_DEV = new byte[0];
-		static byte[] commonByteArray_OPENDAS_SET_DEV = new byte[0];
-
-		public String title;
-
-		public String getTitle() {
-			return this.title;
-		}
-
-		public String sendUrl;
-
-		public String getSendUrl() {
-			return this.sendUrl;
-		}
-
-		public String fromUrl;
-
-		public String getFromUrl() {
-			return this.fromUrl;
-		}
-
-		public java.util.Date sendedDate;
-
-		public java.util.Date getSendedDate() {
-			return this.sendedDate;
-		}
-
-		public Object attachement;
-
-		public Object getAttachement() {
-			return this.attachement;
-		}
-
-		public String station;
-
-		public String getStation() {
-			return this.station;
-		}
-
-		public String title_out;
-
-		public String getTitle_out() {
-			return this.title_out;
-		}
-
-		public String send_out;
-
-		public String getSend_out() {
-			return this.send_out;
-		}
-
-		public String from_out;
-
-		public String getFrom_out() {
-			return this.from_out;
-		}
-
-		public java.util.Date sendedDate_out;
-
-		public java.util.Date getSendedDate_out() {
-			return this.sendedDate_out;
-		}
-
-		public Object attachement_out;
-
-		public Object getAttachement_out() {
-			return this.attachement_out;
-		}
-
-		public String station_out;
-
-		public String getStation_out() {
-			return this.station_out;
-		}
-
-		private String readString(ObjectInputStream dis) throws IOException {
-			String strReturn = null;
-			int length = 0;
-			length = dis.readInt();
-			if (length == -1) {
-				strReturn = null;
-			} else {
-				if (length > commonByteArray_OPENDAS_SET_DEV.length) {
-					if (length < 1024
-							&& commonByteArray_OPENDAS_SET_DEV.length == 0) {
-						commonByteArray_OPENDAS_SET_DEV = new byte[1024];
-					} else {
-						commonByteArray_OPENDAS_SET_DEV = new byte[2 * length];
-					}
-				}
-				dis.readFully(commonByteArray_OPENDAS_SET_DEV, 0, length);
-				strReturn = new String(commonByteArray_OPENDAS_SET_DEV, 0,
-						length, utf8Charset);
-			}
-			return strReturn;
-		}
-
-		private void writeString(String str, ObjectOutputStream dos)
-				throws IOException {
-			if (str == null) {
-				dos.writeInt(-1);
-			} else {
-				byte[] byteArray = str.getBytes(utf8Charset);
-				dos.writeInt(byteArray.length);
-				dos.write(byteArray);
-			}
-		}
-
-		private java.util.Date readDate(ObjectInputStream dis)
-				throws IOException {
-			java.util.Date dateReturn = null;
-			int length = 0;
-			length = dis.readByte();
-			if (length == -1) {
-				dateReturn = null;
-			} else {
-				dateReturn = new Date(dis.readLong());
-			}
-			return dateReturn;
-		}
-
-		private void writeDate(java.util.Date date1, ObjectOutputStream dos)
-				throws IOException {
-			if (date1 == null) {
-				dos.writeByte(-1);
-			} else {
-				dos.writeByte(0);
-				dos.writeLong(date1.getTime());
-			}
-		}
-
-		public void readData(ObjectInputStream dis) {
-
-			synchronized (commonByteArrayLock_OPENDAS_SET_DEV) {
-
-				try {
-
-					int length = 0;
-
-					this.title = readString(dis);
-
-					this.sendUrl = readString(dis);
-
-					this.fromUrl = readString(dis);
-
-					this.sendedDate = readDate(dis);
-
-					this.attachement = (Object) dis.readObject();
-
-					this.station = readString(dis);
-
-					this.title_out = readString(dis);
-
-					this.send_out = readString(dis);
-
-					this.from_out = readString(dis);
-
-					this.sendedDate_out = readDate(dis);
-
-					this.attachement_out = (Object) dis.readObject();
-
-					this.station_out = readString(dis);
-
-				} catch (IOException e) {
-					throw new RuntimeException(e);
-
-				} catch (ClassNotFoundException eCNFE) {
-					throw new RuntimeException(eCNFE);
-
-				}
-
-			}
-
-		}
-
-		public void writeData(ObjectOutputStream dos) {
-			try {
-
-				// String
-
-				writeString(this.title, dos);
-
-				// String
-
-				writeString(this.sendUrl, dos);
-
-				// String
-
-				writeString(this.fromUrl, dos);
-
-				// java.util.Date
-
-				writeDate(this.sendedDate, dos);
-
-				// Object
-
-				dos.writeObject(this.attachement);
-
-				// String
-
-				writeString(this.station, dos);
-
-				// String
-
-				writeString(this.title_out, dos);
-
-				// String
-
-				writeString(this.send_out, dos);
-
-				// String
-
-				writeString(this.from_out, dos);
-
-				// java.util.Date
-
-				writeDate(this.sendedDate_out, dos);
-
-				// Object
-
-				dos.writeObject(this.attachement_out);
-
-				// String
-
-				writeString(this.station_out, dos);
-
-			} catch (IOException e) {
-				throw new RuntimeException(e);
-			}
-
-		}
-
-		public String toString() {
-
-			StringBuilder sb = new StringBuilder();
-			sb.append(super.toString());
-			sb.append("[");
-			sb.append("title=" + title);
-			sb.append(",sendUrl=" + sendUrl);
-			sb.append(",fromUrl=" + fromUrl);
-			sb.append(",sendedDate=" + String.valueOf(sendedDate));
-			sb.append(",attachement=" + String.valueOf(attachement));
-			sb.append(",station=" + station);
-			sb.append(",title_out=" + title_out);
-			sb.append(",send_out=" + send_out);
-			sb.append(",from_out=" + from_out);
-			sb.append(",sendedDate_out=" + String.valueOf(sendedDate_out));
-			sb.append(",attachement_out=" + String.valueOf(attachement_out));
-			sb.append(",station_out=" + station_out);
-			sb.append("]");
-
-			return sb.toString();
-		}
-
-		/**
-		 * Compare keys
-		 */
-		public int compareTo(pointing_change_folderStruct other) {
-
-			int returnValue = -1;
-
-			return returnValue;
-		}
-
-		private int checkNullsAndCompare(Object object1, Object object2) {
-			int returnValue = 0;
-			if (object1 instanceof Comparable && object2 instanceof Comparable) {
-				returnValue = ((Comparable) object1).compareTo(object2);
-			} else if (object1 != null && object2 != null) {
-				returnValue = compareStrings(object1.toString(),
-						object2.toString());
-			} else if (object1 == null && object2 != null) {
-				returnValue = 1;
-			} else if (object1 != null && object2 == null) {
-				returnValue = -1;
-			} else {
-				returnValue = 0;
-			}
-
-			return returnValue;
-		}
-
-		private int compareStrings(String string1, String string2) {
-			return string1.compareTo(string2);
-		}
-
-	}
-
-	public static class pointingStruct implements
-			routines.system.IPersistableRow<pointingStruct> {
-		final static byte[] commonByteArrayLock_OPENDAS_SET_DEV = new byte[0];
-		static byte[] commonByteArray_OPENDAS_SET_DEV = new byte[0];
-
-		public String title;
-
-		public String getTitle() {
-			return this.title;
-		}
-
-		public String sendUrl;
-
-		public String getSendUrl() {
-			return this.sendUrl;
-		}
-
-		public String fromUrl;
-
-		public String getFromUrl() {
-			return this.fromUrl;
-		}
-
-		public java.util.Date sendedDate;
-
-		public java.util.Date getSendedDate() {
-			return this.sendedDate;
-		}
-
-		public Object attachement;
-
-		public Object getAttachement() {
-			return this.attachement;
-		}
-
-		public String station;
-
-		public String getStation() {
-			return this.station;
-		}
-
-		public String title_out;
-
-		public String getTitle_out() {
-			return this.title_out;
-		}
-
-		public String send_out;
-
-		public String getSend_out() {
-			return this.send_out;
-		}
-
-		public String from_out;
-
-		public String getFrom_out() {
-			return this.from_out;
-		}
-
-		public java.util.Date sendedDate_out;
-
-		public java.util.Date getSendedDate_out() {
-			return this.sendedDate_out;
-		}
-
-		public Object attachement_out;
-
-		public Object getAttachement_out() {
-			return this.attachement_out;
-		}
-
-		public String station_out;
-
-		public String getStation_out() {
-			return this.station_out;
-		}
-
-		private String readString(ObjectInputStream dis) throws IOException {
-			String strReturn = null;
-			int length = 0;
-			length = dis.readInt();
-			if (length == -1) {
-				strReturn = null;
-			} else {
-				if (length > commonByteArray_OPENDAS_SET_DEV.length) {
-					if (length < 1024
-							&& commonByteArray_OPENDAS_SET_DEV.length == 0) {
-						commonByteArray_OPENDAS_SET_DEV = new byte[1024];
-					} else {
-						commonByteArray_OPENDAS_SET_DEV = new byte[2 * length];
-					}
-				}
-				dis.readFully(commonByteArray_OPENDAS_SET_DEV, 0, length);
-				strReturn = new String(commonByteArray_OPENDAS_SET_DEV, 0,
-						length, utf8Charset);
-			}
-			return strReturn;
-		}
-
-		private void writeString(String str, ObjectOutputStream dos)
-				throws IOException {
-			if (str == null) {
-				dos.writeInt(-1);
-			} else {
-				byte[] byteArray = str.getBytes(utf8Charset);
-				dos.writeInt(byteArray.length);
-				dos.write(byteArray);
-			}
-		}
-
-		private java.util.Date readDate(ObjectInputStream dis)
-				throws IOException {
-			java.util.Date dateReturn = null;
-			int length = 0;
-			length = dis.readByte();
-			if (length == -1) {
-				dateReturn = null;
-			} else {
-				dateReturn = new Date(dis.readLong());
-			}
-			return dateReturn;
-		}
-
-		private void writeDate(java.util.Date date1, ObjectOutputStream dos)
-				throws IOException {
-			if (date1 == null) {
-				dos.writeByte(-1);
-			} else {
-				dos.writeByte(0);
-				dos.writeLong(date1.getTime());
-			}
-		}
-
-		public void readData(ObjectInputStream dis) {
-
-			synchronized (commonByteArrayLock_OPENDAS_SET_DEV) {
-
-				try {
-
-					int length = 0;
-
-					this.title = readString(dis);
-
-					this.sendUrl = readString(dis);
-
-					this.fromUrl = readString(dis);
-
-					this.sendedDate = readDate(dis);
-
-					this.attachement = (Object) dis.readObject();
-
-					this.station = readString(dis);
-
-					this.title_out = readString(dis);
-
-					this.send_out = readString(dis);
-
-					this.from_out = readString(dis);
-
-					this.sendedDate_out = readDate(dis);
-
-					this.attachement_out = (Object) dis.readObject();
-
-					this.station_out = readString(dis);
-
-				} catch (IOException e) {
-					throw new RuntimeException(e);
-
-				} catch (ClassNotFoundException eCNFE) {
-					throw new RuntimeException(eCNFE);
-
-				}
-
-			}
-
-		}
-
-		public void writeData(ObjectOutputStream dos) {
-			try {
-
-				// String
-
-				writeString(this.title, dos);
-
-				// String
-
-				writeString(this.sendUrl, dos);
-
-				// String
-
-				writeString(this.fromUrl, dos);
-
-				// java.util.Date
-
-				writeDate(this.sendedDate, dos);
-
-				// Object
-
-				dos.writeObject(this.attachement);
-
-				// String
-
-				writeString(this.station, dos);
-
-				// String
-
-				writeString(this.title_out, dos);
-
-				// String
-
-				writeString(this.send_out, dos);
-
-				// String
-
-				writeString(this.from_out, dos);
-
-				// java.util.Date
-
-				writeDate(this.sendedDate_out, dos);
-
-				// Object
-
-				dos.writeObject(this.attachement_out);
-
-				// String
-
-				writeString(this.station_out, dos);
-
-			} catch (IOException e) {
-				throw new RuntimeException(e);
-			}
-
-		}
-
-		public String toString() {
-
-			StringBuilder sb = new StringBuilder();
-			sb.append(super.toString());
-			sb.append("[");
-			sb.append("title=" + title);
-			sb.append(",sendUrl=" + sendUrl);
-			sb.append(",fromUrl=" + fromUrl);
-			sb.append(",sendedDate=" + String.valueOf(sendedDate));
-			sb.append(",attachement=" + String.valueOf(attachement));
-			sb.append(",station=" + station);
-			sb.append(",title_out=" + title_out);
-			sb.append(",send_out=" + send_out);
-			sb.append(",from_out=" + from_out);
-			sb.append(",sendedDate_out=" + String.valueOf(sendedDate_out));
-			sb.append(",attachement_out=" + String.valueOf(attachement_out));
-			sb.append(",station_out=" + station_out);
-			sb.append("]");
-
-			return sb.toString();
-		}
-
-		/**
-		 * Compare keys
-		 */
-		public int compareTo(pointingStruct other) {
-
-			int returnValue = -1;
-
-			return returnValue;
-		}
-
-		private int checkNullsAndCompare(Object object1, Object object2) {
-			int returnValue = 0;
-			if (object1 instanceof Comparable && object2 instanceof Comparable) {
-				returnValue = ((Comparable) object1).compareTo(object2);
-			} else if (object1 != null && object2 != null) {
-				returnValue = compareStrings(object1.toString(),
-						object2.toString());
-			} else if (object1 == null && object2 != null) {
-				returnValue = 1;
-			} else if (object1 != null && object2 == null) {
-				returnValue = -1;
-			} else {
-				returnValue = 0;
-			}
-
-			return returnValue;
-		}
-
-		private int compareStrings(String string1, String string2) {
-			return string1.compareTo(string2);
-		}
-
-	}
-
 	public static class outStruct implements
 			routines.system.IPersistableRow<outStruct> {
 		final static byte[] commonByteArrayLock_OPENDAS_SET_DEV = new byte[0];
@@ -4948,8 +4078,8 @@ public class SET_DEV implements TalendJob {
 
 	}
 
-	public static class tracking_odooStruct implements
-			routines.system.IPersistableRow<tracking_odooStruct> {
+	public static class signing_folder_changeStruct implements
+			routines.system.IPersistableRow<signing_folder_changeStruct> {
 		final static byte[] commonByteArrayLock_OPENDAS_SET_DEV = new byte[0];
 		static byte[] commonByteArray_OPENDAS_SET_DEV = new byte[0];
 
@@ -5207,7 +4337,7 @@ public class SET_DEV implements TalendJob {
 		/**
 		 * Compare keys
 		 */
-		public int compareTo(tracking_odooStruct other) {
+		public int compareTo(signing_folder_changeStruct other) {
 
 			int returnValue = -1;
 
@@ -5238,8 +4368,8 @@ public class SET_DEV implements TalendJob {
 
 	}
 
-	public static class entryStruct implements
-			routines.system.IPersistableRow<entryStruct> {
+	public static class signingStruct implements
+			routines.system.IPersistableRow<signingStruct> {
 		final static byte[] commonByteArrayLock_OPENDAS_SET_DEV = new byte[0];
 		static byte[] commonByteArray_OPENDAS_SET_DEV = new byte[0];
 
@@ -5497,7 +4627,877 @@ public class SET_DEV implements TalendJob {
 		/**
 		 * Compare keys
 		 */
-		public int compareTo(entryStruct other) {
+		public int compareTo(signingStruct other) {
+
+			int returnValue = -1;
+
+			return returnValue;
+		}
+
+		private int checkNullsAndCompare(Object object1, Object object2) {
+			int returnValue = 0;
+			if (object1 instanceof Comparable && object2 instanceof Comparable) {
+				returnValue = ((Comparable) object1).compareTo(object2);
+			} else if (object1 != null && object2 != null) {
+				returnValue = compareStrings(object1.toString(),
+						object2.toString());
+			} else if (object1 == null && object2 != null) {
+				returnValue = 1;
+			} else if (object1 != null && object2 == null) {
+				returnValue = -1;
+			} else {
+				returnValue = 0;
+			}
+
+			return returnValue;
+		}
+
+		private int compareStrings(String string1, String string2) {
+			return string1.compareTo(string2);
+		}
+
+	}
+
+	public static class odoo_trackingStruct implements
+			routines.system.IPersistableRow<odoo_trackingStruct> {
+		final static byte[] commonByteArrayLock_OPENDAS_SET_DEV = new byte[0];
+		static byte[] commonByteArray_OPENDAS_SET_DEV = new byte[0];
+
+		public String title;
+
+		public String getTitle() {
+			return this.title;
+		}
+
+		public String sendUrl;
+
+		public String getSendUrl() {
+			return this.sendUrl;
+		}
+
+		public String fromUrl;
+
+		public String getFromUrl() {
+			return this.fromUrl;
+		}
+
+		public java.util.Date sendedDate;
+
+		public java.util.Date getSendedDate() {
+			return this.sendedDate;
+		}
+
+		public Object attachement;
+
+		public Object getAttachement() {
+			return this.attachement;
+		}
+
+		public String station;
+
+		public String getStation() {
+			return this.station;
+		}
+
+		public String title_out;
+
+		public String getTitle_out() {
+			return this.title_out;
+		}
+
+		public String send_out;
+
+		public String getSend_out() {
+			return this.send_out;
+		}
+
+		public String from_out;
+
+		public String getFrom_out() {
+			return this.from_out;
+		}
+
+		public java.util.Date sendedDate_out;
+
+		public java.util.Date getSendedDate_out() {
+			return this.sendedDate_out;
+		}
+
+		public Object attachement_out;
+
+		public Object getAttachement_out() {
+			return this.attachement_out;
+		}
+
+		public String station_out;
+
+		public String getStation_out() {
+			return this.station_out;
+		}
+
+		private String readString(ObjectInputStream dis) throws IOException {
+			String strReturn = null;
+			int length = 0;
+			length = dis.readInt();
+			if (length == -1) {
+				strReturn = null;
+			} else {
+				if (length > commonByteArray_OPENDAS_SET_DEV.length) {
+					if (length < 1024
+							&& commonByteArray_OPENDAS_SET_DEV.length == 0) {
+						commonByteArray_OPENDAS_SET_DEV = new byte[1024];
+					} else {
+						commonByteArray_OPENDAS_SET_DEV = new byte[2 * length];
+					}
+				}
+				dis.readFully(commonByteArray_OPENDAS_SET_DEV, 0, length);
+				strReturn = new String(commonByteArray_OPENDAS_SET_DEV, 0,
+						length, utf8Charset);
+			}
+			return strReturn;
+		}
+
+		private void writeString(String str, ObjectOutputStream dos)
+				throws IOException {
+			if (str == null) {
+				dos.writeInt(-1);
+			} else {
+				byte[] byteArray = str.getBytes(utf8Charset);
+				dos.writeInt(byteArray.length);
+				dos.write(byteArray);
+			}
+		}
+
+		private java.util.Date readDate(ObjectInputStream dis)
+				throws IOException {
+			java.util.Date dateReturn = null;
+			int length = 0;
+			length = dis.readByte();
+			if (length == -1) {
+				dateReturn = null;
+			} else {
+				dateReturn = new Date(dis.readLong());
+			}
+			return dateReturn;
+		}
+
+		private void writeDate(java.util.Date date1, ObjectOutputStream dos)
+				throws IOException {
+			if (date1 == null) {
+				dos.writeByte(-1);
+			} else {
+				dos.writeByte(0);
+				dos.writeLong(date1.getTime());
+			}
+		}
+
+		public void readData(ObjectInputStream dis) {
+
+			synchronized (commonByteArrayLock_OPENDAS_SET_DEV) {
+
+				try {
+
+					int length = 0;
+
+					this.title = readString(dis);
+
+					this.sendUrl = readString(dis);
+
+					this.fromUrl = readString(dis);
+
+					this.sendedDate = readDate(dis);
+
+					this.attachement = (Object) dis.readObject();
+
+					this.station = readString(dis);
+
+					this.title_out = readString(dis);
+
+					this.send_out = readString(dis);
+
+					this.from_out = readString(dis);
+
+					this.sendedDate_out = readDate(dis);
+
+					this.attachement_out = (Object) dis.readObject();
+
+					this.station_out = readString(dis);
+
+				} catch (IOException e) {
+					throw new RuntimeException(e);
+
+				} catch (ClassNotFoundException eCNFE) {
+					throw new RuntimeException(eCNFE);
+
+				}
+
+			}
+
+		}
+
+		public void writeData(ObjectOutputStream dos) {
+			try {
+
+				// String
+
+				writeString(this.title, dos);
+
+				// String
+
+				writeString(this.sendUrl, dos);
+
+				// String
+
+				writeString(this.fromUrl, dos);
+
+				// java.util.Date
+
+				writeDate(this.sendedDate, dos);
+
+				// Object
+
+				dos.writeObject(this.attachement);
+
+				// String
+
+				writeString(this.station, dos);
+
+				// String
+
+				writeString(this.title_out, dos);
+
+				// String
+
+				writeString(this.send_out, dos);
+
+				// String
+
+				writeString(this.from_out, dos);
+
+				// java.util.Date
+
+				writeDate(this.sendedDate_out, dos);
+
+				// Object
+
+				dos.writeObject(this.attachement_out);
+
+				// String
+
+				writeString(this.station_out, dos);
+
+			} catch (IOException e) {
+				throw new RuntimeException(e);
+			}
+
+		}
+
+		public String toString() {
+
+			StringBuilder sb = new StringBuilder();
+			sb.append(super.toString());
+			sb.append("[");
+			sb.append("title=" + title);
+			sb.append(",sendUrl=" + sendUrl);
+			sb.append(",fromUrl=" + fromUrl);
+			sb.append(",sendedDate=" + String.valueOf(sendedDate));
+			sb.append(",attachement=" + String.valueOf(attachement));
+			sb.append(",station=" + station);
+			sb.append(",title_out=" + title_out);
+			sb.append(",send_out=" + send_out);
+			sb.append(",from_out=" + from_out);
+			sb.append(",sendedDate_out=" + String.valueOf(sendedDate_out));
+			sb.append(",attachement_out=" + String.valueOf(attachement_out));
+			sb.append(",station_out=" + station_out);
+			sb.append("]");
+
+			return sb.toString();
+		}
+
+		/**
+		 * Compare keys
+		 */
+		public int compareTo(odoo_trackingStruct other) {
+
+			int returnValue = -1;
+
+			return returnValue;
+		}
+
+		private int checkNullsAndCompare(Object object1, Object object2) {
+			int returnValue = 0;
+			if (object1 instanceof Comparable && object2 instanceof Comparable) {
+				returnValue = ((Comparable) object1).compareTo(object2);
+			} else if (object1 != null && object2 != null) {
+				returnValue = compareStrings(object1.toString(),
+						object2.toString());
+			} else if (object1 == null && object2 != null) {
+				returnValue = 1;
+			} else if (object1 != null && object2 == null) {
+				returnValue = -1;
+			} else {
+				returnValue = 0;
+			}
+
+			return returnValue;
+		}
+
+		private int compareStrings(String string1, String string2) {
+			return string1.compareTo(string2);
+		}
+
+	}
+
+	public static class entranceStruct implements
+			routines.system.IPersistableRow<entranceStruct> {
+		final static byte[] commonByteArrayLock_OPENDAS_SET_DEV = new byte[0];
+		static byte[] commonByteArray_OPENDAS_SET_DEV = new byte[0];
+
+		public String title;
+
+		public String getTitle() {
+			return this.title;
+		}
+
+		public String sendUrl;
+
+		public String getSendUrl() {
+			return this.sendUrl;
+		}
+
+		public String fromUrl;
+
+		public String getFromUrl() {
+			return this.fromUrl;
+		}
+
+		public java.util.Date sendedDate;
+
+		public java.util.Date getSendedDate() {
+			return this.sendedDate;
+		}
+
+		public Object attachement;
+
+		public Object getAttachement() {
+			return this.attachement;
+		}
+
+		public String station;
+
+		public String getStation() {
+			return this.station;
+		}
+
+		public String title_out;
+
+		public String getTitle_out() {
+			return this.title_out;
+		}
+
+		public String send_out;
+
+		public String getSend_out() {
+			return this.send_out;
+		}
+
+		public String from_out;
+
+		public String getFrom_out() {
+			return this.from_out;
+		}
+
+		public java.util.Date sendedDate_out;
+
+		public java.util.Date getSendedDate_out() {
+			return this.sendedDate_out;
+		}
+
+		public Object attachement_out;
+
+		public Object getAttachement_out() {
+			return this.attachement_out;
+		}
+
+		public String station_out;
+
+		public String getStation_out() {
+			return this.station_out;
+		}
+
+		private String readString(ObjectInputStream dis) throws IOException {
+			String strReturn = null;
+			int length = 0;
+			length = dis.readInt();
+			if (length == -1) {
+				strReturn = null;
+			} else {
+				if (length > commonByteArray_OPENDAS_SET_DEV.length) {
+					if (length < 1024
+							&& commonByteArray_OPENDAS_SET_DEV.length == 0) {
+						commonByteArray_OPENDAS_SET_DEV = new byte[1024];
+					} else {
+						commonByteArray_OPENDAS_SET_DEV = new byte[2 * length];
+					}
+				}
+				dis.readFully(commonByteArray_OPENDAS_SET_DEV, 0, length);
+				strReturn = new String(commonByteArray_OPENDAS_SET_DEV, 0,
+						length, utf8Charset);
+			}
+			return strReturn;
+		}
+
+		private void writeString(String str, ObjectOutputStream dos)
+				throws IOException {
+			if (str == null) {
+				dos.writeInt(-1);
+			} else {
+				byte[] byteArray = str.getBytes(utf8Charset);
+				dos.writeInt(byteArray.length);
+				dos.write(byteArray);
+			}
+		}
+
+		private java.util.Date readDate(ObjectInputStream dis)
+				throws IOException {
+			java.util.Date dateReturn = null;
+			int length = 0;
+			length = dis.readByte();
+			if (length == -1) {
+				dateReturn = null;
+			} else {
+				dateReturn = new Date(dis.readLong());
+			}
+			return dateReturn;
+		}
+
+		private void writeDate(java.util.Date date1, ObjectOutputStream dos)
+				throws IOException {
+			if (date1 == null) {
+				dos.writeByte(-1);
+			} else {
+				dos.writeByte(0);
+				dos.writeLong(date1.getTime());
+			}
+		}
+
+		public void readData(ObjectInputStream dis) {
+
+			synchronized (commonByteArrayLock_OPENDAS_SET_DEV) {
+
+				try {
+
+					int length = 0;
+
+					this.title = readString(dis);
+
+					this.sendUrl = readString(dis);
+
+					this.fromUrl = readString(dis);
+
+					this.sendedDate = readDate(dis);
+
+					this.attachement = (Object) dis.readObject();
+
+					this.station = readString(dis);
+
+					this.title_out = readString(dis);
+
+					this.send_out = readString(dis);
+
+					this.from_out = readString(dis);
+
+					this.sendedDate_out = readDate(dis);
+
+					this.attachement_out = (Object) dis.readObject();
+
+					this.station_out = readString(dis);
+
+				} catch (IOException e) {
+					throw new RuntimeException(e);
+
+				} catch (ClassNotFoundException eCNFE) {
+					throw new RuntimeException(eCNFE);
+
+				}
+
+			}
+
+		}
+
+		public void writeData(ObjectOutputStream dos) {
+			try {
+
+				// String
+
+				writeString(this.title, dos);
+
+				// String
+
+				writeString(this.sendUrl, dos);
+
+				// String
+
+				writeString(this.fromUrl, dos);
+
+				// java.util.Date
+
+				writeDate(this.sendedDate, dos);
+
+				// Object
+
+				dos.writeObject(this.attachement);
+
+				// String
+
+				writeString(this.station, dos);
+
+				// String
+
+				writeString(this.title_out, dos);
+
+				// String
+
+				writeString(this.send_out, dos);
+
+				// String
+
+				writeString(this.from_out, dos);
+
+				// java.util.Date
+
+				writeDate(this.sendedDate_out, dos);
+
+				// Object
+
+				dos.writeObject(this.attachement_out);
+
+				// String
+
+				writeString(this.station_out, dos);
+
+			} catch (IOException e) {
+				throw new RuntimeException(e);
+			}
+
+		}
+
+		public String toString() {
+
+			StringBuilder sb = new StringBuilder();
+			sb.append(super.toString());
+			sb.append("[");
+			sb.append("title=" + title);
+			sb.append(",sendUrl=" + sendUrl);
+			sb.append(",fromUrl=" + fromUrl);
+			sb.append(",sendedDate=" + String.valueOf(sendedDate));
+			sb.append(",attachement=" + String.valueOf(attachement));
+			sb.append(",station=" + station);
+			sb.append(",title_out=" + title_out);
+			sb.append(",send_out=" + send_out);
+			sb.append(",from_out=" + from_out);
+			sb.append(",sendedDate_out=" + String.valueOf(sendedDate_out));
+			sb.append(",attachement_out=" + String.valueOf(attachement_out));
+			sb.append(",station_out=" + station_out);
+			sb.append("]");
+
+			return sb.toString();
+		}
+
+		/**
+		 * Compare keys
+		 */
+		public int compareTo(entranceStruct other) {
+
+			int returnValue = -1;
+
+			return returnValue;
+		}
+
+		private int checkNullsAndCompare(Object object1, Object object2) {
+			int returnValue = 0;
+			if (object1 instanceof Comparable && object2 instanceof Comparable) {
+				returnValue = ((Comparable) object1).compareTo(object2);
+			} else if (object1 != null && object2 != null) {
+				returnValue = compareStrings(object1.toString(),
+						object2.toString());
+			} else if (object1 == null && object2 != null) {
+				returnValue = 1;
+			} else if (object1 != null && object2 == null) {
+				returnValue = -1;
+			} else {
+				returnValue = 0;
+			}
+
+			return returnValue;
+		}
+
+		private int compareStrings(String string1, String string2) {
+			return string1.compareTo(string2);
+		}
+
+	}
+
+	public static class signing_workcenter_changeStruct implements
+			routines.system.IPersistableRow<signing_workcenter_changeStruct> {
+		final static byte[] commonByteArrayLock_OPENDAS_SET_DEV = new byte[0];
+		static byte[] commonByteArray_OPENDAS_SET_DEV = new byte[0];
+
+		public String title;
+
+		public String getTitle() {
+			return this.title;
+		}
+
+		public String sendUrl;
+
+		public String getSendUrl() {
+			return this.sendUrl;
+		}
+
+		public String fromUrl;
+
+		public String getFromUrl() {
+			return this.fromUrl;
+		}
+
+		public java.util.Date sendedDate;
+
+		public java.util.Date getSendedDate() {
+			return this.sendedDate;
+		}
+
+		public Object attachement;
+
+		public Object getAttachement() {
+			return this.attachement;
+		}
+
+		public String station;
+
+		public String getStation() {
+			return this.station;
+		}
+
+		public String title_out;
+
+		public String getTitle_out() {
+			return this.title_out;
+		}
+
+		public String send_out;
+
+		public String getSend_out() {
+			return this.send_out;
+		}
+
+		public String from_out;
+
+		public String getFrom_out() {
+			return this.from_out;
+		}
+
+		public java.util.Date sendedDate_out;
+
+		public java.util.Date getSendedDate_out() {
+			return this.sendedDate_out;
+		}
+
+		public Object attachement_out;
+
+		public Object getAttachement_out() {
+			return this.attachement_out;
+		}
+
+		public String station_out;
+
+		public String getStation_out() {
+			return this.station_out;
+		}
+
+		private String readString(ObjectInputStream dis) throws IOException {
+			String strReturn = null;
+			int length = 0;
+			length = dis.readInt();
+			if (length == -1) {
+				strReturn = null;
+			} else {
+				if (length > commonByteArray_OPENDAS_SET_DEV.length) {
+					if (length < 1024
+							&& commonByteArray_OPENDAS_SET_DEV.length == 0) {
+						commonByteArray_OPENDAS_SET_DEV = new byte[1024];
+					} else {
+						commonByteArray_OPENDAS_SET_DEV = new byte[2 * length];
+					}
+				}
+				dis.readFully(commonByteArray_OPENDAS_SET_DEV, 0, length);
+				strReturn = new String(commonByteArray_OPENDAS_SET_DEV, 0,
+						length, utf8Charset);
+			}
+			return strReturn;
+		}
+
+		private void writeString(String str, ObjectOutputStream dos)
+				throws IOException {
+			if (str == null) {
+				dos.writeInt(-1);
+			} else {
+				byte[] byteArray = str.getBytes(utf8Charset);
+				dos.writeInt(byteArray.length);
+				dos.write(byteArray);
+			}
+		}
+
+		private java.util.Date readDate(ObjectInputStream dis)
+				throws IOException {
+			java.util.Date dateReturn = null;
+			int length = 0;
+			length = dis.readByte();
+			if (length == -1) {
+				dateReturn = null;
+			} else {
+				dateReturn = new Date(dis.readLong());
+			}
+			return dateReturn;
+		}
+
+		private void writeDate(java.util.Date date1, ObjectOutputStream dos)
+				throws IOException {
+			if (date1 == null) {
+				dos.writeByte(-1);
+			} else {
+				dos.writeByte(0);
+				dos.writeLong(date1.getTime());
+			}
+		}
+
+		public void readData(ObjectInputStream dis) {
+
+			synchronized (commonByteArrayLock_OPENDAS_SET_DEV) {
+
+				try {
+
+					int length = 0;
+
+					this.title = readString(dis);
+
+					this.sendUrl = readString(dis);
+
+					this.fromUrl = readString(dis);
+
+					this.sendedDate = readDate(dis);
+
+					this.attachement = (Object) dis.readObject();
+
+					this.station = readString(dis);
+
+					this.title_out = readString(dis);
+
+					this.send_out = readString(dis);
+
+					this.from_out = readString(dis);
+
+					this.sendedDate_out = readDate(dis);
+
+					this.attachement_out = (Object) dis.readObject();
+
+					this.station_out = readString(dis);
+
+				} catch (IOException e) {
+					throw new RuntimeException(e);
+
+				} catch (ClassNotFoundException eCNFE) {
+					throw new RuntimeException(eCNFE);
+
+				}
+
+			}
+
+		}
+
+		public void writeData(ObjectOutputStream dos) {
+			try {
+
+				// String
+
+				writeString(this.title, dos);
+
+				// String
+
+				writeString(this.sendUrl, dos);
+
+				// String
+
+				writeString(this.fromUrl, dos);
+
+				// java.util.Date
+
+				writeDate(this.sendedDate, dos);
+
+				// Object
+
+				dos.writeObject(this.attachement);
+
+				// String
+
+				writeString(this.station, dos);
+
+				// String
+
+				writeString(this.title_out, dos);
+
+				// String
+
+				writeString(this.send_out, dos);
+
+				// String
+
+				writeString(this.from_out, dos);
+
+				// java.util.Date
+
+				writeDate(this.sendedDate_out, dos);
+
+				// Object
+
+				dos.writeObject(this.attachement_out);
+
+				// String
+
+				writeString(this.station_out, dos);
+
+			} catch (IOException e) {
+				throw new RuntimeException(e);
+			}
+
+		}
+
+		public String toString() {
+
+			StringBuilder sb = new StringBuilder();
+			sb.append(super.toString());
+			sb.append("[");
+			sb.append("title=" + title);
+			sb.append(",sendUrl=" + sendUrl);
+			sb.append(",fromUrl=" + fromUrl);
+			sb.append(",sendedDate=" + String.valueOf(sendedDate));
+			sb.append(",attachement=" + String.valueOf(attachement));
+			sb.append(",station=" + station);
+			sb.append(",title_out=" + title_out);
+			sb.append(",send_out=" + send_out);
+			sb.append(",from_out=" + from_out);
+			sb.append(",sendedDate_out=" + String.valueOf(sendedDate_out));
+			sb.append(",attachement_out=" + String.valueOf(attachement_out));
+			sb.append(",station_out=" + station_out);
+			sb.append("]");
+
+			return sb.toString();
+		}
+
+		/**
+		 * Compare keys
+		 */
+		public int compareTo(signing_workcenter_changeStruct other) {
 
 			int returnValue = -1;
 
@@ -5843,18 +5843,18 @@ public class SET_DEV implements TalendJob {
 				row2Struct row2 = new row2Struct();
 				synchro_date_mrp_production_product_lineStruct synchro_date_mrp_production_product_line = new synchro_date_mrp_production_product_lineStruct();
 				row12Struct row12 = new row12Struct();
-				pointing_change_jobStruct pointing_change_job = new pointing_change_jobStruct();
-				row10Struct row10 = new row10Struct();
-				pointing_change_folderStruct pointing_change_folder = new pointing_change_folderStruct();
-				row11Struct row11 = new row11Struct();
-				pointingStruct pointing = new pointingStruct();
-				row5Struct row5 = new row5Struct();
 				outStruct out = new outStruct();
 				row9Struct row9 = new row9Struct();
-				tracking_odooStruct tracking_odoo = new tracking_odooStruct();
+				signing_folder_changeStruct signing_folder_change = new signing_folder_changeStruct();
+				row11Struct row11 = new row11Struct();
+				signingStruct signing = new signingStruct();
+				row5Struct row5 = new row5Struct();
+				odoo_trackingStruct odoo_tracking = new odoo_trackingStruct();
 				row6Struct row6 = new row6Struct();
-				entryStruct entry = new entryStruct();
+				entranceStruct entrance = new entranceStruct();
 				row8Struct row8 = new row8Struct();
+				signing_workcenter_changeStruct signing_workcenter_change = new signing_workcenter_changeStruct();
+				row10Struct row10 = new row10Struct();
 
 				/**
 				 * [tMomObjectOutput_10 begin ] start
@@ -5937,242 +5937,6 @@ public class SET_DEV implements TalendJob {
 				 */
 
 				/**
-				 * [tMomObjectOutput_8 begin ] start
-				 */
-
-				ok_Hash.put("tMomObjectOutput_8", false);
-				start_Hash
-						.put("tMomObjectOutput_8", System.currentTimeMillis());
-
-				currentComponent = "tMomObjectOutput_8";
-
-				if (execStat) {
-					if (resourceMap.get("inIterateVComp") == null) {
-
-						runStat.updateStatOnConnection("row10" + iterateId, 0,
-								0);
-
-					}
-				}
-
-				int tos_count_tMomObjectOutput_8 = 0;
-
-				java.util.Hashtable props_tMomObjectOutput_8 = new java.util.Hashtable();
-				String url_tMomObjectOutput_8 = "tcp://"
-						+ context.addressActiveMQ + ":" + context.portActiveMQ;
-				System.out.println("Connecting to URL: "
-						+ url_tMomObjectOutput_8);
-				System.out.println("Producing " + (false ? "topic" : "queue")
-						+ ": " + context.senderActiveMQ);
-
-				org.apache.activemq.ActiveMQConnectionFactory factory_tMomObjectOutput_8 = new org.apache.activemq.ActiveMQConnectionFactory(
-						org.apache.activemq.ActiveMQConnection.DEFAULT_USER,
-						org.apache.activemq.ActiveMQConnection.DEFAULT_PASSWORD,
-						url_tMomObjectOutput_8);
-
-				javax.jms.Connection connection_tMomObjectOutput_8 = factory_tMomObjectOutput_8
-						.createConnection();
-				connection_tMomObjectOutput_8.start();
-
-				javax.jms.Session session_tMomObjectOutput_8 = connection_tMomObjectOutput_8
-						.createSession(false,
-								javax.jms.Session.AUTO_ACKNOWLEDGE);
-
-				javax.jms.Destination des_tMomObjectOutput_8;
-				des_tMomObjectOutput_8 = session_tMomObjectOutput_8
-						.createQueue(context.senderActiveMQ);
-				javax.jms.MessageProducer producer_tMomObjectOutput_8 = session_tMomObjectOutput_8
-						.createProducer(des_tMomObjectOutput_8);
-
-				producer_tMomObjectOutput_8
-						.setDeliveryMode(javax.jms.DeliveryMode.NON_PERSISTENT);
-
-				/**
-				 * [tMomObjectOutput_8 begin ] stop
-				 */
-
-				/**
-				 * [tXMLRPCOpenDAS_8 begin ] start
-				 */
-
-				ok_Hash.put("tXMLRPCOpenDAS_8", false);
-				start_Hash.put("tXMLRPCOpenDAS_8", System.currentTimeMillis());
-
-				currentComponent = "tXMLRPCOpenDAS_8";
-
-				if (execStat) {
-					if (resourceMap.get("inIterateVComp") == null) {
-
-						runStat.updateStatOnConnection("pointing_change_job"
-								+ iterateId, 0, 0);
-
-					}
-				}
-
-				int tos_count_tXMLRPCOpenDAS_8 = 0;
-
-				/**
-				 * [tXMLRPCOpenDAS_8 begin ] stop
-				 */
-
-				/**
-				 * [tMomObjectOutput_9 begin ] start
-				 */
-
-				ok_Hash.put("tMomObjectOutput_9", false);
-				start_Hash
-						.put("tMomObjectOutput_9", System.currentTimeMillis());
-
-				currentComponent = "tMomObjectOutput_9";
-
-				if (execStat) {
-					if (resourceMap.get("inIterateVComp") == null) {
-
-						runStat.updateStatOnConnection("row11" + iterateId, 0,
-								0);
-
-					}
-				}
-
-				int tos_count_tMomObjectOutput_9 = 0;
-
-				java.util.Hashtable props_tMomObjectOutput_9 = new java.util.Hashtable();
-				String url_tMomObjectOutput_9 = "tcp://"
-						+ context.addressActiveMQ + ":" + context.portActiveMQ;
-				System.out.println("Connecting to URL: "
-						+ url_tMomObjectOutput_9);
-				System.out.println("Producing " + (false ? "topic" : "queue")
-						+ ": " + context.senderActiveMQ);
-
-				org.apache.activemq.ActiveMQConnectionFactory factory_tMomObjectOutput_9 = new org.apache.activemq.ActiveMQConnectionFactory(
-						org.apache.activemq.ActiveMQConnection.DEFAULT_USER,
-						org.apache.activemq.ActiveMQConnection.DEFAULT_PASSWORD,
-						url_tMomObjectOutput_9);
-
-				javax.jms.Connection connection_tMomObjectOutput_9 = factory_tMomObjectOutput_9
-						.createConnection();
-				connection_tMomObjectOutput_9.start();
-
-				javax.jms.Session session_tMomObjectOutput_9 = connection_tMomObjectOutput_9
-						.createSession(false,
-								javax.jms.Session.AUTO_ACKNOWLEDGE);
-
-				javax.jms.Destination des_tMomObjectOutput_9;
-				des_tMomObjectOutput_9 = session_tMomObjectOutput_9
-						.createQueue(context.senderActiveMQ);
-				javax.jms.MessageProducer producer_tMomObjectOutput_9 = session_tMomObjectOutput_9
-						.createProducer(des_tMomObjectOutput_9);
-
-				producer_tMomObjectOutput_9
-						.setDeliveryMode(javax.jms.DeliveryMode.NON_PERSISTENT);
-
-				/**
-				 * [tMomObjectOutput_9 begin ] stop
-				 */
-
-				/**
-				 * [tXMLRPCOpenDAS_9 begin ] start
-				 */
-
-				ok_Hash.put("tXMLRPCOpenDAS_9", false);
-				start_Hash.put("tXMLRPCOpenDAS_9", System.currentTimeMillis());
-
-				currentComponent = "tXMLRPCOpenDAS_9";
-
-				if (execStat) {
-					if (resourceMap.get("inIterateVComp") == null) {
-
-						runStat.updateStatOnConnection("pointing_change_folder"
-								+ iterateId, 0, 0);
-
-					}
-				}
-
-				int tos_count_tXMLRPCOpenDAS_9 = 0;
-
-				/**
-				 * [tXMLRPCOpenDAS_9 begin ] stop
-				 */
-
-				/**
-				 * [tMomObjectOutput_3 begin ] start
-				 */
-
-				ok_Hash.put("tMomObjectOutput_3", false);
-				start_Hash
-						.put("tMomObjectOutput_3", System.currentTimeMillis());
-
-				currentComponent = "tMomObjectOutput_3";
-
-				if (execStat) {
-					if (resourceMap.get("inIterateVComp") == null) {
-
-						runStat.updateStatOnConnection("row5" + iterateId, 0, 0);
-
-					}
-				}
-
-				int tos_count_tMomObjectOutput_3 = 0;
-
-				java.util.Hashtable props_tMomObjectOutput_3 = new java.util.Hashtable();
-				String url_tMomObjectOutput_3 = "tcp://"
-						+ context.addressActiveMQ + ":" + context.portActiveMQ;
-				System.out.println("Connecting to URL: "
-						+ url_tMomObjectOutput_3);
-				System.out.println("Producing " + (false ? "topic" : "queue")
-						+ ": " + context.senderActiveMQ);
-
-				org.apache.activemq.ActiveMQConnectionFactory factory_tMomObjectOutput_3 = new org.apache.activemq.ActiveMQConnectionFactory(
-						org.apache.activemq.ActiveMQConnection.DEFAULT_USER,
-						org.apache.activemq.ActiveMQConnection.DEFAULT_PASSWORD,
-						url_tMomObjectOutput_3);
-
-				javax.jms.Connection connection_tMomObjectOutput_3 = factory_tMomObjectOutput_3
-						.createConnection();
-				connection_tMomObjectOutput_3.start();
-
-				javax.jms.Session session_tMomObjectOutput_3 = connection_tMomObjectOutput_3
-						.createSession(false,
-								javax.jms.Session.AUTO_ACKNOWLEDGE);
-
-				javax.jms.Destination des_tMomObjectOutput_3;
-				des_tMomObjectOutput_3 = session_tMomObjectOutput_3
-						.createQueue(context.senderActiveMQ);
-				javax.jms.MessageProducer producer_tMomObjectOutput_3 = session_tMomObjectOutput_3
-						.createProducer(des_tMomObjectOutput_3);
-
-				producer_tMomObjectOutput_3
-						.setDeliveryMode(javax.jms.DeliveryMode.NON_PERSISTENT);
-
-				/**
-				 * [tMomObjectOutput_3 begin ] stop
-				 */
-
-				/**
-				 * [tXMLRPCOpenDAS_4 begin ] start
-				 */
-
-				ok_Hash.put("tXMLRPCOpenDAS_4", false);
-				start_Hash.put("tXMLRPCOpenDAS_4", System.currentTimeMillis());
-
-				currentComponent = "tXMLRPCOpenDAS_4";
-
-				if (execStat) {
-					if (resourceMap.get("inIterateVComp") == null) {
-
-						runStat.updateStatOnConnection("pointing" + iterateId,
-								0, 0);
-
-					}
-				}
-
-				int tos_count_tXMLRPCOpenDAS_4 = 0;
-
-				/**
-				 * [tXMLRPCOpenDAS_4 begin ] stop
-				 */
-
-				/**
 				 * [tMomObjectOutput_7 begin ] start
 				 */
 
@@ -6250,6 +6014,163 @@ public class SET_DEV implements TalendJob {
 				 */
 
 				/**
+				 * [tMomObjectOutput_9 begin ] start
+				 */
+
+				ok_Hash.put("tMomObjectOutput_9", false);
+				start_Hash
+						.put("tMomObjectOutput_9", System.currentTimeMillis());
+
+				currentComponent = "tMomObjectOutput_9";
+
+				if (execStat) {
+					if (resourceMap.get("inIterateVComp") == null) {
+
+						runStat.updateStatOnConnection("row11" + iterateId, 0,
+								0);
+
+					}
+				}
+
+				int tos_count_tMomObjectOutput_9 = 0;
+
+				java.util.Hashtable props_tMomObjectOutput_9 = new java.util.Hashtable();
+				String url_tMomObjectOutput_9 = "tcp://"
+						+ context.addressActiveMQ + ":" + context.portActiveMQ;
+				System.out.println("Connecting to URL: "
+						+ url_tMomObjectOutput_9);
+				System.out.println("Producing " + (false ? "topic" : "queue")
+						+ ": " + context.senderActiveMQ);
+
+				org.apache.activemq.ActiveMQConnectionFactory factory_tMomObjectOutput_9 = new org.apache.activemq.ActiveMQConnectionFactory(
+						org.apache.activemq.ActiveMQConnection.DEFAULT_USER,
+						org.apache.activemq.ActiveMQConnection.DEFAULT_PASSWORD,
+						url_tMomObjectOutput_9);
+
+				javax.jms.Connection connection_tMomObjectOutput_9 = factory_tMomObjectOutput_9
+						.createConnection();
+				connection_tMomObjectOutput_9.start();
+
+				javax.jms.Session session_tMomObjectOutput_9 = connection_tMomObjectOutput_9
+						.createSession(false,
+								javax.jms.Session.AUTO_ACKNOWLEDGE);
+
+				javax.jms.Destination des_tMomObjectOutput_9;
+				des_tMomObjectOutput_9 = session_tMomObjectOutput_9
+						.createQueue(context.senderActiveMQ);
+				javax.jms.MessageProducer producer_tMomObjectOutput_9 = session_tMomObjectOutput_9
+						.createProducer(des_tMomObjectOutput_9);
+
+				producer_tMomObjectOutput_9
+						.setDeliveryMode(javax.jms.DeliveryMode.NON_PERSISTENT);
+
+				/**
+				 * [tMomObjectOutput_9 begin ] stop
+				 */
+
+				/**
+				 * [tXMLRPCOpenDAS_9 begin ] start
+				 */
+
+				ok_Hash.put("tXMLRPCOpenDAS_9", false);
+				start_Hash.put("tXMLRPCOpenDAS_9", System.currentTimeMillis());
+
+				currentComponent = "tXMLRPCOpenDAS_9";
+
+				if (execStat) {
+					if (resourceMap.get("inIterateVComp") == null) {
+
+						runStat.updateStatOnConnection("signing_folder_change"
+								+ iterateId, 0, 0);
+
+					}
+				}
+
+				int tos_count_tXMLRPCOpenDAS_9 = 0;
+
+				/**
+				 * [tXMLRPCOpenDAS_9 begin ] stop
+				 */
+
+				/**
+				 * [tMomObjectOutput_3 begin ] start
+				 */
+
+				ok_Hash.put("tMomObjectOutput_3", false);
+				start_Hash
+						.put("tMomObjectOutput_3", System.currentTimeMillis());
+
+				currentComponent = "tMomObjectOutput_3";
+
+				if (execStat) {
+					if (resourceMap.get("inIterateVComp") == null) {
+
+						runStat.updateStatOnConnection("row5" + iterateId, 0, 0);
+
+					}
+				}
+
+				int tos_count_tMomObjectOutput_3 = 0;
+
+				java.util.Hashtable props_tMomObjectOutput_3 = new java.util.Hashtable();
+				String url_tMomObjectOutput_3 = "tcp://"
+						+ context.addressActiveMQ + ":" + context.portActiveMQ;
+				System.out.println("Connecting to URL: "
+						+ url_tMomObjectOutput_3);
+				System.out.println("Producing " + (false ? "topic" : "queue")
+						+ ": " + context.senderActiveMQ);
+
+				org.apache.activemq.ActiveMQConnectionFactory factory_tMomObjectOutput_3 = new org.apache.activemq.ActiveMQConnectionFactory(
+						org.apache.activemq.ActiveMQConnection.DEFAULT_USER,
+						org.apache.activemq.ActiveMQConnection.DEFAULT_PASSWORD,
+						url_tMomObjectOutput_3);
+
+				javax.jms.Connection connection_tMomObjectOutput_3 = factory_tMomObjectOutput_3
+						.createConnection();
+				connection_tMomObjectOutput_3.start();
+
+				javax.jms.Session session_tMomObjectOutput_3 = connection_tMomObjectOutput_3
+						.createSession(false,
+								javax.jms.Session.AUTO_ACKNOWLEDGE);
+
+				javax.jms.Destination des_tMomObjectOutput_3;
+				des_tMomObjectOutput_3 = session_tMomObjectOutput_3
+						.createQueue(context.senderActiveMQ);
+				javax.jms.MessageProducer producer_tMomObjectOutput_3 = session_tMomObjectOutput_3
+						.createProducer(des_tMomObjectOutput_3);
+
+				producer_tMomObjectOutput_3
+						.setDeliveryMode(javax.jms.DeliveryMode.NON_PERSISTENT);
+
+				/**
+				 * [tMomObjectOutput_3 begin ] stop
+				 */
+
+				/**
+				 * [tXMLRPCOpenDAS_4 begin ] start
+				 */
+
+				ok_Hash.put("tXMLRPCOpenDAS_4", false);
+				start_Hash.put("tXMLRPCOpenDAS_4", System.currentTimeMillis());
+
+				currentComponent = "tXMLRPCOpenDAS_4";
+
+				if (execStat) {
+					if (resourceMap.get("inIterateVComp") == null) {
+
+						runStat.updateStatOnConnection("signing" + iterateId,
+								0, 0);
+
+					}
+				}
+
+				int tos_count_tXMLRPCOpenDAS_4 = 0;
+
+				/**
+				 * [tXMLRPCOpenDAS_4 begin ] stop
+				 */
+
+				/**
 				 * [tMomObjectOutput_4 begin ] start
 				 */
 
@@ -6315,7 +6236,7 @@ public class SET_DEV implements TalendJob {
 				if (execStat) {
 					if (resourceMap.get("inIterateVComp") == null) {
 
-						runStat.updateStatOnConnection("tracking_odoo"
+						runStat.updateStatOnConnection("odoo_tracking"
 								+ iterateId, 0, 0);
 
 					}
@@ -6393,8 +6314,8 @@ public class SET_DEV implements TalendJob {
 				if (execStat) {
 					if (resourceMap.get("inIterateVComp") == null) {
 
-						runStat.updateStatOnConnection("entry" + iterateId, 0,
-								0);
+						runStat.updateStatOnConnection("entrance" + iterateId,
+								0, 0);
 
 					}
 				}
@@ -6403,6 +6324,85 @@ public class SET_DEV implements TalendJob {
 
 				/**
 				 * [tXMLRPCOpenDAS_2 begin ] stop
+				 */
+
+				/**
+				 * [tMomObjectOutput_8 begin ] start
+				 */
+
+				ok_Hash.put("tMomObjectOutput_8", false);
+				start_Hash
+						.put("tMomObjectOutput_8", System.currentTimeMillis());
+
+				currentComponent = "tMomObjectOutput_8";
+
+				if (execStat) {
+					if (resourceMap.get("inIterateVComp") == null) {
+
+						runStat.updateStatOnConnection("row10" + iterateId, 0,
+								0);
+
+					}
+				}
+
+				int tos_count_tMomObjectOutput_8 = 0;
+
+				java.util.Hashtable props_tMomObjectOutput_8 = new java.util.Hashtable();
+				String url_tMomObjectOutput_8 = "tcp://"
+						+ context.addressActiveMQ + ":" + context.portActiveMQ;
+				System.out.println("Connecting to URL: "
+						+ url_tMomObjectOutput_8);
+				System.out.println("Producing " + (false ? "topic" : "queue")
+						+ ": " + context.senderActiveMQ);
+
+				org.apache.activemq.ActiveMQConnectionFactory factory_tMomObjectOutput_8 = new org.apache.activemq.ActiveMQConnectionFactory(
+						org.apache.activemq.ActiveMQConnection.DEFAULT_USER,
+						org.apache.activemq.ActiveMQConnection.DEFAULT_PASSWORD,
+						url_tMomObjectOutput_8);
+
+				javax.jms.Connection connection_tMomObjectOutput_8 = factory_tMomObjectOutput_8
+						.createConnection();
+				connection_tMomObjectOutput_8.start();
+
+				javax.jms.Session session_tMomObjectOutput_8 = connection_tMomObjectOutput_8
+						.createSession(false,
+								javax.jms.Session.AUTO_ACKNOWLEDGE);
+
+				javax.jms.Destination des_tMomObjectOutput_8;
+				des_tMomObjectOutput_8 = session_tMomObjectOutput_8
+						.createQueue(context.senderActiveMQ);
+				javax.jms.MessageProducer producer_tMomObjectOutput_8 = session_tMomObjectOutput_8
+						.createProducer(des_tMomObjectOutput_8);
+
+				producer_tMomObjectOutput_8
+						.setDeliveryMode(javax.jms.DeliveryMode.NON_PERSISTENT);
+
+				/**
+				 * [tMomObjectOutput_8 begin ] stop
+				 */
+
+				/**
+				 * [tXMLRPCOpenDAS_8 begin ] start
+				 */
+
+				ok_Hash.put("tXMLRPCOpenDAS_8", false);
+				start_Hash.put("tXMLRPCOpenDAS_8", System.currentTimeMillis());
+
+				currentComponent = "tXMLRPCOpenDAS_8";
+
+				if (execStat) {
+					if (resourceMap.get("inIterateVComp") == null) {
+
+						runStat.updateStatOnConnection(
+								"signing_workcenter_change" + iterateId, 0, 0);
+
+					}
+				}
+
+				int tos_count_tXMLRPCOpenDAS_8 = 0;
+
+				/**
+				 * [tXMLRPCOpenDAS_8 begin ] stop
 				 */
 
 				/**
@@ -6438,12 +6438,12 @@ public class SET_DEV implements TalendJob {
 				// ###############################
 				// # Outputs initialization
 				synchro_date_mrp_production_product_lineStruct synchro_date_mrp_production_product_line_tmp = new synchro_date_mrp_production_product_lineStruct();
-				pointing_change_jobStruct pointing_change_job_tmp = new pointing_change_jobStruct();
-				pointing_change_folderStruct pointing_change_folder_tmp = new pointing_change_folderStruct();
-				pointingStruct pointing_tmp = new pointingStruct();
 				outStruct out_tmp = new outStruct();
-				tracking_odooStruct tracking_odoo_tmp = new tracking_odooStruct();
-				entryStruct entry_tmp = new entryStruct();
+				signing_folder_changeStruct signing_folder_change_tmp = new signing_folder_changeStruct();
+				signingStruct signing_tmp = new signingStruct();
+				odoo_trackingStruct odoo_tracking_tmp = new odoo_trackingStruct();
+				entranceStruct entrance_tmp = new entranceStruct();
+				signing_workcenter_changeStruct signing_workcenter_change_tmp = new signing_workcenter_changeStruct();
 				// ###############################
 
 				/**
@@ -6648,12 +6648,12 @@ public class SET_DEV implements TalendJob {
 						// # Output tables
 
 						synchro_date_mrp_production_product_line = null;
-						pointing_change_job = null;
-						pointing_change_folder = null;
-						pointing = null;
 						out = null;
-						tracking_odoo = null;
-						entry = null;
+						signing_folder_change = null;
+						signing = null;
+						odoo_tracking = null;
+						entrance = null;
+						signing_workcenter_change = null;
 
 						// # Output table :
 						// 'synchro_date_mrp_production_product_line'
@@ -6679,72 +6679,6 @@ public class SET_DEV implements TalendJob {
 							synchro_date_mrp_production_product_line = synchro_date_mrp_production_product_line_tmp;
 						} // closing filter/reject
 
-						// # Output table : 'pointing_change_job'
-						// # Filter conditions
-						if (
-
-						"pointing_change_job".equals(row2.title)
-
-						) {
-							pointing_change_job_tmp.title = row2.title;
-							pointing_change_job_tmp.sendUrl = row2.sendUrl;
-							pointing_change_job_tmp.fromUrl = row2.fromUrl;
-							pointing_change_job_tmp.sendedDate = row2.sendedDate;
-							pointing_change_job_tmp.attachement = row2.attachement;
-							pointing_change_job_tmp.station = row2.station;
-							pointing_change_job_tmp.title_out = row2.title_out;
-							pointing_change_job_tmp.send_out = row2.send_out;
-							pointing_change_job_tmp.from_out = row2.from_out;
-							pointing_change_job_tmp.sendedDate_out = row2.sendedDate_out;
-							pointing_change_job_tmp.attachement_out = row2.attachement_out;
-							pointing_change_job_tmp.station_out = row2.station_out;
-							pointing_change_job = pointing_change_job_tmp;
-						} // closing filter/reject
-
-						// # Output table : 'pointing_change_folder'
-						// # Filter conditions
-						if (
-
-						"pointing_change_folder".equals(row2.title)
-
-						) {
-							pointing_change_folder_tmp.title = row2.title;
-							pointing_change_folder_tmp.sendUrl = row2.sendUrl;
-							pointing_change_folder_tmp.fromUrl = row2.fromUrl;
-							pointing_change_folder_tmp.sendedDate = row2.sendedDate;
-							pointing_change_folder_tmp.attachement = row2.attachement;
-							pointing_change_folder_tmp.station = row2.station;
-							pointing_change_folder_tmp.title_out = row2.title_out;
-							pointing_change_folder_tmp.send_out = row2.send_out;
-							pointing_change_folder_tmp.from_out = row2.from_out;
-							pointing_change_folder_tmp.sendedDate_out = row2.sendedDate_out;
-							pointing_change_folder_tmp.attachement_out = row2.attachement_out;
-							pointing_change_folder_tmp.station_out = row2.station_out;
-							pointing_change_folder = pointing_change_folder_tmp;
-						} // closing filter/reject
-
-						// # Output table : 'pointing'
-						// # Filter conditions
-						if (
-
-						"pointing".equals(row2.title)
-
-						) {
-							pointing_tmp.title = row2.title;
-							pointing_tmp.sendUrl = row2.sendUrl;
-							pointing_tmp.fromUrl = row2.fromUrl;
-							pointing_tmp.sendedDate = row2.sendedDate;
-							pointing_tmp.attachement = row2.attachement;
-							pointing_tmp.station = row2.station;
-							pointing_tmp.title_out = row2.title_out;
-							pointing_tmp.send_out = row2.send_out;
-							pointing_tmp.from_out = row2.from_out;
-							pointing_tmp.sendedDate_out = row2.sendedDate_out;
-							pointing_tmp.attachement_out = row2.attachement_out;
-							pointing_tmp.station_out = row2.station_out;
-							pointing = pointing_tmp;
-						} // closing filter/reject
-
 						// # Output table : 'out'
 						// # Filter conditions
 						if (
@@ -6767,48 +6701,114 @@ public class SET_DEV implements TalendJob {
 							out = out_tmp;
 						} // closing filter/reject
 
-						// # Output table : 'tracking_odoo'
+						// # Output table : 'signing_folder_change'
 						// # Filter conditions
 						if (
 
-						"tracking_odoo".equals(row2.title)
+						"signing_folder_change".equals(row2.title)
 
 						) {
-							tracking_odoo_tmp.title = row2.title;
-							tracking_odoo_tmp.sendUrl = row2.sendUrl;
-							tracking_odoo_tmp.fromUrl = row2.fromUrl;
-							tracking_odoo_tmp.sendedDate = row2.sendedDate;
-							tracking_odoo_tmp.attachement = row2.attachement;
-							tracking_odoo_tmp.station = row2.station;
-							tracking_odoo_tmp.title_out = row2.title_out;
-							tracking_odoo_tmp.send_out = row2.send_out;
-							tracking_odoo_tmp.from_out = row2.from_out;
-							tracking_odoo_tmp.sendedDate_out = row2.sendedDate_out;
-							tracking_odoo_tmp.attachement_out = row2.attachement_out;
-							tracking_odoo_tmp.station_out = row2.station_out;
-							tracking_odoo = tracking_odoo_tmp;
+							signing_folder_change_tmp.title = row2.title;
+							signing_folder_change_tmp.sendUrl = row2.sendUrl;
+							signing_folder_change_tmp.fromUrl = row2.fromUrl;
+							signing_folder_change_tmp.sendedDate = row2.sendedDate;
+							signing_folder_change_tmp.attachement = row2.attachement;
+							signing_folder_change_tmp.station = row2.station;
+							signing_folder_change_tmp.title_out = row2.title_out;
+							signing_folder_change_tmp.send_out = row2.send_out;
+							signing_folder_change_tmp.from_out = row2.from_out;
+							signing_folder_change_tmp.sendedDate_out = row2.sendedDate_out;
+							signing_folder_change_tmp.attachement_out = row2.attachement_out;
+							signing_folder_change_tmp.station_out = row2.station_out;
+							signing_folder_change = signing_folder_change_tmp;
 						} // closing filter/reject
 
-						// # Output table : 'entry'
+						// # Output table : 'signing'
 						// # Filter conditions
 						if (
 
-						"entry".equals(row2.title)
+						"signing".equals(row2.title)
 
 						) {
-							entry_tmp.title = row2.title;
-							entry_tmp.sendUrl = row2.sendUrl;
-							entry_tmp.fromUrl = row2.fromUrl;
-							entry_tmp.sendedDate = row2.sendedDate;
-							entry_tmp.attachement = row2.attachement;
-							entry_tmp.station = row2.station;
-							entry_tmp.title_out = row2.title_out;
-							entry_tmp.send_out = row2.send_out;
-							entry_tmp.from_out = row2.from_out;
-							entry_tmp.sendedDate_out = row2.sendedDate_out;
-							entry_tmp.attachement_out = row2.attachement_out;
-							entry_tmp.station_out = row2.station_out;
-							entry = entry_tmp;
+							signing_tmp.title = row2.title;
+							signing_tmp.sendUrl = row2.sendUrl;
+							signing_tmp.fromUrl = row2.fromUrl;
+							signing_tmp.sendedDate = row2.sendedDate;
+							signing_tmp.attachement = row2.attachement;
+							signing_tmp.station = row2.station;
+							signing_tmp.title_out = row2.title_out;
+							signing_tmp.send_out = row2.send_out;
+							signing_tmp.from_out = row2.from_out;
+							signing_tmp.sendedDate_out = row2.sendedDate_out;
+							signing_tmp.attachement_out = row2.attachement_out;
+							signing_tmp.station_out = row2.station_out;
+							signing = signing_tmp;
+						} // closing filter/reject
+
+						// # Output table : 'odoo_tracking'
+						// # Filter conditions
+						if (
+
+						"odoo_tracking".equals(row2.title)
+
+						) {
+							odoo_tracking_tmp.title = row2.title;
+							odoo_tracking_tmp.sendUrl = row2.sendUrl;
+							odoo_tracking_tmp.fromUrl = row2.fromUrl;
+							odoo_tracking_tmp.sendedDate = row2.sendedDate;
+							odoo_tracking_tmp.attachement = row2.attachement;
+							odoo_tracking_tmp.station = row2.station;
+							odoo_tracking_tmp.title_out = row2.title_out;
+							odoo_tracking_tmp.send_out = row2.send_out;
+							odoo_tracking_tmp.from_out = row2.from_out;
+							odoo_tracking_tmp.sendedDate_out = row2.sendedDate_out;
+							odoo_tracking_tmp.attachement_out = row2.attachement_out;
+							odoo_tracking_tmp.station_out = row2.station_out;
+							odoo_tracking = odoo_tracking_tmp;
+						} // closing filter/reject
+
+						// # Output table : 'entrance'
+						// # Filter conditions
+						if (
+
+						"entrance".equals(row2.title)
+
+						) {
+							entrance_tmp.title = row2.title;
+							entrance_tmp.sendUrl = row2.sendUrl;
+							entrance_tmp.fromUrl = row2.fromUrl;
+							entrance_tmp.sendedDate = row2.sendedDate;
+							entrance_tmp.attachement = row2.attachement;
+							entrance_tmp.station = row2.station;
+							entrance_tmp.title_out = row2.title_out;
+							entrance_tmp.send_out = row2.send_out;
+							entrance_tmp.from_out = row2.from_out;
+							entrance_tmp.sendedDate_out = row2.sendedDate_out;
+							entrance_tmp.attachement_out = row2.attachement_out;
+							entrance_tmp.station_out = row2.station_out;
+							entrance = entrance_tmp;
+						} // closing filter/reject
+
+						// # Output table : 'signing_workcenter_change'
+						// # Filter conditions
+						if (
+
+						"signing_workcenter_change".equals(row2.title)
+
+						) {
+							signing_workcenter_change_tmp.title = row2.title;
+							signing_workcenter_change_tmp.sendUrl = row2.sendUrl;
+							signing_workcenter_change_tmp.fromUrl = row2.fromUrl;
+							signing_workcenter_change_tmp.sendedDate = row2.sendedDate;
+							signing_workcenter_change_tmp.attachement = row2.attachement;
+							signing_workcenter_change_tmp.station = row2.station;
+							signing_workcenter_change_tmp.title_out = row2.title_out;
+							signing_workcenter_change_tmp.send_out = row2.send_out;
+							signing_workcenter_change_tmp.from_out = row2.from_out;
+							signing_workcenter_change_tmp.sendedDate_out = row2.sendedDate_out;
+							signing_workcenter_change_tmp.attachement_out = row2.attachement_out;
+							signing_workcenter_change_tmp.station_out = row2.station_out;
+							signing_workcenter_change = signing_workcenter_change_tmp;
 						} // closing filter/reject
 							// ###############################
 
@@ -7198,1011 +7198,6 @@ public class SET_DEV implements TalendJob {
 					} // End of branch
 						// "synchro_date_mrp_production_product_line"
 
-					// Start of branch "pointing_change_job"
-					if (pointing_change_job != null) {
-
-						/**
-						 * [tXMLRPCOpenDAS_8 main ] start
-						 */
-
-						currentComponent = "tXMLRPCOpenDAS_8";
-
-						// pointing_change_job
-						// pointing_change_job
-
-						if (execStat) {
-							runStat.updateStatOnConnection(
-									"pointing_change_job" + iterateId, 1, 1);
-						}
-
-						// DEBUG DISPLAY
-						java.io.PrintStream consoleOut_tXMLRPCOpenDAS_8 = null;
-						if (globalMap.get("tLogRow_CONSOLE") != null) {
-							consoleOut_tXMLRPCOpenDAS_8 = (java.io.PrintStream) globalMap
-									.get("tLogRow_CONSOLE");
-						} else {
-							consoleOut_tXMLRPCOpenDAS_8 = new java.io.PrintStream(
-									new java.io.BufferedOutputStream(System.out));
-							globalMap.put("tLogRow_CONSOLE",
-									consoleOut_tXMLRPCOpenDAS_8);
-						}
-
-						consoleOut_tXMLRPCOpenDAS_8.println("tXMLRPCOpenDAS_8"
-								+ " received parameters : "
-								+ pointing_change_job.toString());
-						consoleOut_tXMLRPCOpenDAS_8.flush();
-
-						// Retrieving input parameters (These parameters come
-						// from tMomObjectInput)
-						String title_tXMLRPCOpenDAS_8 = pointing_change_job.title;
-						String sendUrl_tXMLRPCOpenDAS_8 = pointing_change_job.sendUrl;
-						String fromUrl_tXMLRPCOpenDAS_8 = pointing_change_job.fromUrl;
-						Date sendedDate_tXMLRPCOpenDAS_8 = pointing_change_job.sendedDate;
-						String station_tXMLRPCOpenDAS_8 = pointing_change_job.station;
-						java.util.Map checkingMap = (java.util.Map) pointing_change_job.attachement;
-
-						Object[] tab = checkingMap.keySet().toArray();
-						redstone.xmlrpc.XmlRpcStruct vals = new redstone.xmlrpc.XmlRpcStruct();
-						for (int i = 0; i < tab.length; i++) {
-							if ("perso".equals(tab[i])) {
-								vals.put("employee", checkingMap.get(tab[i]));
-							}
-							if ("poste".equals(tab[i])) {
-								vals.put("workcenter", checkingMap.get(tab[i]));
-							}
-						}
-						// Initialization output parameters
-						String title_out_tXMLRPCOpenDAS_8 = null;
-						String sendUrl_out_tXMLRPCOpenDAS_8 = null;
-						String fromUrl_out_tXMLRPCOpenDAS_8 = null;
-						Date sendedDate_out_tXMLRPCOpenDAS_8 = null;
-						String station_out_tXMLRPCOpenDAS_8 = null;
-						Object attachement_out_tXMLRPCOpenDAS_8 = null;
-						org.opendas.modele.DASError result = new org.opendas.modele.DASError();
-
-						try {
-							consoleOut_tXMLRPCOpenDAS_8
-									.println("tXMLRPCOpenDAS_8"
-											+ " Connexion OpenERP_V5 ");
-							consoleOut_tXMLRPCOpenDAS_8.flush();
-							OpenDAS_xmlrpc.OpenERP_V5_connect connexiontXMLRPCOpenDAS_8 = new OpenDAS_xmlrpc.OpenERP_V5_connect(
-									context.dbnameOdoo, context.usernameOdoo,
-									context.pwdOdoo, context.hostOdoo,
-									context.portOdoo);
-
-							java.util.List<Object[]> context_search_tmp = new java.util.ArrayList<Object[]>();
-
-							Object[] context_search = new Object[context_search_tmp
-									.size()];
-							for (int i = 0; i < context_search_tmp.size(); ++i) {
-								context_search[i] = context_search_tmp.get(i);
-							}
-
-							consoleOut_tXMLRPCOpenDAS_8
-									.println("tXMLRPCOpenDAS_8" + " XMLRpc : "
-											+ "hr.employee" + " "
-											+ "talend_change_workcenter_barre");
-							consoleOut_tXMLRPCOpenDAS_8.flush();
-							redstone.xmlrpc.XmlRpcStruct responsetXMLRPCOpenDAS_8 = (redstone.xmlrpc.XmlRpcStruct) connexiontXMLRPCOpenDAS_8
-									.exec("hr.employee",
-											"talend_change_workcenter_barre",
-											vals, context_search);
-							if (responsetXMLRPCOpenDAS_8 != null) {
-								System.out
-										.println("responsetXMLRPCOpenDAS_8 : "
-												+ responsetXMLRPCOpenDAS_8);
-								result.setCode(responsetXMLRPCOpenDAS_8
-										.getInteger("code"));
-								result.setString(responsetXMLRPCOpenDAS_8
-										.getString("string"));
-								java.util.List<org.opendas.modele.DASGeneric> listgen = new java.util.ArrayList<org.opendas.modele.DASGeneric>();
-
-								redstone.xmlrpc.XmlRpcArray res_array = null;
-								res_array = (redstone.xmlrpc.XmlRpcArray) responsetXMLRPCOpenDAS_8
-										.get("object");
-
-								Object retour = null;
-								for (int i = 0; i < res_array.size(); ++i) {
-									org.opendas.modele.DASGeneric tmp_generic = new org.opendas.modele.DASGeneric();
-									redstone.xmlrpc.XmlRpcStruct tmp_dict = null;
-									tmp_dict = (redstone.xmlrpc.XmlRpcStruct) res_array
-											.get(i);
-									tmp_generic
-											.setInfos(connexiontXMLRPCOpenDAS_8
-													.convert(tmp_dict));
-									listgen.add(tmp_generic);
-								}
-								result.setObject(listgen);
-							} else {
-								System.out.println("ERROR : On ext response");
-
-								result.setCode(1);
-
-								result.setString("ERROR : On ext response");
-
-							}
-
-						} catch (redstone.xmlrpc.XmlRpcException e) {
-							System.out
-									.println("ERROR XMLRPC : " + e.toString());
-							result.setCode(2);
-							result.setString("ERROR XMLRPC : " + e.toString());
-						} catch (Exception e) {
-							System.out.println("ERROR : " + e.toString());
-							result.setCode(3);
-							result.setString("ERROR : " + e.toString());
-						}
-						System.out.println("result :" + result);
-
-						// Transmission of parameters to tMomObjectOutput
-						// component ( none output here)
-						Object[] results_tXMLRPCOpenDAS_8 = {
-								title_tXMLRPCOpenDAS_8,
-								sendUrl_tXMLRPCOpenDAS_8,
-								fromUrl_tXMLRPCOpenDAS_8,
-								sendedDate_tXMLRPCOpenDAS_8,
-								pointing_change_job.attachement,
-								station_tXMLRPCOpenDAS_8,
-								title_out_tXMLRPCOpenDAS_8,
-								sendUrl_out_tXMLRPCOpenDAS_8,
-								fromUrl_out_tXMLRPCOpenDAS_8,
-								sendedDate_out_tXMLRPCOpenDAS_8, result,
-								station_out_tXMLRPCOpenDAS_8 };
-
-						for (int i_tXMLRPCOpenDAS_8 = 0; i_tXMLRPCOpenDAS_8 < results_tXMLRPCOpenDAS_8.length; i_tXMLRPCOpenDAS_8++) {
-
-							// for output
-
-							// We set the results in the output connections
-							if (0 < results_tXMLRPCOpenDAS_8.length
-									&& results_tXMLRPCOpenDAS_8[0] != null) {
-								row10.title = (String) results_tXMLRPCOpenDAS_8[0];
-
-							} else {
-								row10.title = null;
-							}
-
-							// We set the results in the output connections
-							if (1 < results_tXMLRPCOpenDAS_8.length
-									&& results_tXMLRPCOpenDAS_8[1] != null) {
-								row10.sendUrl = (String) results_tXMLRPCOpenDAS_8[1];
-
-							} else {
-								row10.sendUrl = null;
-							}
-
-							// We set the results in the output connections
-							if (2 < results_tXMLRPCOpenDAS_8.length
-									&& results_tXMLRPCOpenDAS_8[2] != null) {
-								row10.fromUrl = (String) results_tXMLRPCOpenDAS_8[2];
-
-							} else {
-								row10.fromUrl = null;
-							}
-
-							// We set the results in the output connections
-							if (3 < results_tXMLRPCOpenDAS_8.length
-									&& results_tXMLRPCOpenDAS_8[3] != null) {
-								row10.sendedDate = (Date) results_tXMLRPCOpenDAS_8[3];
-
-							} else {
-								row10.sendedDate = null;
-							}
-
-							// We set the results in the output connections
-							if (4 < results_tXMLRPCOpenDAS_8.length
-									&& results_tXMLRPCOpenDAS_8[4] != null) {
-								row10.attachement = (Object) results_tXMLRPCOpenDAS_8[4];
-
-							} else {
-								row10.attachement = null;
-							}
-
-							// We set the results in the output connections
-							if (5 < results_tXMLRPCOpenDAS_8.length
-									&& results_tXMLRPCOpenDAS_8[5] != null) {
-								row10.station = (String) results_tXMLRPCOpenDAS_8[5];
-
-							} else {
-								row10.station = null;
-							}
-
-							// We set the results in the output connections
-							if (6 < results_tXMLRPCOpenDAS_8.length
-									&& results_tXMLRPCOpenDAS_8[6] != null) {
-								row10.title_out = (String) results_tXMLRPCOpenDAS_8[6];
-
-							} else {
-								row10.title_out = null;
-							}
-
-							// We set the results in the output connections
-							if (7 < results_tXMLRPCOpenDAS_8.length
-									&& results_tXMLRPCOpenDAS_8[7] != null) {
-								row10.send_out = (String) results_tXMLRPCOpenDAS_8[7];
-
-							} else {
-								row10.send_out = null;
-							}
-
-							// We set the results in the output connections
-							if (8 < results_tXMLRPCOpenDAS_8.length
-									&& results_tXMLRPCOpenDAS_8[8] != null) {
-								row10.from_out = (String) results_tXMLRPCOpenDAS_8[8];
-
-							} else {
-								row10.from_out = null;
-							}
-
-							// We set the results in the output connections
-							if (9 < results_tXMLRPCOpenDAS_8.length
-									&& results_tXMLRPCOpenDAS_8[9] != null) {
-								row10.sendedDate_out = (Date) results_tXMLRPCOpenDAS_8[9];
-
-							} else {
-								row10.sendedDate_out = null;
-							}
-
-							// We set the results in the output connections
-							if (10 < results_tXMLRPCOpenDAS_8.length
-									&& results_tXMLRPCOpenDAS_8[10] != null) {
-								row10.attachement_out = (Object) results_tXMLRPCOpenDAS_8[10];
-
-							} else {
-								row10.attachement_out = null;
-							}
-
-							// We set the results in the output connections
-							if (11 < results_tXMLRPCOpenDAS_8.length
-									&& results_tXMLRPCOpenDAS_8[11] != null) {
-								row10.station_out = (String) results_tXMLRPCOpenDAS_8[11];
-
-							} else {
-								row10.station_out = null;
-							}
-
-						}
-
-						tos_count_tXMLRPCOpenDAS_8++;
-
-						/**
-						 * [tXMLRPCOpenDAS_8 main ] stop
-						 */
-						// Start of branch "row10"
-						if (row10 != null) {
-
-							/**
-							 * [tMomObjectOutput_8 main ] start
-							 */
-
-							currentComponent = "tMomObjectOutput_8";
-
-							// row10
-							// row10
-
-							if (execStat) {
-								runStat.updateStatOnConnection("row10"
-										+ iterateId, 1, 1);
-							}
-
-							System.out.println("attachement :"
-									+ row10.attachement);
-
-							// on reconstitue le message d'origine
-							org.opendas.modele.ServerRequest previousRequest = new org.opendas.modele.ServerRequest();
-							previousRequest.setTitle(row10.title);
-							previousRequest.setSendUrl(row10.sendUrl);
-							previousRequest.setFromUrl(row10.fromUrl);
-							previousRequest.setSendedDate(row10.sendedDate);
-							previousRequest
-									.setAttachement((java.io.Serializable) row10.attachement);
-
-							// on crée le message de réponse
-							org.opendas.modele.ServerRequest response = new org.opendas.modele.ServerRequest(
-									previousRequest);
-							response.setTitle(row10.title_out);
-							response.setSendedDate(row10.sendedDate_out);
-							response.setAttachement((java.io.Serializable) row10.attachement_out);
-
-							javax.jms.ObjectMessage message_tMomObjectOutput_8 = session_tMomObjectOutput_8
-									.createObjectMessage();// On crée
-															// l'ObjectMessage
-							message_tMomObjectOutput_8.setObject(response);
-							message_tMomObjectOutput_8.setStringProperty(
-									"Sujet", row10.station);
-
-							System.out.println("----------------------------");
-							System.out.println(response);
-							System.out.println("----------------------------");
-
-							des_tMomObjectOutput_8 = session_tMomObjectOutput_8
-									.createQueue(response.getSendUrl());
-							producer_tMomObjectOutput_8 = session_tMomObjectOutput_8
-									.createProducer(des_tMomObjectOutput_8);
-							producer_tMomObjectOutput_8
-									.send(message_tMomObjectOutput_8);
-
-							tos_count_tMomObjectOutput_8++;
-
-							/**
-							 * [tMomObjectOutput_8 main ] stop
-							 */
-
-						} // End of branch "row10"
-
-					} // End of branch "pointing_change_job"
-
-					// Start of branch "pointing_change_folder"
-					if (pointing_change_folder != null) {
-
-						/**
-						 * [tXMLRPCOpenDAS_9 main ] start
-						 */
-
-						currentComponent = "tXMLRPCOpenDAS_9";
-
-						// pointing_change_folder
-						// pointing_change_folder
-
-						if (execStat) {
-							runStat.updateStatOnConnection(
-									"pointing_change_folder" + iterateId, 1, 1);
-						}
-
-						// DEBUG DISPLAY
-						java.io.PrintStream consoleOut_tXMLRPCOpenDAS_9 = null;
-						if (globalMap.get("tLogRow_CONSOLE") != null) {
-							consoleOut_tXMLRPCOpenDAS_9 = (java.io.PrintStream) globalMap
-									.get("tLogRow_CONSOLE");
-						} else {
-							consoleOut_tXMLRPCOpenDAS_9 = new java.io.PrintStream(
-									new java.io.BufferedOutputStream(System.out));
-							globalMap.put("tLogRow_CONSOLE",
-									consoleOut_tXMLRPCOpenDAS_9);
-						}
-
-						consoleOut_tXMLRPCOpenDAS_9.println("tXMLRPCOpenDAS_9"
-								+ " received parameters : "
-								+ pointing_change_folder.toString());
-						consoleOut_tXMLRPCOpenDAS_9.flush();
-
-						// Retrieving input parameters (These parameters come
-						// from tMomObjectInput)
-						String title_tXMLRPCOpenDAS_9 = pointing_change_folder.title;
-						String sendUrl_tXMLRPCOpenDAS_9 = pointing_change_folder.sendUrl;
-						String fromUrl_tXMLRPCOpenDAS_9 = pointing_change_folder.fromUrl;
-						Date sendedDate_tXMLRPCOpenDAS_9 = pointing_change_folder.sendedDate;
-						String station_tXMLRPCOpenDAS_9 = pointing_change_folder.station;
-						java.util.Map checkingMap = (java.util.Map) pointing_change_folder.attachement;
-
-						Object[] tab = checkingMap.keySet().toArray();
-						redstone.xmlrpc.XmlRpcStruct vals = new redstone.xmlrpc.XmlRpcStruct();
-						for (int i = 0; i < tab.length; i++) {
-							if ("perso".equals(tab[i])) {
-								vals.put("employee", checkingMap.get(tab[i]));
-							}
-							if ("poste".equals(tab[i])) {
-								vals.put("workcenter", checkingMap.get(tab[i]));
-							}
-							if ("dossier".equals(tab[i])) {
-								vals.put("production", checkingMap.get(tab[i]));
-							}
-							if ("reglage".equals(tab[i])) {
-								vals.put("adjustment", checkingMap.get(tab[i]));
-							}
-						}
-						// Initialization output parameters
-						String title_out_tXMLRPCOpenDAS_9 = null;
-						String sendUrl_out_tXMLRPCOpenDAS_9 = null;
-						String fromUrl_out_tXMLRPCOpenDAS_9 = null;
-						Date sendedDate_out_tXMLRPCOpenDAS_9 = null;
-						String station_out_tXMLRPCOpenDAS_9 = null;
-						Object attachement_out_tXMLRPCOpenDAS_9 = null;
-						org.opendas.modele.DASError result = new org.opendas.modele.DASError();
-
-						try {
-							consoleOut_tXMLRPCOpenDAS_9
-									.println("tXMLRPCOpenDAS_9"
-											+ " Connexion OpenERP_V5 ");
-							consoleOut_tXMLRPCOpenDAS_9.flush();
-							OpenDAS_xmlrpc.OpenERP_V5_connect connexiontXMLRPCOpenDAS_9 = new OpenDAS_xmlrpc.OpenERP_V5_connect(
-									context.dbnameOdoo, context.usernameOdoo,
-									context.pwdOdoo, context.hostOdoo,
-									context.portOdoo);
-
-							java.util.List<Object[]> context_search_tmp = new java.util.ArrayList<Object[]>();
-
-							Object[] context_search = new Object[context_search_tmp
-									.size()];
-							for (int i = 0; i < context_search_tmp.size(); ++i) {
-								context_search[i] = context_search_tmp.get(i);
-							}
-
-							consoleOut_tXMLRPCOpenDAS_9
-									.println("tXMLRPCOpenDAS_9"
-											+ " XMLRpc : "
-											+ "hr.employee"
-											+ " "
-											+ "talend_change_workcenter_line_barre");
-							consoleOut_tXMLRPCOpenDAS_9.flush();
-							redstone.xmlrpc.XmlRpcStruct responsetXMLRPCOpenDAS_9 = (redstone.xmlrpc.XmlRpcStruct) connexiontXMLRPCOpenDAS_9
-									.exec("hr.employee",
-											"talend_change_workcenter_line_barre",
-											vals, context_search);
-							if (responsetXMLRPCOpenDAS_9 != null) {
-								System.out
-										.println("responsetXMLRPCOpenDAS_9 : "
-												+ responsetXMLRPCOpenDAS_9);
-								result.setCode(responsetXMLRPCOpenDAS_9
-										.getInteger("code"));
-								result.setString(responsetXMLRPCOpenDAS_9
-										.getString("string"));
-								java.util.List<org.opendas.modele.DASGeneric> listgen = new java.util.ArrayList<org.opendas.modele.DASGeneric>();
-
-								redstone.xmlrpc.XmlRpcArray res_array = null;
-								res_array = (redstone.xmlrpc.XmlRpcArray) responsetXMLRPCOpenDAS_9
-										.get("object");
-
-								Object retour = null;
-								for (int i = 0; i < res_array.size(); ++i) {
-									org.opendas.modele.DASGeneric tmp_generic = new org.opendas.modele.DASGeneric();
-									redstone.xmlrpc.XmlRpcStruct tmp_dict = null;
-									tmp_dict = (redstone.xmlrpc.XmlRpcStruct) res_array
-											.get(i);
-									tmp_generic
-											.setInfos(connexiontXMLRPCOpenDAS_9
-													.convert(tmp_dict));
-									listgen.add(tmp_generic);
-								}
-								result.setObject(listgen);
-							} else {
-								System.out.println("ERROR : On ext response");
-
-								result.setCode(1);
-
-								result.setString("ERROR : On ext response");
-
-							}
-
-						} catch (redstone.xmlrpc.XmlRpcException e) {
-							System.out
-									.println("ERROR XMLRPC : " + e.toString());
-							result.setCode(2);
-							result.setString("ERROR XMLRPC : " + e.toString());
-						} catch (Exception e) {
-							System.out.println("ERROR : " + e.toString());
-							result.setCode(3);
-							result.setString("ERROR : " + e.toString());
-						}
-						System.out.println("result :" + result);
-
-						// Transmission of parameters to tMomObjectOutput
-						// component ( none output here)
-						Object[] results_tXMLRPCOpenDAS_9 = {
-								title_tXMLRPCOpenDAS_9,
-								sendUrl_tXMLRPCOpenDAS_9,
-								fromUrl_tXMLRPCOpenDAS_9,
-								sendedDate_tXMLRPCOpenDAS_9,
-								pointing_change_folder.attachement,
-								station_tXMLRPCOpenDAS_9,
-								title_out_tXMLRPCOpenDAS_9,
-								sendUrl_out_tXMLRPCOpenDAS_9,
-								fromUrl_out_tXMLRPCOpenDAS_9,
-								sendedDate_out_tXMLRPCOpenDAS_9, result,
-								station_out_tXMLRPCOpenDAS_9 };
-
-						for (int i_tXMLRPCOpenDAS_9 = 0; i_tXMLRPCOpenDAS_9 < results_tXMLRPCOpenDAS_9.length; i_tXMLRPCOpenDAS_9++) {
-
-							// for output
-
-							// We set the results in the output connections
-							if (0 < results_tXMLRPCOpenDAS_9.length
-									&& results_tXMLRPCOpenDAS_9[0] != null) {
-								row11.title = (String) results_tXMLRPCOpenDAS_9[0];
-
-							} else {
-								row11.title = null;
-							}
-
-							// We set the results in the output connections
-							if (1 < results_tXMLRPCOpenDAS_9.length
-									&& results_tXMLRPCOpenDAS_9[1] != null) {
-								row11.sendUrl = (String) results_tXMLRPCOpenDAS_9[1];
-
-							} else {
-								row11.sendUrl = null;
-							}
-
-							// We set the results in the output connections
-							if (2 < results_tXMLRPCOpenDAS_9.length
-									&& results_tXMLRPCOpenDAS_9[2] != null) {
-								row11.fromUrl = (String) results_tXMLRPCOpenDAS_9[2];
-
-							} else {
-								row11.fromUrl = null;
-							}
-
-							// We set the results in the output connections
-							if (3 < results_tXMLRPCOpenDAS_9.length
-									&& results_tXMLRPCOpenDAS_9[3] != null) {
-								row11.sendedDate = (Date) results_tXMLRPCOpenDAS_9[3];
-
-							} else {
-								row11.sendedDate = null;
-							}
-
-							// We set the results in the output connections
-							if (4 < results_tXMLRPCOpenDAS_9.length
-									&& results_tXMLRPCOpenDAS_9[4] != null) {
-								row11.attachement = (Object) results_tXMLRPCOpenDAS_9[4];
-
-							} else {
-								row11.attachement = null;
-							}
-
-							// We set the results in the output connections
-							if (5 < results_tXMLRPCOpenDAS_9.length
-									&& results_tXMLRPCOpenDAS_9[5] != null) {
-								row11.station = (String) results_tXMLRPCOpenDAS_9[5];
-
-							} else {
-								row11.station = null;
-							}
-
-							// We set the results in the output connections
-							if (6 < results_tXMLRPCOpenDAS_9.length
-									&& results_tXMLRPCOpenDAS_9[6] != null) {
-								row11.title_out = (String) results_tXMLRPCOpenDAS_9[6];
-
-							} else {
-								row11.title_out = null;
-							}
-
-							// We set the results in the output connections
-							if (7 < results_tXMLRPCOpenDAS_9.length
-									&& results_tXMLRPCOpenDAS_9[7] != null) {
-								row11.send_out = (String) results_tXMLRPCOpenDAS_9[7];
-
-							} else {
-								row11.send_out = null;
-							}
-
-							// We set the results in the output connections
-							if (8 < results_tXMLRPCOpenDAS_9.length
-									&& results_tXMLRPCOpenDAS_9[8] != null) {
-								row11.from_out = (String) results_tXMLRPCOpenDAS_9[8];
-
-							} else {
-								row11.from_out = null;
-							}
-
-							// We set the results in the output connections
-							if (9 < results_tXMLRPCOpenDAS_9.length
-									&& results_tXMLRPCOpenDAS_9[9] != null) {
-								row11.sendedDate_out = (Date) results_tXMLRPCOpenDAS_9[9];
-
-							} else {
-								row11.sendedDate_out = null;
-							}
-
-							// We set the results in the output connections
-							if (10 < results_tXMLRPCOpenDAS_9.length
-									&& results_tXMLRPCOpenDAS_9[10] != null) {
-								row11.attachement_out = (Object) results_tXMLRPCOpenDAS_9[10];
-
-							} else {
-								row11.attachement_out = null;
-							}
-
-							// We set the results in the output connections
-							if (11 < results_tXMLRPCOpenDAS_9.length
-									&& results_tXMLRPCOpenDAS_9[11] != null) {
-								row11.station_out = (String) results_tXMLRPCOpenDAS_9[11];
-
-							} else {
-								row11.station_out = null;
-							}
-
-						}
-
-						tos_count_tXMLRPCOpenDAS_9++;
-
-						/**
-						 * [tXMLRPCOpenDAS_9 main ] stop
-						 */
-						// Start of branch "row11"
-						if (row11 != null) {
-
-							/**
-							 * [tMomObjectOutput_9 main ] start
-							 */
-
-							currentComponent = "tMomObjectOutput_9";
-
-							// row11
-							// row11
-
-							if (execStat) {
-								runStat.updateStatOnConnection("row11"
-										+ iterateId, 1, 1);
-							}
-
-							System.out.println("attachement :"
-									+ row11.attachement);
-
-							// on reconstitue le message d'origine
-							org.opendas.modele.ServerRequest previousRequest = new org.opendas.modele.ServerRequest();
-							previousRequest.setTitle(row11.title);
-							previousRequest.setSendUrl(row11.sendUrl);
-							previousRequest.setFromUrl(row11.fromUrl);
-							previousRequest.setSendedDate(row11.sendedDate);
-							previousRequest
-									.setAttachement((java.io.Serializable) row11.attachement);
-
-							// on crée le message de réponse
-							org.opendas.modele.ServerRequest response = new org.opendas.modele.ServerRequest(
-									previousRequest);
-							response.setTitle(row11.title_out);
-							response.setSendedDate(row11.sendedDate_out);
-							response.setAttachement((java.io.Serializable) row11.attachement_out);
-
-							javax.jms.ObjectMessage message_tMomObjectOutput_9 = session_tMomObjectOutput_9
-									.createObjectMessage();// On crée
-															// l'ObjectMessage
-							message_tMomObjectOutput_9.setObject(response);
-							message_tMomObjectOutput_9.setStringProperty(
-									"Sujet", row11.station);
-
-							System.out.println("----------------------------");
-							System.out.println(response);
-							System.out.println("----------------------------");
-
-							des_tMomObjectOutput_9 = session_tMomObjectOutput_9
-									.createQueue(response.getSendUrl());
-							producer_tMomObjectOutput_9 = session_tMomObjectOutput_9
-									.createProducer(des_tMomObjectOutput_9);
-							producer_tMomObjectOutput_9
-									.send(message_tMomObjectOutput_9);
-
-							tos_count_tMomObjectOutput_9++;
-
-							/**
-							 * [tMomObjectOutput_9 main ] stop
-							 */
-
-						} // End of branch "row11"
-
-					} // End of branch "pointing_change_folder"
-
-					// Start of branch "pointing"
-					if (pointing != null) {
-
-						/**
-						 * [tXMLRPCOpenDAS_4 main ] start
-						 */
-
-						currentComponent = "tXMLRPCOpenDAS_4";
-
-						// pointing
-						// pointing
-
-						if (execStat) {
-							runStat.updateStatOnConnection("pointing"
-									+ iterateId, 1, 1);
-						}
-
-						// DEBUG DISPLAY
-						java.io.PrintStream consoleOut_tXMLRPCOpenDAS_4 = null;
-						if (globalMap.get("tLogRow_CONSOLE") != null) {
-							consoleOut_tXMLRPCOpenDAS_4 = (java.io.PrintStream) globalMap
-									.get("tLogRow_CONSOLE");
-						} else {
-							consoleOut_tXMLRPCOpenDAS_4 = new java.io.PrintStream(
-									new java.io.BufferedOutputStream(System.out));
-							globalMap.put("tLogRow_CONSOLE",
-									consoleOut_tXMLRPCOpenDAS_4);
-						}
-
-						consoleOut_tXMLRPCOpenDAS_4.println("tXMLRPCOpenDAS_4"
-								+ " received parameters : "
-								+ pointing.toString());
-						consoleOut_tXMLRPCOpenDAS_4.flush();
-
-						// Retrieving input parameters (These parameters come
-						// from tMomObjectInput)
-						String title_tXMLRPCOpenDAS_4 = pointing.title;
-						String sendUrl_tXMLRPCOpenDAS_4 = pointing.sendUrl;
-						String fromUrl_tXMLRPCOpenDAS_4 = pointing.fromUrl;
-						Date sendedDate_tXMLRPCOpenDAS_4 = pointing.sendedDate;
-						String station_tXMLRPCOpenDAS_4 = pointing.station;
-						java.util.Map checkingMap = (java.util.Map) pointing.attachement;
-
-						Object[] tab = checkingMap.keySet().toArray();
-						redstone.xmlrpc.XmlRpcStruct vals = new redstone.xmlrpc.XmlRpcStruct();
-						for (int i = 0; i < tab.length; i++) {
-							if ("perso".equals(tab[i])) {
-								vals.put("employee", checkingMap.get(tab[i]));
-							}
-						}
-						// Initialization output parameters
-						String title_out_tXMLRPCOpenDAS_4 = null;
-						String sendUrl_out_tXMLRPCOpenDAS_4 = null;
-						String fromUrl_out_tXMLRPCOpenDAS_4 = null;
-						Date sendedDate_out_tXMLRPCOpenDAS_4 = null;
-						String station_out_tXMLRPCOpenDAS_4 = null;
-						Object attachement_out_tXMLRPCOpenDAS_4 = null;
-						org.opendas.modele.DASError result = new org.opendas.modele.DASError();
-
-						try {
-							consoleOut_tXMLRPCOpenDAS_4
-									.println("tXMLRPCOpenDAS_4"
-											+ " Connexion OpenERP_V5 ");
-							consoleOut_tXMLRPCOpenDAS_4.flush();
-							OpenDAS_xmlrpc.OpenERP_V5_connect connexiontXMLRPCOpenDAS_4 = new OpenDAS_xmlrpc.OpenERP_V5_connect(
-									context.dbnameOdoo, context.usernameOdoo,
-									context.pwdOdoo, context.hostOdoo,
-									context.portOdoo);
-
-							java.util.List<Object[]> context_search_tmp = new java.util.ArrayList<Object[]>();
-
-							Object[] context_search = new Object[context_search_tmp
-									.size()];
-							for (int i = 0; i < context_search_tmp.size(); ++i) {
-								context_search[i] = context_search_tmp.get(i);
-							}
-
-							consoleOut_tXMLRPCOpenDAS_4
-									.println("tXMLRPCOpenDAS_4" + " XMLRpc : "
-											+ "hr.employee" + " "
-											+ "talend_in_out_barre");
-							consoleOut_tXMLRPCOpenDAS_4.flush();
-							redstone.xmlrpc.XmlRpcStruct responsetXMLRPCOpenDAS_4 = (redstone.xmlrpc.XmlRpcStruct) connexiontXMLRPCOpenDAS_4
-									.exec("hr.employee", "talend_in_out_barre",
-											vals, context_search);
-							if (responsetXMLRPCOpenDAS_4 != null) {
-								System.out
-										.println("responsetXMLRPCOpenDAS_4 : "
-												+ responsetXMLRPCOpenDAS_4);
-								result.setCode(responsetXMLRPCOpenDAS_4
-										.getInteger("code"));
-								result.setString(responsetXMLRPCOpenDAS_4
-										.getString("string"));
-								java.util.List<org.opendas.modele.DASGeneric> listgen = new java.util.ArrayList<org.opendas.modele.DASGeneric>();
-
-								redstone.xmlrpc.XmlRpcArray res_array = null;
-								res_array = (redstone.xmlrpc.XmlRpcArray) responsetXMLRPCOpenDAS_4
-										.get("object");
-
-								Object retour = null;
-								for (int i = 0; i < res_array.size(); ++i) {
-									org.opendas.modele.DASGeneric tmp_generic = new org.opendas.modele.DASGeneric();
-									redstone.xmlrpc.XmlRpcStruct tmp_dict = null;
-									tmp_dict = (redstone.xmlrpc.XmlRpcStruct) res_array
-											.get(i);
-									tmp_generic
-											.setInfos(connexiontXMLRPCOpenDAS_4
-													.convert(tmp_dict));
-									listgen.add(tmp_generic);
-								}
-								result.setObject(listgen);
-							} else {
-								System.out.println("ERROR : On ext response");
-
-								result.setCode(1);
-
-								result.setString("ERROR : On ext response");
-
-							}
-
-						} catch (redstone.xmlrpc.XmlRpcException e) {
-							System.out
-									.println("ERROR XMLRPC : " + e.toString());
-							result.setCode(2);
-							result.setString("ERROR XMLRPC : " + e.toString());
-						} catch (Exception e) {
-							System.out.println("ERROR : " + e.toString());
-							result.setCode(3);
-							result.setString("ERROR : " + e.toString());
-						}
-						System.out.println("result :" + result);
-
-						// Transmission of parameters to tMomObjectOutput
-						// component ( none output here)
-						Object[] results_tXMLRPCOpenDAS_4 = {
-								title_tXMLRPCOpenDAS_4,
-								sendUrl_tXMLRPCOpenDAS_4,
-								fromUrl_tXMLRPCOpenDAS_4,
-								sendedDate_tXMLRPCOpenDAS_4,
-								pointing.attachement, station_tXMLRPCOpenDAS_4,
-								title_out_tXMLRPCOpenDAS_4,
-								sendUrl_out_tXMLRPCOpenDAS_4,
-								fromUrl_out_tXMLRPCOpenDAS_4,
-								sendedDate_out_tXMLRPCOpenDAS_4, result,
-								station_out_tXMLRPCOpenDAS_4 };
-
-						for (int i_tXMLRPCOpenDAS_4 = 0; i_tXMLRPCOpenDAS_4 < results_tXMLRPCOpenDAS_4.length; i_tXMLRPCOpenDAS_4++) {
-
-							// for output
-
-							// We set the results in the output connections
-							if (0 < results_tXMLRPCOpenDAS_4.length
-									&& results_tXMLRPCOpenDAS_4[0] != null) {
-								row5.title = (String) results_tXMLRPCOpenDAS_4[0];
-
-							} else {
-								row5.title = null;
-							}
-
-							// We set the results in the output connections
-							if (1 < results_tXMLRPCOpenDAS_4.length
-									&& results_tXMLRPCOpenDAS_4[1] != null) {
-								row5.sendUrl = (String) results_tXMLRPCOpenDAS_4[1];
-
-							} else {
-								row5.sendUrl = null;
-							}
-
-							// We set the results in the output connections
-							if (2 < results_tXMLRPCOpenDAS_4.length
-									&& results_tXMLRPCOpenDAS_4[2] != null) {
-								row5.fromUrl = (String) results_tXMLRPCOpenDAS_4[2];
-
-							} else {
-								row5.fromUrl = null;
-							}
-
-							// We set the results in the output connections
-							if (3 < results_tXMLRPCOpenDAS_4.length
-									&& results_tXMLRPCOpenDAS_4[3] != null) {
-								row5.sendedDate = (Date) results_tXMLRPCOpenDAS_4[3];
-
-							} else {
-								row5.sendedDate = null;
-							}
-
-							// We set the results in the output connections
-							if (4 < results_tXMLRPCOpenDAS_4.length
-									&& results_tXMLRPCOpenDAS_4[4] != null) {
-								row5.attachement = (Object) results_tXMLRPCOpenDAS_4[4];
-
-							} else {
-								row5.attachement = null;
-							}
-
-							// We set the results in the output connections
-							if (5 < results_tXMLRPCOpenDAS_4.length
-									&& results_tXMLRPCOpenDAS_4[5] != null) {
-								row5.station = (String) results_tXMLRPCOpenDAS_4[5];
-
-							} else {
-								row5.station = null;
-							}
-
-							// We set the results in the output connections
-							if (6 < results_tXMLRPCOpenDAS_4.length
-									&& results_tXMLRPCOpenDAS_4[6] != null) {
-								row5.title_out = (String) results_tXMLRPCOpenDAS_4[6];
-
-							} else {
-								row5.title_out = null;
-							}
-
-							// We set the results in the output connections
-							if (7 < results_tXMLRPCOpenDAS_4.length
-									&& results_tXMLRPCOpenDAS_4[7] != null) {
-								row5.send_out = (String) results_tXMLRPCOpenDAS_4[7];
-
-							} else {
-								row5.send_out = null;
-							}
-
-							// We set the results in the output connections
-							if (8 < results_tXMLRPCOpenDAS_4.length
-									&& results_tXMLRPCOpenDAS_4[8] != null) {
-								row5.from_out = (String) results_tXMLRPCOpenDAS_4[8];
-
-							} else {
-								row5.from_out = null;
-							}
-
-							// We set the results in the output connections
-							if (9 < results_tXMLRPCOpenDAS_4.length
-									&& results_tXMLRPCOpenDAS_4[9] != null) {
-								row5.sendedDate_out = (Date) results_tXMLRPCOpenDAS_4[9];
-
-							} else {
-								row5.sendedDate_out = null;
-							}
-
-							// We set the results in the output connections
-							if (10 < results_tXMLRPCOpenDAS_4.length
-									&& results_tXMLRPCOpenDAS_4[10] != null) {
-								row5.attachement_out = (Object) results_tXMLRPCOpenDAS_4[10];
-
-							} else {
-								row5.attachement_out = null;
-							}
-
-							// We set the results in the output connections
-							if (11 < results_tXMLRPCOpenDAS_4.length
-									&& results_tXMLRPCOpenDAS_4[11] != null) {
-								row5.station_out = (String) results_tXMLRPCOpenDAS_4[11];
-
-							} else {
-								row5.station_out = null;
-							}
-
-						}
-
-						tos_count_tXMLRPCOpenDAS_4++;
-
-						/**
-						 * [tXMLRPCOpenDAS_4 main ] stop
-						 */
-						// Start of branch "row5"
-						if (row5 != null) {
-
-							/**
-							 * [tMomObjectOutput_3 main ] start
-							 */
-
-							currentComponent = "tMomObjectOutput_3";
-
-							// row5
-							// row5
-
-							if (execStat) {
-								runStat.updateStatOnConnection("row5"
-										+ iterateId, 1, 1);
-							}
-
-							System.out.println("attachement :"
-									+ row5.attachement);
-
-							// on reconstitue le message d'origine
-							org.opendas.modele.ServerRequest previousRequest = new org.opendas.modele.ServerRequest();
-							previousRequest.setTitle(row5.title);
-							previousRequest.setSendUrl(row5.sendUrl);
-							previousRequest.setFromUrl(row5.fromUrl);
-							previousRequest.setSendedDate(row5.sendedDate);
-							previousRequest
-									.setAttachement((java.io.Serializable) row5.attachement);
-
-							// on crée le message de réponse
-							org.opendas.modele.ServerRequest response = new org.opendas.modele.ServerRequest(
-									previousRequest);
-							response.setTitle(row5.title_out);
-							response.setSendedDate(row5.sendedDate_out);
-							response.setAttachement((java.io.Serializable) row5.attachement_out);
-
-							javax.jms.ObjectMessage message_tMomObjectOutput_3 = session_tMomObjectOutput_3
-									.createObjectMessage();// On crée
-															// l'ObjectMessage
-							message_tMomObjectOutput_3.setObject(response);
-							message_tMomObjectOutput_3.setStringProperty(
-									"Sujet", row5.station);
-
-							System.out.println("----------------------------");
-							System.out.println(response);
-							System.out.println("----------------------------");
-
-							des_tMomObjectOutput_3 = session_tMomObjectOutput_3
-									.createQueue(response.getSendUrl());
-							producer_tMomObjectOutput_3 = session_tMomObjectOutput_3
-									.createProducer(des_tMomObjectOutput_3);
-							producer_tMomObjectOutput_3
-									.send(message_tMomObjectOutput_3);
-
-							tos_count_tMomObjectOutput_3++;
-
-							/**
-							 * [tMomObjectOutput_3 main ] stop
-							 */
-
-						} // End of branch "row5"
-
-					} // End of branch "pointing"
-
 					// Start of branch "out"
 					if (out != null) {
 
@@ -8536,8 +7531,679 @@ public class SET_DEV implements TalendJob {
 
 					} // End of branch "out"
 
-					// Start of branch "tracking_odoo"
-					if (tracking_odoo != null) {
+					// Start of branch "signing_folder_change"
+					if (signing_folder_change != null) {
+
+						/**
+						 * [tXMLRPCOpenDAS_9 main ] start
+						 */
+
+						currentComponent = "tXMLRPCOpenDAS_9";
+
+						// signing_folder_change
+						// signing_folder_change
+
+						if (execStat) {
+							runStat.updateStatOnConnection(
+									"signing_folder_change" + iterateId, 1, 1);
+						}
+
+						// DEBUG DISPLAY
+						java.io.PrintStream consoleOut_tXMLRPCOpenDAS_9 = null;
+						if (globalMap.get("tLogRow_CONSOLE") != null) {
+							consoleOut_tXMLRPCOpenDAS_9 = (java.io.PrintStream) globalMap
+									.get("tLogRow_CONSOLE");
+						} else {
+							consoleOut_tXMLRPCOpenDAS_9 = new java.io.PrintStream(
+									new java.io.BufferedOutputStream(System.out));
+							globalMap.put("tLogRow_CONSOLE",
+									consoleOut_tXMLRPCOpenDAS_9);
+						}
+
+						consoleOut_tXMLRPCOpenDAS_9.println("tXMLRPCOpenDAS_9"
+								+ " received parameters : "
+								+ signing_folder_change.toString());
+						consoleOut_tXMLRPCOpenDAS_9.flush();
+
+						// Retrieving input parameters (These parameters come
+						// from tMomObjectInput)
+						String title_tXMLRPCOpenDAS_9 = signing_folder_change.title;
+						String sendUrl_tXMLRPCOpenDAS_9 = signing_folder_change.sendUrl;
+						String fromUrl_tXMLRPCOpenDAS_9 = signing_folder_change.fromUrl;
+						Date sendedDate_tXMLRPCOpenDAS_9 = signing_folder_change.sendedDate;
+						String station_tXMLRPCOpenDAS_9 = signing_folder_change.station;
+						java.util.Map checkingMap = (java.util.Map) signing_folder_change.attachement;
+
+						Object[] tab = checkingMap.keySet().toArray();
+						redstone.xmlrpc.XmlRpcStruct vals = new redstone.xmlrpc.XmlRpcStruct();
+						for (int i = 0; i < tab.length; i++) {
+							if ("perso".equals(tab[i])) {
+								vals.put("employee", checkingMap.get(tab[i]));
+							}
+							if ("job".equals(tab[i])) {
+								vals.put("workcenter", checkingMap.get(tab[i]));
+							}
+							if ("folder".equals(tab[i])) {
+								vals.put("production", checkingMap.get(tab[i]));
+							}
+							if ("reglage".equals(tab[i])) {
+								vals.put("adjustment", checkingMap.get(tab[i]));
+							}
+						}
+						// Initialization output parameters
+						String title_out_tXMLRPCOpenDAS_9 = null;
+						String sendUrl_out_tXMLRPCOpenDAS_9 = null;
+						String fromUrl_out_tXMLRPCOpenDAS_9 = null;
+						Date sendedDate_out_tXMLRPCOpenDAS_9 = null;
+						String station_out_tXMLRPCOpenDAS_9 = null;
+						Object attachement_out_tXMLRPCOpenDAS_9 = null;
+						org.opendas.modele.DASError result = new org.opendas.modele.DASError();
+
+						try {
+							consoleOut_tXMLRPCOpenDAS_9
+									.println("tXMLRPCOpenDAS_9"
+											+ " Connexion OpenERP_V5 ");
+							consoleOut_tXMLRPCOpenDAS_9.flush();
+							OpenDAS_xmlrpc.OpenERP_V5_connect connexiontXMLRPCOpenDAS_9 = new OpenDAS_xmlrpc.OpenERP_V5_connect(
+									context.dbnameOdoo, context.usernameOdoo,
+									context.pwdOdoo, context.hostOdoo,
+									context.portOdoo);
+
+							java.util.List<Object[]> context_search_tmp = new java.util.ArrayList<Object[]>();
+
+							Object[] context_search = new Object[context_search_tmp
+									.size()];
+							for (int i = 0; i < context_search_tmp.size(); ++i) {
+								context_search[i] = context_search_tmp.get(i);
+							}
+
+							consoleOut_tXMLRPCOpenDAS_9
+									.println("tXMLRPCOpenDAS_9"
+											+ " XMLRpc : "
+											+ "hr.employee"
+											+ " "
+											+ "talend_change_workcenter_line_barre");
+							consoleOut_tXMLRPCOpenDAS_9.flush();
+							redstone.xmlrpc.XmlRpcStruct responsetXMLRPCOpenDAS_9 = (redstone.xmlrpc.XmlRpcStruct) connexiontXMLRPCOpenDAS_9
+									.exec("hr.employee",
+											"talend_change_workcenter_line_barre",
+											vals, context_search);
+							if (responsetXMLRPCOpenDAS_9 != null) {
+								System.out
+										.println("responsetXMLRPCOpenDAS_9 : "
+												+ responsetXMLRPCOpenDAS_9);
+								result.setCode(responsetXMLRPCOpenDAS_9
+										.getInteger("code"));
+								result.setString(responsetXMLRPCOpenDAS_9
+										.getString("string"));
+								java.util.List<org.opendas.modele.DASGeneric> listgen = new java.util.ArrayList<org.opendas.modele.DASGeneric>();
+
+								redstone.xmlrpc.XmlRpcArray res_array = null;
+								res_array = (redstone.xmlrpc.XmlRpcArray) responsetXMLRPCOpenDAS_9
+										.get("object");
+
+								Object retour = null;
+								for (int i = 0; i < res_array.size(); ++i) {
+									org.opendas.modele.DASGeneric tmp_generic = new org.opendas.modele.DASGeneric();
+									redstone.xmlrpc.XmlRpcStruct tmp_dict = null;
+									tmp_dict = (redstone.xmlrpc.XmlRpcStruct) res_array
+											.get(i);
+									tmp_generic
+											.setInfos(connexiontXMLRPCOpenDAS_9
+													.convert(tmp_dict));
+									listgen.add(tmp_generic);
+								}
+								result.setObject(listgen);
+							} else {
+								System.out.println("ERROR : On ext response");
+
+								result.setCode(1);
+
+								result.setString("ERROR : On ext response");
+
+							}
+
+						} catch (redstone.xmlrpc.XmlRpcException e) {
+							System.out
+									.println("ERROR XMLRPC : " + e.toString());
+							result.setCode(2);
+							result.setString("ERROR XMLRPC : " + e.toString());
+						} catch (Exception e) {
+							System.out.println("ERROR : " + e.toString());
+							result.setCode(3);
+							result.setString("ERROR : " + e.toString());
+						}
+						System.out.println("result :" + result);
+
+						// Transmission of parameters to tMomObjectOutput
+						// component ( none output here)
+						Object[] results_tXMLRPCOpenDAS_9 = {
+								title_tXMLRPCOpenDAS_9,
+								sendUrl_tXMLRPCOpenDAS_9,
+								fromUrl_tXMLRPCOpenDAS_9,
+								sendedDate_tXMLRPCOpenDAS_9,
+								signing_folder_change.attachement,
+								station_tXMLRPCOpenDAS_9,
+								title_out_tXMLRPCOpenDAS_9,
+								sendUrl_out_tXMLRPCOpenDAS_9,
+								fromUrl_out_tXMLRPCOpenDAS_9,
+								sendedDate_out_tXMLRPCOpenDAS_9, result,
+								station_out_tXMLRPCOpenDAS_9 };
+
+						for (int i_tXMLRPCOpenDAS_9 = 0; i_tXMLRPCOpenDAS_9 < results_tXMLRPCOpenDAS_9.length; i_tXMLRPCOpenDAS_9++) {
+
+							// for output
+
+							// We set the results in the output connections
+							if (0 < results_tXMLRPCOpenDAS_9.length
+									&& results_tXMLRPCOpenDAS_9[0] != null) {
+								row11.title = (String) results_tXMLRPCOpenDAS_9[0];
+
+							} else {
+								row11.title = null;
+							}
+
+							// We set the results in the output connections
+							if (1 < results_tXMLRPCOpenDAS_9.length
+									&& results_tXMLRPCOpenDAS_9[1] != null) {
+								row11.sendUrl = (String) results_tXMLRPCOpenDAS_9[1];
+
+							} else {
+								row11.sendUrl = null;
+							}
+
+							// We set the results in the output connections
+							if (2 < results_tXMLRPCOpenDAS_9.length
+									&& results_tXMLRPCOpenDAS_9[2] != null) {
+								row11.fromUrl = (String) results_tXMLRPCOpenDAS_9[2];
+
+							} else {
+								row11.fromUrl = null;
+							}
+
+							// We set the results in the output connections
+							if (3 < results_tXMLRPCOpenDAS_9.length
+									&& results_tXMLRPCOpenDAS_9[3] != null) {
+								row11.sendedDate = (Date) results_tXMLRPCOpenDAS_9[3];
+
+							} else {
+								row11.sendedDate = null;
+							}
+
+							// We set the results in the output connections
+							if (4 < results_tXMLRPCOpenDAS_9.length
+									&& results_tXMLRPCOpenDAS_9[4] != null) {
+								row11.attachement = (Object) results_tXMLRPCOpenDAS_9[4];
+
+							} else {
+								row11.attachement = null;
+							}
+
+							// We set the results in the output connections
+							if (5 < results_tXMLRPCOpenDAS_9.length
+									&& results_tXMLRPCOpenDAS_9[5] != null) {
+								row11.station = (String) results_tXMLRPCOpenDAS_9[5];
+
+							} else {
+								row11.station = null;
+							}
+
+							// We set the results in the output connections
+							if (6 < results_tXMLRPCOpenDAS_9.length
+									&& results_tXMLRPCOpenDAS_9[6] != null) {
+								row11.title_out = (String) results_tXMLRPCOpenDAS_9[6];
+
+							} else {
+								row11.title_out = null;
+							}
+
+							// We set the results in the output connections
+							if (7 < results_tXMLRPCOpenDAS_9.length
+									&& results_tXMLRPCOpenDAS_9[7] != null) {
+								row11.send_out = (String) results_tXMLRPCOpenDAS_9[7];
+
+							} else {
+								row11.send_out = null;
+							}
+
+							// We set the results in the output connections
+							if (8 < results_tXMLRPCOpenDAS_9.length
+									&& results_tXMLRPCOpenDAS_9[8] != null) {
+								row11.from_out = (String) results_tXMLRPCOpenDAS_9[8];
+
+							} else {
+								row11.from_out = null;
+							}
+
+							// We set the results in the output connections
+							if (9 < results_tXMLRPCOpenDAS_9.length
+									&& results_tXMLRPCOpenDAS_9[9] != null) {
+								row11.sendedDate_out = (Date) results_tXMLRPCOpenDAS_9[9];
+
+							} else {
+								row11.sendedDate_out = null;
+							}
+
+							// We set the results in the output connections
+							if (10 < results_tXMLRPCOpenDAS_9.length
+									&& results_tXMLRPCOpenDAS_9[10] != null) {
+								row11.attachement_out = (Object) results_tXMLRPCOpenDAS_9[10];
+
+							} else {
+								row11.attachement_out = null;
+							}
+
+							// We set the results in the output connections
+							if (11 < results_tXMLRPCOpenDAS_9.length
+									&& results_tXMLRPCOpenDAS_9[11] != null) {
+								row11.station_out = (String) results_tXMLRPCOpenDAS_9[11];
+
+							} else {
+								row11.station_out = null;
+							}
+
+						}
+
+						tos_count_tXMLRPCOpenDAS_9++;
+
+						/**
+						 * [tXMLRPCOpenDAS_9 main ] stop
+						 */
+						// Start of branch "row11"
+						if (row11 != null) {
+
+							/**
+							 * [tMomObjectOutput_9 main ] start
+							 */
+
+							currentComponent = "tMomObjectOutput_9";
+
+							// row11
+							// row11
+
+							if (execStat) {
+								runStat.updateStatOnConnection("row11"
+										+ iterateId, 1, 1);
+							}
+
+							System.out.println("attachement :"
+									+ row11.attachement);
+
+							// on reconstitue le message d'origine
+							org.opendas.modele.ServerRequest previousRequest = new org.opendas.modele.ServerRequest();
+							previousRequest.setTitle(row11.title);
+							previousRequest.setSendUrl(row11.sendUrl);
+							previousRequest.setFromUrl(row11.fromUrl);
+							previousRequest.setSendedDate(row11.sendedDate);
+							previousRequest
+									.setAttachement((java.io.Serializable) row11.attachement);
+
+							// on crée le message de réponse
+							org.opendas.modele.ServerRequest response = new org.opendas.modele.ServerRequest(
+									previousRequest);
+							response.setTitle(row11.title_out);
+							response.setSendedDate(row11.sendedDate_out);
+							response.setAttachement((java.io.Serializable) row11.attachement_out);
+
+							javax.jms.ObjectMessage message_tMomObjectOutput_9 = session_tMomObjectOutput_9
+									.createObjectMessage();// On crée
+															// l'ObjectMessage
+							message_tMomObjectOutput_9.setObject(response);
+							message_tMomObjectOutput_9.setStringProperty(
+									"Sujet", row11.station);
+
+							System.out.println("----------------------------");
+							System.out.println(response);
+							System.out.println("----------------------------");
+
+							des_tMomObjectOutput_9 = session_tMomObjectOutput_9
+									.createQueue(response.getSendUrl());
+							producer_tMomObjectOutput_9 = session_tMomObjectOutput_9
+									.createProducer(des_tMomObjectOutput_9);
+							producer_tMomObjectOutput_9
+									.send(message_tMomObjectOutput_9);
+
+							tos_count_tMomObjectOutput_9++;
+
+							/**
+							 * [tMomObjectOutput_9 main ] stop
+							 */
+
+						} // End of branch "row11"
+
+					} // End of branch "signing_folder_change"
+
+					// Start of branch "signing"
+					if (signing != null) {
+
+						/**
+						 * [tXMLRPCOpenDAS_4 main ] start
+						 */
+
+						currentComponent = "tXMLRPCOpenDAS_4";
+
+						// signing
+						// signing
+
+						if (execStat) {
+							runStat.updateStatOnConnection("signing"
+									+ iterateId, 1, 1);
+						}
+
+						// DEBUG DISPLAY
+						java.io.PrintStream consoleOut_tXMLRPCOpenDAS_4 = null;
+						if (globalMap.get("tLogRow_CONSOLE") != null) {
+							consoleOut_tXMLRPCOpenDAS_4 = (java.io.PrintStream) globalMap
+									.get("tLogRow_CONSOLE");
+						} else {
+							consoleOut_tXMLRPCOpenDAS_4 = new java.io.PrintStream(
+									new java.io.BufferedOutputStream(System.out));
+							globalMap.put("tLogRow_CONSOLE",
+									consoleOut_tXMLRPCOpenDAS_4);
+						}
+
+						consoleOut_tXMLRPCOpenDAS_4.println("tXMLRPCOpenDAS_4"
+								+ " received parameters : "
+								+ signing.toString());
+						consoleOut_tXMLRPCOpenDAS_4.flush();
+
+						// Retrieving input parameters (These parameters come
+						// from tMomObjectInput)
+						String title_tXMLRPCOpenDAS_4 = signing.title;
+						String sendUrl_tXMLRPCOpenDAS_4 = signing.sendUrl;
+						String fromUrl_tXMLRPCOpenDAS_4 = signing.fromUrl;
+						Date sendedDate_tXMLRPCOpenDAS_4 = signing.sendedDate;
+						String station_tXMLRPCOpenDAS_4 = signing.station;
+						java.util.Map checkingMap = (java.util.Map) signing.attachement;
+
+						Object[] tab = checkingMap.keySet().toArray();
+						redstone.xmlrpc.XmlRpcStruct vals = new redstone.xmlrpc.XmlRpcStruct();
+						for (int i = 0; i < tab.length; i++) {
+							if ("perso".equals(tab[i])) {
+								vals.put("employee", checkingMap.get(tab[i]));
+							}
+						}
+						// Initialization output parameters
+						String title_out_tXMLRPCOpenDAS_4 = null;
+						String sendUrl_out_tXMLRPCOpenDAS_4 = null;
+						String fromUrl_out_tXMLRPCOpenDAS_4 = null;
+						Date sendedDate_out_tXMLRPCOpenDAS_4 = null;
+						String station_out_tXMLRPCOpenDAS_4 = null;
+						Object attachement_out_tXMLRPCOpenDAS_4 = null;
+						org.opendas.modele.DASError result = new org.opendas.modele.DASError();
+
+						try {
+							consoleOut_tXMLRPCOpenDAS_4
+									.println("tXMLRPCOpenDAS_4"
+											+ " Connexion OpenERP_V5 ");
+							consoleOut_tXMLRPCOpenDAS_4.flush();
+							OpenDAS_xmlrpc.OpenERP_V5_connect connexiontXMLRPCOpenDAS_4 = new OpenDAS_xmlrpc.OpenERP_V5_connect(
+									context.dbnameOdoo, context.usernameOdoo,
+									context.pwdOdoo, context.hostOdoo,
+									context.portOdoo);
+
+							java.util.List<Object[]> context_search_tmp = new java.util.ArrayList<Object[]>();
+
+							Object[] context_search = new Object[context_search_tmp
+									.size()];
+							for (int i = 0; i < context_search_tmp.size(); ++i) {
+								context_search[i] = context_search_tmp.get(i);
+							}
+
+							consoleOut_tXMLRPCOpenDAS_4
+									.println("tXMLRPCOpenDAS_4" + " XMLRpc : "
+											+ "hr.employee" + " "
+											+ "talend_in_out_barre");
+							consoleOut_tXMLRPCOpenDAS_4.flush();
+							redstone.xmlrpc.XmlRpcStruct responsetXMLRPCOpenDAS_4 = (redstone.xmlrpc.XmlRpcStruct) connexiontXMLRPCOpenDAS_4
+									.exec("hr.employee", "talend_in_out_barre",
+											vals, context_search);
+							if (responsetXMLRPCOpenDAS_4 != null) {
+								System.out
+										.println("responsetXMLRPCOpenDAS_4 : "
+												+ responsetXMLRPCOpenDAS_4);
+								result.setCode(responsetXMLRPCOpenDAS_4
+										.getInteger("code"));
+								result.setString(responsetXMLRPCOpenDAS_4
+										.getString("string"));
+								java.util.List<org.opendas.modele.DASGeneric> listgen = new java.util.ArrayList<org.opendas.modele.DASGeneric>();
+
+								redstone.xmlrpc.XmlRpcArray res_array = null;
+								res_array = (redstone.xmlrpc.XmlRpcArray) responsetXMLRPCOpenDAS_4
+										.get("object");
+
+								Object retour = null;
+								for (int i = 0; i < res_array.size(); ++i) {
+									org.opendas.modele.DASGeneric tmp_generic = new org.opendas.modele.DASGeneric();
+									redstone.xmlrpc.XmlRpcStruct tmp_dict = null;
+									tmp_dict = (redstone.xmlrpc.XmlRpcStruct) res_array
+											.get(i);
+									tmp_generic
+											.setInfos(connexiontXMLRPCOpenDAS_4
+													.convert(tmp_dict));
+									listgen.add(tmp_generic);
+								}
+								result.setObject(listgen);
+							} else {
+								System.out.println("ERROR : On ext response");
+
+								result.setCode(1);
+
+								result.setString("ERROR : On ext response");
+
+							}
+
+						} catch (redstone.xmlrpc.XmlRpcException e) {
+							System.out
+									.println("ERROR XMLRPC : " + e.toString());
+							result.setCode(2);
+							result.setString("ERROR XMLRPC : " + e.toString());
+						} catch (Exception e) {
+							System.out.println("ERROR : " + e.toString());
+							result.setCode(3);
+							result.setString("ERROR : " + e.toString());
+						}
+						System.out.println("result :" + result);
+
+						// Transmission of parameters to tMomObjectOutput
+						// component ( none output here)
+						Object[] results_tXMLRPCOpenDAS_4 = {
+								title_tXMLRPCOpenDAS_4,
+								sendUrl_tXMLRPCOpenDAS_4,
+								fromUrl_tXMLRPCOpenDAS_4,
+								sendedDate_tXMLRPCOpenDAS_4,
+								signing.attachement, station_tXMLRPCOpenDAS_4,
+								title_out_tXMLRPCOpenDAS_4,
+								sendUrl_out_tXMLRPCOpenDAS_4,
+								fromUrl_out_tXMLRPCOpenDAS_4,
+								sendedDate_out_tXMLRPCOpenDAS_4, result,
+								station_out_tXMLRPCOpenDAS_4 };
+
+						for (int i_tXMLRPCOpenDAS_4 = 0; i_tXMLRPCOpenDAS_4 < results_tXMLRPCOpenDAS_4.length; i_tXMLRPCOpenDAS_4++) {
+
+							// for output
+
+							// We set the results in the output connections
+							if (0 < results_tXMLRPCOpenDAS_4.length
+									&& results_tXMLRPCOpenDAS_4[0] != null) {
+								row5.title = (String) results_tXMLRPCOpenDAS_4[0];
+
+							} else {
+								row5.title = null;
+							}
+
+							// We set the results in the output connections
+							if (1 < results_tXMLRPCOpenDAS_4.length
+									&& results_tXMLRPCOpenDAS_4[1] != null) {
+								row5.sendUrl = (String) results_tXMLRPCOpenDAS_4[1];
+
+							} else {
+								row5.sendUrl = null;
+							}
+
+							// We set the results in the output connections
+							if (2 < results_tXMLRPCOpenDAS_4.length
+									&& results_tXMLRPCOpenDAS_4[2] != null) {
+								row5.fromUrl = (String) results_tXMLRPCOpenDAS_4[2];
+
+							} else {
+								row5.fromUrl = null;
+							}
+
+							// We set the results in the output connections
+							if (3 < results_tXMLRPCOpenDAS_4.length
+									&& results_tXMLRPCOpenDAS_4[3] != null) {
+								row5.sendedDate = (Date) results_tXMLRPCOpenDAS_4[3];
+
+							} else {
+								row5.sendedDate = null;
+							}
+
+							// We set the results in the output connections
+							if (4 < results_tXMLRPCOpenDAS_4.length
+									&& results_tXMLRPCOpenDAS_4[4] != null) {
+								row5.attachement = (Object) results_tXMLRPCOpenDAS_4[4];
+
+							} else {
+								row5.attachement = null;
+							}
+
+							// We set the results in the output connections
+							if (5 < results_tXMLRPCOpenDAS_4.length
+									&& results_tXMLRPCOpenDAS_4[5] != null) {
+								row5.station = (String) results_tXMLRPCOpenDAS_4[5];
+
+							} else {
+								row5.station = null;
+							}
+
+							// We set the results in the output connections
+							if (6 < results_tXMLRPCOpenDAS_4.length
+									&& results_tXMLRPCOpenDAS_4[6] != null) {
+								row5.title_out = (String) results_tXMLRPCOpenDAS_4[6];
+
+							} else {
+								row5.title_out = null;
+							}
+
+							// We set the results in the output connections
+							if (7 < results_tXMLRPCOpenDAS_4.length
+									&& results_tXMLRPCOpenDAS_4[7] != null) {
+								row5.send_out = (String) results_tXMLRPCOpenDAS_4[7];
+
+							} else {
+								row5.send_out = null;
+							}
+
+							// We set the results in the output connections
+							if (8 < results_tXMLRPCOpenDAS_4.length
+									&& results_tXMLRPCOpenDAS_4[8] != null) {
+								row5.from_out = (String) results_tXMLRPCOpenDAS_4[8];
+
+							} else {
+								row5.from_out = null;
+							}
+
+							// We set the results in the output connections
+							if (9 < results_tXMLRPCOpenDAS_4.length
+									&& results_tXMLRPCOpenDAS_4[9] != null) {
+								row5.sendedDate_out = (Date) results_tXMLRPCOpenDAS_4[9];
+
+							} else {
+								row5.sendedDate_out = null;
+							}
+
+							// We set the results in the output connections
+							if (10 < results_tXMLRPCOpenDAS_4.length
+									&& results_tXMLRPCOpenDAS_4[10] != null) {
+								row5.attachement_out = (Object) results_tXMLRPCOpenDAS_4[10];
+
+							} else {
+								row5.attachement_out = null;
+							}
+
+							// We set the results in the output connections
+							if (11 < results_tXMLRPCOpenDAS_4.length
+									&& results_tXMLRPCOpenDAS_4[11] != null) {
+								row5.station_out = (String) results_tXMLRPCOpenDAS_4[11];
+
+							} else {
+								row5.station_out = null;
+							}
+
+						}
+
+						tos_count_tXMLRPCOpenDAS_4++;
+
+						/**
+						 * [tXMLRPCOpenDAS_4 main ] stop
+						 */
+						// Start of branch "row5"
+						if (row5 != null) {
+
+							/**
+							 * [tMomObjectOutput_3 main ] start
+							 */
+
+							currentComponent = "tMomObjectOutput_3";
+
+							// row5
+							// row5
+
+							if (execStat) {
+								runStat.updateStatOnConnection("row5"
+										+ iterateId, 1, 1);
+							}
+
+							System.out.println("attachement :"
+									+ row5.attachement);
+
+							// on reconstitue le message d'origine
+							org.opendas.modele.ServerRequest previousRequest = new org.opendas.modele.ServerRequest();
+							previousRequest.setTitle(row5.title);
+							previousRequest.setSendUrl(row5.sendUrl);
+							previousRequest.setFromUrl(row5.fromUrl);
+							previousRequest.setSendedDate(row5.sendedDate);
+							previousRequest
+									.setAttachement((java.io.Serializable) row5.attachement);
+
+							// on crée le message de réponse
+							org.opendas.modele.ServerRequest response = new org.opendas.modele.ServerRequest(
+									previousRequest);
+							response.setTitle(row5.title_out);
+							response.setSendedDate(row5.sendedDate_out);
+							response.setAttachement((java.io.Serializable) row5.attachement_out);
+
+							javax.jms.ObjectMessage message_tMomObjectOutput_3 = session_tMomObjectOutput_3
+									.createObjectMessage();// On crée
+															// l'ObjectMessage
+							message_tMomObjectOutput_3.setObject(response);
+							message_tMomObjectOutput_3.setStringProperty(
+									"Sujet", row5.station);
+
+							System.out.println("----------------------------");
+							System.out.println(response);
+							System.out.println("----------------------------");
+
+							des_tMomObjectOutput_3 = session_tMomObjectOutput_3
+									.createQueue(response.getSendUrl());
+							producer_tMomObjectOutput_3 = session_tMomObjectOutput_3
+									.createProducer(des_tMomObjectOutput_3);
+							producer_tMomObjectOutput_3
+									.send(message_tMomObjectOutput_3);
+
+							tos_count_tMomObjectOutput_3++;
+
+							/**
+							 * [tMomObjectOutput_3 main ] stop
+							 */
+
+						} // End of branch "row5"
+
+					} // End of branch "signing"
+
+					// Start of branch "odoo_tracking"
+					if (odoo_tracking != null) {
 
 						/**
 						 * [tXMLRPCOpenDAS_5 main ] start
@@ -8545,11 +8211,11 @@ public class SET_DEV implements TalendJob {
 
 						currentComponent = "tXMLRPCOpenDAS_5";
 
-						// tracking_odoo
-						// tracking_odoo
+						// odoo_tracking
+						// odoo_tracking
 
 						if (execStat) {
-							runStat.updateStatOnConnection("tracking_odoo"
+							runStat.updateStatOnConnection("odoo_tracking"
 									+ iterateId, 1, 1);
 						}
 
@@ -8567,17 +8233,17 @@ public class SET_DEV implements TalendJob {
 
 						consoleOut_tXMLRPCOpenDAS_5.println("tXMLRPCOpenDAS_5"
 								+ " received parameters : "
-								+ tracking_odoo.toString());
+								+ odoo_tracking.toString());
 						consoleOut_tXMLRPCOpenDAS_5.flush();
 
 						// Retrieving input parameters (These parameters come
 						// from tMomObjectInput)
-						String title_tXMLRPCOpenDAS_5 = tracking_odoo.title;
-						String sendUrl_tXMLRPCOpenDAS_5 = tracking_odoo.sendUrl;
-						String fromUrl_tXMLRPCOpenDAS_5 = tracking_odoo.fromUrl;
-						Date sendedDate_tXMLRPCOpenDAS_5 = tracking_odoo.sendedDate;
-						String station_tXMLRPCOpenDAS_5 = tracking_odoo.station;
-						java.util.Map checkingMap = (java.util.Map) tracking_odoo.attachement;
+						String title_tXMLRPCOpenDAS_5 = odoo_tracking.title;
+						String sendUrl_tXMLRPCOpenDAS_5 = odoo_tracking.sendUrl;
+						String fromUrl_tXMLRPCOpenDAS_5 = odoo_tracking.fromUrl;
+						Date sendedDate_tXMLRPCOpenDAS_5 = odoo_tracking.sendedDate;
+						String station_tXMLRPCOpenDAS_5 = odoo_tracking.station;
+						java.util.Map checkingMap = (java.util.Map) odoo_tracking.attachement;
 
 						Object[] tab = checkingMap.keySet().toArray();
 						redstone.xmlrpc.XmlRpcStruct vals = new redstone.xmlrpc.XmlRpcStruct();
@@ -8676,7 +8342,7 @@ public class SET_DEV implements TalendJob {
 								sendUrl_tXMLRPCOpenDAS_5,
 								fromUrl_tXMLRPCOpenDAS_5,
 								sendedDate_tXMLRPCOpenDAS_5,
-								tracking_odoo.attachement,
+								odoo_tracking.attachement,
 								station_tXMLRPCOpenDAS_5,
 								title_out_tXMLRPCOpenDAS_5,
 								sendUrl_out_tXMLRPCOpenDAS_5,
@@ -8865,10 +8531,10 @@ public class SET_DEV implements TalendJob {
 
 						} // End of branch "row6"
 
-					} // End of branch "tracking_odoo"
+					} // End of branch "odoo_tracking"
 
-					// Start of branch "entry"
-					if (entry != null) {
+					// Start of branch "entrance"
+					if (entrance != null) {
 
 						/**
 						 * [tXMLRPCOpenDAS_2 main ] start
@@ -8876,12 +8542,12 @@ public class SET_DEV implements TalendJob {
 
 						currentComponent = "tXMLRPCOpenDAS_2";
 
-						// entry
-						// entry
+						// entrance
+						// entrance
 
 						if (execStat) {
-							runStat.updateStatOnConnection("entry" + iterateId,
-									1, 1);
+							runStat.updateStatOnConnection("entrance"
+									+ iterateId, 1, 1);
 						}
 
 						// DEBUG DISPLAY
@@ -8897,17 +8563,18 @@ public class SET_DEV implements TalendJob {
 						}
 
 						consoleOut_tXMLRPCOpenDAS_2.println("tXMLRPCOpenDAS_2"
-								+ " received parameters : " + entry.toString());
+								+ " received parameters : "
+								+ entrance.toString());
 						consoleOut_tXMLRPCOpenDAS_2.flush();
 
 						// Retrieving input parameters (These parameters come
 						// from tMomObjectInput)
-						String title_tXMLRPCOpenDAS_2 = entry.title;
-						String sendUrl_tXMLRPCOpenDAS_2 = entry.sendUrl;
-						String fromUrl_tXMLRPCOpenDAS_2 = entry.fromUrl;
-						Date sendedDate_tXMLRPCOpenDAS_2 = entry.sendedDate;
-						String station_tXMLRPCOpenDAS_2 = entry.station;
-						java.util.Map checkingMap = (java.util.Map) entry.attachement;
+						String title_tXMLRPCOpenDAS_2 = entrance.title;
+						String sendUrl_tXMLRPCOpenDAS_2 = entrance.sendUrl;
+						String fromUrl_tXMLRPCOpenDAS_2 = entrance.fromUrl;
+						Date sendedDate_tXMLRPCOpenDAS_2 = entrance.sendedDate;
+						String station_tXMLRPCOpenDAS_2 = entrance.station;
+						java.util.Map checkingMap = (java.util.Map) entrance.attachement;
 
 						Object[] tab = checkingMap.keySet().toArray();
 						redstone.xmlrpc.XmlRpcStruct vals = new redstone.xmlrpc.XmlRpcStruct();
@@ -9009,8 +8676,8 @@ public class SET_DEV implements TalendJob {
 								title_tXMLRPCOpenDAS_2,
 								sendUrl_tXMLRPCOpenDAS_2,
 								fromUrl_tXMLRPCOpenDAS_2,
-								sendedDate_tXMLRPCOpenDAS_2, entry.attachement,
-								station_tXMLRPCOpenDAS_2,
+								sendedDate_tXMLRPCOpenDAS_2,
+								entrance.attachement, station_tXMLRPCOpenDAS_2,
 								title_out_tXMLRPCOpenDAS_2,
 								sendUrl_out_tXMLRPCOpenDAS_2,
 								fromUrl_out_tXMLRPCOpenDAS_2,
@@ -9198,7 +8865,342 @@ public class SET_DEV implements TalendJob {
 
 						} // End of branch "row8"
 
-					} // End of branch "entry"
+					} // End of branch "entrance"
+
+					// Start of branch "signing_workcenter_change"
+					if (signing_workcenter_change != null) {
+
+						/**
+						 * [tXMLRPCOpenDAS_8 main ] start
+						 */
+
+						currentComponent = "tXMLRPCOpenDAS_8";
+
+						// signing_workcenter_change
+						// signing_workcenter_change
+
+						if (execStat) {
+							runStat.updateStatOnConnection(
+									"signing_workcenter_change" + iterateId, 1,
+									1);
+						}
+
+						// DEBUG DISPLAY
+						java.io.PrintStream consoleOut_tXMLRPCOpenDAS_8 = null;
+						if (globalMap.get("tLogRow_CONSOLE") != null) {
+							consoleOut_tXMLRPCOpenDAS_8 = (java.io.PrintStream) globalMap
+									.get("tLogRow_CONSOLE");
+						} else {
+							consoleOut_tXMLRPCOpenDAS_8 = new java.io.PrintStream(
+									new java.io.BufferedOutputStream(System.out));
+							globalMap.put("tLogRow_CONSOLE",
+									consoleOut_tXMLRPCOpenDAS_8);
+						}
+
+						consoleOut_tXMLRPCOpenDAS_8.println("tXMLRPCOpenDAS_8"
+								+ " received parameters : "
+								+ signing_workcenter_change.toString());
+						consoleOut_tXMLRPCOpenDAS_8.flush();
+
+						// Retrieving input parameters (These parameters come
+						// from tMomObjectInput)
+						String title_tXMLRPCOpenDAS_8 = signing_workcenter_change.title;
+						String sendUrl_tXMLRPCOpenDAS_8 = signing_workcenter_change.sendUrl;
+						String fromUrl_tXMLRPCOpenDAS_8 = signing_workcenter_change.fromUrl;
+						Date sendedDate_tXMLRPCOpenDAS_8 = signing_workcenter_change.sendedDate;
+						String station_tXMLRPCOpenDAS_8 = signing_workcenter_change.station;
+						java.util.Map checkingMap = (java.util.Map) signing_workcenter_change.attachement;
+
+						Object[] tab = checkingMap.keySet().toArray();
+						redstone.xmlrpc.XmlRpcStruct vals = new redstone.xmlrpc.XmlRpcStruct();
+						for (int i = 0; i < tab.length; i++) {
+							if ("perso".equals(tab[i])) {
+								vals.put("employee", checkingMap.get(tab[i]));
+							}
+							if ("job".equals(tab[i])) {
+								vals.put("workcenter", checkingMap.get(tab[i]));
+							}
+						}
+						// Initialization output parameters
+						String title_out_tXMLRPCOpenDAS_8 = null;
+						String sendUrl_out_tXMLRPCOpenDAS_8 = null;
+						String fromUrl_out_tXMLRPCOpenDAS_8 = null;
+						Date sendedDate_out_tXMLRPCOpenDAS_8 = null;
+						String station_out_tXMLRPCOpenDAS_8 = null;
+						Object attachement_out_tXMLRPCOpenDAS_8 = null;
+						org.opendas.modele.DASError result = new org.opendas.modele.DASError();
+
+						try {
+							consoleOut_tXMLRPCOpenDAS_8
+									.println("tXMLRPCOpenDAS_8"
+											+ " Connexion OpenERP_V5 ");
+							consoleOut_tXMLRPCOpenDAS_8.flush();
+							OpenDAS_xmlrpc.OpenERP_V5_connect connexiontXMLRPCOpenDAS_8 = new OpenDAS_xmlrpc.OpenERP_V5_connect(
+									context.dbnameOdoo, context.usernameOdoo,
+									context.pwdOdoo, context.hostOdoo,
+									context.portOdoo);
+
+							java.util.List<Object[]> context_search_tmp = new java.util.ArrayList<Object[]>();
+
+							Object[] context_search = new Object[context_search_tmp
+									.size()];
+							for (int i = 0; i < context_search_tmp.size(); ++i) {
+								context_search[i] = context_search_tmp.get(i);
+							}
+
+							consoleOut_tXMLRPCOpenDAS_8
+									.println("tXMLRPCOpenDAS_8" + " XMLRpc : "
+											+ "hr.employee" + " "
+											+ "talend_change_workcenter_barre");
+							consoleOut_tXMLRPCOpenDAS_8.flush();
+							redstone.xmlrpc.XmlRpcStruct responsetXMLRPCOpenDAS_8 = (redstone.xmlrpc.XmlRpcStruct) connexiontXMLRPCOpenDAS_8
+									.exec("hr.employee",
+											"talend_change_workcenter_barre",
+											vals, context_search);
+							if (responsetXMLRPCOpenDAS_8 != null) {
+								System.out
+										.println("responsetXMLRPCOpenDAS_8 : "
+												+ responsetXMLRPCOpenDAS_8);
+								result.setCode(responsetXMLRPCOpenDAS_8
+										.getInteger("code"));
+								result.setString(responsetXMLRPCOpenDAS_8
+										.getString("string"));
+								java.util.List<org.opendas.modele.DASGeneric> listgen = new java.util.ArrayList<org.opendas.modele.DASGeneric>();
+
+								redstone.xmlrpc.XmlRpcArray res_array = null;
+								res_array = (redstone.xmlrpc.XmlRpcArray) responsetXMLRPCOpenDAS_8
+										.get("object");
+
+								Object retour = null;
+								for (int i = 0; i < res_array.size(); ++i) {
+									org.opendas.modele.DASGeneric tmp_generic = new org.opendas.modele.DASGeneric();
+									redstone.xmlrpc.XmlRpcStruct tmp_dict = null;
+									tmp_dict = (redstone.xmlrpc.XmlRpcStruct) res_array
+											.get(i);
+									tmp_generic
+											.setInfos(connexiontXMLRPCOpenDAS_8
+													.convert(tmp_dict));
+									listgen.add(tmp_generic);
+								}
+								result.setObject(listgen);
+							} else {
+								System.out.println("ERROR : On ext response");
+
+								result.setCode(1);
+
+								result.setString("ERROR : On ext response");
+
+							}
+
+						} catch (redstone.xmlrpc.XmlRpcException e) {
+							System.out
+									.println("ERROR XMLRPC : " + e.toString());
+							result.setCode(2);
+							result.setString("ERROR XMLRPC : " + e.toString());
+						} catch (Exception e) {
+							System.out.println("ERROR : " + e.toString());
+							result.setCode(3);
+							result.setString("ERROR : " + e.toString());
+						}
+						System.out.println("result :" + result);
+
+						// Transmission of parameters to tMomObjectOutput
+						// component ( none output here)
+						Object[] results_tXMLRPCOpenDAS_8 = {
+								title_tXMLRPCOpenDAS_8,
+								sendUrl_tXMLRPCOpenDAS_8,
+								fromUrl_tXMLRPCOpenDAS_8,
+								sendedDate_tXMLRPCOpenDAS_8,
+								signing_workcenter_change.attachement,
+								station_tXMLRPCOpenDAS_8,
+								title_out_tXMLRPCOpenDAS_8,
+								sendUrl_out_tXMLRPCOpenDAS_8,
+								fromUrl_out_tXMLRPCOpenDAS_8,
+								sendedDate_out_tXMLRPCOpenDAS_8, result,
+								station_out_tXMLRPCOpenDAS_8 };
+
+						for (int i_tXMLRPCOpenDAS_8 = 0; i_tXMLRPCOpenDAS_8 < results_tXMLRPCOpenDAS_8.length; i_tXMLRPCOpenDAS_8++) {
+
+							// for output
+
+							// We set the results in the output connections
+							if (0 < results_tXMLRPCOpenDAS_8.length
+									&& results_tXMLRPCOpenDAS_8[0] != null) {
+								row10.title = (String) results_tXMLRPCOpenDAS_8[0];
+
+							} else {
+								row10.title = null;
+							}
+
+							// We set the results in the output connections
+							if (1 < results_tXMLRPCOpenDAS_8.length
+									&& results_tXMLRPCOpenDAS_8[1] != null) {
+								row10.sendUrl = (String) results_tXMLRPCOpenDAS_8[1];
+
+							} else {
+								row10.sendUrl = null;
+							}
+
+							// We set the results in the output connections
+							if (2 < results_tXMLRPCOpenDAS_8.length
+									&& results_tXMLRPCOpenDAS_8[2] != null) {
+								row10.fromUrl = (String) results_tXMLRPCOpenDAS_8[2];
+
+							} else {
+								row10.fromUrl = null;
+							}
+
+							// We set the results in the output connections
+							if (3 < results_tXMLRPCOpenDAS_8.length
+									&& results_tXMLRPCOpenDAS_8[3] != null) {
+								row10.sendedDate = (Date) results_tXMLRPCOpenDAS_8[3];
+
+							} else {
+								row10.sendedDate = null;
+							}
+
+							// We set the results in the output connections
+							if (4 < results_tXMLRPCOpenDAS_8.length
+									&& results_tXMLRPCOpenDAS_8[4] != null) {
+								row10.attachement = (Object) results_tXMLRPCOpenDAS_8[4];
+
+							} else {
+								row10.attachement = null;
+							}
+
+							// We set the results in the output connections
+							if (5 < results_tXMLRPCOpenDAS_8.length
+									&& results_tXMLRPCOpenDAS_8[5] != null) {
+								row10.station = (String) results_tXMLRPCOpenDAS_8[5];
+
+							} else {
+								row10.station = null;
+							}
+
+							// We set the results in the output connections
+							if (6 < results_tXMLRPCOpenDAS_8.length
+									&& results_tXMLRPCOpenDAS_8[6] != null) {
+								row10.title_out = (String) results_tXMLRPCOpenDAS_8[6];
+
+							} else {
+								row10.title_out = null;
+							}
+
+							// We set the results in the output connections
+							if (7 < results_tXMLRPCOpenDAS_8.length
+									&& results_tXMLRPCOpenDAS_8[7] != null) {
+								row10.send_out = (String) results_tXMLRPCOpenDAS_8[7];
+
+							} else {
+								row10.send_out = null;
+							}
+
+							// We set the results in the output connections
+							if (8 < results_tXMLRPCOpenDAS_8.length
+									&& results_tXMLRPCOpenDAS_8[8] != null) {
+								row10.from_out = (String) results_tXMLRPCOpenDAS_8[8];
+
+							} else {
+								row10.from_out = null;
+							}
+
+							// We set the results in the output connections
+							if (9 < results_tXMLRPCOpenDAS_8.length
+									&& results_tXMLRPCOpenDAS_8[9] != null) {
+								row10.sendedDate_out = (Date) results_tXMLRPCOpenDAS_8[9];
+
+							} else {
+								row10.sendedDate_out = null;
+							}
+
+							// We set the results in the output connections
+							if (10 < results_tXMLRPCOpenDAS_8.length
+									&& results_tXMLRPCOpenDAS_8[10] != null) {
+								row10.attachement_out = (Object) results_tXMLRPCOpenDAS_8[10];
+
+							} else {
+								row10.attachement_out = null;
+							}
+
+							// We set the results in the output connections
+							if (11 < results_tXMLRPCOpenDAS_8.length
+									&& results_tXMLRPCOpenDAS_8[11] != null) {
+								row10.station_out = (String) results_tXMLRPCOpenDAS_8[11];
+
+							} else {
+								row10.station_out = null;
+							}
+
+						}
+
+						tos_count_tXMLRPCOpenDAS_8++;
+
+						/**
+						 * [tXMLRPCOpenDAS_8 main ] stop
+						 */
+						// Start of branch "row10"
+						if (row10 != null) {
+
+							/**
+							 * [tMomObjectOutput_8 main ] start
+							 */
+
+							currentComponent = "tMomObjectOutput_8";
+
+							// row10
+							// row10
+
+							if (execStat) {
+								runStat.updateStatOnConnection("row10"
+										+ iterateId, 1, 1);
+							}
+
+							System.out.println("attachement :"
+									+ row10.attachement);
+
+							// on reconstitue le message d'origine
+							org.opendas.modele.ServerRequest previousRequest = new org.opendas.modele.ServerRequest();
+							previousRequest.setTitle(row10.title);
+							previousRequest.setSendUrl(row10.sendUrl);
+							previousRequest.setFromUrl(row10.fromUrl);
+							previousRequest.setSendedDate(row10.sendedDate);
+							previousRequest
+									.setAttachement((java.io.Serializable) row10.attachement);
+
+							// on crée le message de réponse
+							org.opendas.modele.ServerRequest response = new org.opendas.modele.ServerRequest(
+									previousRequest);
+							response.setTitle(row10.title_out);
+							response.setSendedDate(row10.sendedDate_out);
+							response.setAttachement((java.io.Serializable) row10.attachement_out);
+
+							javax.jms.ObjectMessage message_tMomObjectOutput_8 = session_tMomObjectOutput_8
+									.createObjectMessage();// On crée
+															// l'ObjectMessage
+							message_tMomObjectOutput_8.setObject(response);
+							message_tMomObjectOutput_8.setStringProperty(
+									"Sujet", row10.station);
+
+							System.out.println("----------------------------");
+							System.out.println(response);
+							System.out.println("----------------------------");
+
+							des_tMomObjectOutput_8 = session_tMomObjectOutput_8
+									.createQueue(response.getSendUrl());
+							producer_tMomObjectOutput_8 = session_tMomObjectOutput_8
+									.createProducer(des_tMomObjectOutput_8);
+							producer_tMomObjectOutput_8
+									.send(message_tMomObjectOutput_8);
+
+							tos_count_tMomObjectOutput_8++;
+
+							/**
+							 * [tMomObjectOutput_8 main ] stop
+							 */
+
+						} // End of branch "row10"
+
+					} // End of branch "signing_workcenter_change"
 
 					/**
 					 * [tMomObjectInput_1 end ] start
@@ -9292,50 +9294,48 @@ public class SET_DEV implements TalendJob {
 				 */
 
 				/**
-				 * [tXMLRPCOpenDAS_8 end ] start
+				 * [tXMLRPCOpenDAS_7 end ] start
 				 */
 
-				currentComponent = "tXMLRPCOpenDAS_8";
+				currentComponent = "tXMLRPCOpenDAS_7";
 
 				if (execStat) {
 					if (resourceMap.get("inIterateVComp") == null
 							|| !((Boolean) resourceMap.get("inIterateVComp"))) {
-						runStat.updateStatOnConnection("pointing_change_job"
-								+ iterateId, 2, 0);
+						runStat.updateStatOnConnection("out" + iterateId, 2, 0);
 					}
 				}
 
-				ok_Hash.put("tXMLRPCOpenDAS_8", true);
-				end_Hash.put("tXMLRPCOpenDAS_8", System.currentTimeMillis());
+				ok_Hash.put("tXMLRPCOpenDAS_7", true);
+				end_Hash.put("tXMLRPCOpenDAS_7", System.currentTimeMillis());
 
 				/**
-				 * [tXMLRPCOpenDAS_8 end ] stop
+				 * [tXMLRPCOpenDAS_7 end ] stop
 				 */
 
 				/**
-				 * [tMomObjectOutput_8 end ] start
+				 * [tMomObjectOutput_7 end ] start
 				 */
 
-				currentComponent = "tMomObjectOutput_8";
+				currentComponent = "tMomObjectOutput_7";
 
 				System.out.println("Closing connection");
-				producer_tMomObjectOutput_8.close();
-				session_tMomObjectOutput_8.close();
-				connection_tMomObjectOutput_8.close();
+				producer_tMomObjectOutput_7.close();
+				session_tMomObjectOutput_7.close();
+				connection_tMomObjectOutput_7.close();
 
 				if (execStat) {
 					if (resourceMap.get("inIterateVComp") == null
 							|| !((Boolean) resourceMap.get("inIterateVComp"))) {
-						runStat.updateStatOnConnection("row10" + iterateId, 2,
-								0);
+						runStat.updateStatOnConnection("row9" + iterateId, 2, 0);
 					}
 				}
 
-				ok_Hash.put("tMomObjectOutput_8", true);
-				end_Hash.put("tMomObjectOutput_8", System.currentTimeMillis());
+				ok_Hash.put("tMomObjectOutput_7", true);
+				end_Hash.put("tMomObjectOutput_7", System.currentTimeMillis());
 
 				/**
-				 * [tMomObjectOutput_8 end ] stop
+				 * [tMomObjectOutput_7 end ] stop
 				 */
 
 				/**
@@ -9347,7 +9347,7 @@ public class SET_DEV implements TalendJob {
 				if (execStat) {
 					if (resourceMap.get("inIterateVComp") == null
 							|| !((Boolean) resourceMap.get("inIterateVComp"))) {
-						runStat.updateStatOnConnection("pointing_change_folder"
+						runStat.updateStatOnConnection("signing_folder_change"
 								+ iterateId, 2, 0);
 					}
 				}
@@ -9394,7 +9394,7 @@ public class SET_DEV implements TalendJob {
 				if (execStat) {
 					if (resourceMap.get("inIterateVComp") == null
 							|| !((Boolean) resourceMap.get("inIterateVComp"))) {
-						runStat.updateStatOnConnection("pointing" + iterateId,
+						runStat.updateStatOnConnection("signing" + iterateId,
 								2, 0);
 					}
 				}
@@ -9432,51 +9432,6 @@ public class SET_DEV implements TalendJob {
 				 */
 
 				/**
-				 * [tXMLRPCOpenDAS_7 end ] start
-				 */
-
-				currentComponent = "tXMLRPCOpenDAS_7";
-
-				if (execStat) {
-					if (resourceMap.get("inIterateVComp") == null
-							|| !((Boolean) resourceMap.get("inIterateVComp"))) {
-						runStat.updateStatOnConnection("out" + iterateId, 2, 0);
-					}
-				}
-
-				ok_Hash.put("tXMLRPCOpenDAS_7", true);
-				end_Hash.put("tXMLRPCOpenDAS_7", System.currentTimeMillis());
-
-				/**
-				 * [tXMLRPCOpenDAS_7 end ] stop
-				 */
-
-				/**
-				 * [tMomObjectOutput_7 end ] start
-				 */
-
-				currentComponent = "tMomObjectOutput_7";
-
-				System.out.println("Closing connection");
-				producer_tMomObjectOutput_7.close();
-				session_tMomObjectOutput_7.close();
-				connection_tMomObjectOutput_7.close();
-
-				if (execStat) {
-					if (resourceMap.get("inIterateVComp") == null
-							|| !((Boolean) resourceMap.get("inIterateVComp"))) {
-						runStat.updateStatOnConnection("row9" + iterateId, 2, 0);
-					}
-				}
-
-				ok_Hash.put("tMomObjectOutput_7", true);
-				end_Hash.put("tMomObjectOutput_7", System.currentTimeMillis());
-
-				/**
-				 * [tMomObjectOutput_7 end ] stop
-				 */
-
-				/**
 				 * [tXMLRPCOpenDAS_5 end ] start
 				 */
 
@@ -9485,7 +9440,7 @@ public class SET_DEV implements TalendJob {
 				if (execStat) {
 					if (resourceMap.get("inIterateVComp") == null
 							|| !((Boolean) resourceMap.get("inIterateVComp"))) {
-						runStat.updateStatOnConnection("tracking_odoo"
+						runStat.updateStatOnConnection("odoo_tracking"
 								+ iterateId, 2, 0);
 					}
 				}
@@ -9531,8 +9486,8 @@ public class SET_DEV implements TalendJob {
 				if (execStat) {
 					if (resourceMap.get("inIterateVComp") == null
 							|| !((Boolean) resourceMap.get("inIterateVComp"))) {
-						runStat.updateStatOnConnection("entry" + iterateId, 2,
-								0);
+						runStat.updateStatOnConnection("entrance" + iterateId,
+								2, 0);
 					}
 				}
 
@@ -9566,6 +9521,53 @@ public class SET_DEV implements TalendJob {
 
 				/**
 				 * [tMomObjectOutput_6 end ] stop
+				 */
+
+				/**
+				 * [tXMLRPCOpenDAS_8 end ] start
+				 */
+
+				currentComponent = "tXMLRPCOpenDAS_8";
+
+				if (execStat) {
+					if (resourceMap.get("inIterateVComp") == null
+							|| !((Boolean) resourceMap.get("inIterateVComp"))) {
+						runStat.updateStatOnConnection(
+								"signing_workcenter_change" + iterateId, 2, 0);
+					}
+				}
+
+				ok_Hash.put("tXMLRPCOpenDAS_8", true);
+				end_Hash.put("tXMLRPCOpenDAS_8", System.currentTimeMillis());
+
+				/**
+				 * [tXMLRPCOpenDAS_8 end ] stop
+				 */
+
+				/**
+				 * [tMomObjectOutput_8 end ] start
+				 */
+
+				currentComponent = "tMomObjectOutput_8";
+
+				System.out.println("Closing connection");
+				producer_tMomObjectOutput_8.close();
+				session_tMomObjectOutput_8.close();
+				connection_tMomObjectOutput_8.close();
+
+				if (execStat) {
+					if (resourceMap.get("inIterateVComp") == null
+							|| !((Boolean) resourceMap.get("inIterateVComp"))) {
+						runStat.updateStatOnConnection("row10" + iterateId, 2,
+								0);
+					}
+				}
+
+				ok_Hash.put("tMomObjectOutput_8", true);
+				end_Hash.put("tMomObjectOutput_8", System.currentTimeMillis());
+
+				/**
+				 * [tMomObjectOutput_8 end ] stop
 				 */
 
 			}// end the resume
@@ -9626,23 +9628,23 @@ public class SET_DEV implements TalendJob {
 				 */
 
 				/**
-				 * [tXMLRPCOpenDAS_8 finally ] start
+				 * [tXMLRPCOpenDAS_7 finally ] start
 				 */
 
-				currentComponent = "tXMLRPCOpenDAS_8";
+				currentComponent = "tXMLRPCOpenDAS_7";
 
 				/**
-				 * [tXMLRPCOpenDAS_8 finally ] stop
+				 * [tXMLRPCOpenDAS_7 finally ] stop
 				 */
 
 				/**
-				 * [tMomObjectOutput_8 finally ] start
+				 * [tMomObjectOutput_7 finally ] start
 				 */
 
-				currentComponent = "tMomObjectOutput_8";
+				currentComponent = "tMomObjectOutput_7";
 
 				/**
-				 * [tMomObjectOutput_8 finally ] stop
+				 * [tMomObjectOutput_7 finally ] stop
 				 */
 
 				/**
@@ -9686,26 +9688,6 @@ public class SET_DEV implements TalendJob {
 				 */
 
 				/**
-				 * [tXMLRPCOpenDAS_7 finally ] start
-				 */
-
-				currentComponent = "tXMLRPCOpenDAS_7";
-
-				/**
-				 * [tXMLRPCOpenDAS_7 finally ] stop
-				 */
-
-				/**
-				 * [tMomObjectOutput_7 finally ] start
-				 */
-
-				currentComponent = "tMomObjectOutput_7";
-
-				/**
-				 * [tMomObjectOutput_7 finally ] stop
-				 */
-
-				/**
 				 * [tXMLRPCOpenDAS_5 finally ] start
 				 */
 
@@ -9743,6 +9725,26 @@ public class SET_DEV implements TalendJob {
 
 				/**
 				 * [tMomObjectOutput_6 finally ] stop
+				 */
+
+				/**
+				 * [tXMLRPCOpenDAS_8 finally ] start
+				 */
+
+				currentComponent = "tXMLRPCOpenDAS_8";
+
+				/**
+				 * [tXMLRPCOpenDAS_8 finally ] stop
+				 */
+
+				/**
+				 * [tMomObjectOutput_8 finally ] start
+				 */
+
+				currentComponent = "tMomObjectOutput_8";
+
+				/**
+				 * [tMomObjectOutput_8 finally ] stop
 				 */
 
 			} catch (java.lang.Exception e) {
@@ -10308,6 +10310,6 @@ public class SET_DEV implements TalendJob {
 	ResumeUtil resumeUtil = null;
 }
 /************************************************************************************************
- * 273023 characters generated by Talend Open Studio for Data Integration on the
- * 11 décembre 2014 11:51:44 CET
+ * 273321 characters generated by Talend Open Studio for Data Integration on the
+ * 17 décembre 2014 09:33:54 CET
  ************************************************************************************************/
