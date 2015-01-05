@@ -603,7 +603,7 @@
     <elementParameter field="TEXT" name="AUTH_PASSWORD" value="context.pwdOdoo"/>
     <elementParameter field="CLOSED_LIST" name="TYPE" value="odoo"/>
     <elementParameter field="TEXT" name="MODEL" value="&quot;hr.employee&quot;"/>
-    <elementParameter field="TEXT" name="METHOD" value="&quot;talend_get_employee_barre&quot;"/>
+    <elementParameter field="TEXT" name="METHOD" value="&quot;talend_get_employee_bar&quot;"/>
     <elementParameter field="TABLE" name="MAPPING"/>
     <elementParameter field="TABLE" name="FILTER"/>
     <elementParameter field="TABLE" name="FILTER_CONST">

@@ -363,7 +363,7 @@
     <elementParameter field="TEXT" name="AUTH_PASSWORD" value="context.pwdOdoo"/>
     <elementParameter field="CLOSED_LIST" name="TYPE" value="odoo"/>
     <elementParameter field="TEXT" name="MODEL" value="&quot;hr.employee&quot;"/>
-    <elementParameter field="TEXT" name="METHOD" value="&quot;talend_in_out_barre&quot;"/>
+    <elementParameter field="TEXT" name="METHOD" value="&quot;talend_in_out_bar&quot;"/>
     <elementParameter field="TABLE" name="MAPPING">
       <elementValue elementRef="NAME" value="&quot;employee&quot;"/>
       <elementValue elementRef="FIELD" value="&quot;employee&quot;"/>
