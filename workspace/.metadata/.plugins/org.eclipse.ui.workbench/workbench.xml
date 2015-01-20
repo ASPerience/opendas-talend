@@ -76,15 +76,15 @@
 <hide_toolbar_item_id id="org.eclipse.jdt.ui.actions.OpenProjectWizard"/>
 <hide_toolbar_item_id id="opengroovyprojectwizard"/>
 <hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
-<view id="org.talend.repository.cnf.view"/>
-<view id="org.eclipse.ui.views.ContentOutline"/>
-<view id="org.talend.designer.core.codeView"/>
-<view id="org.eclipse.gef.ui.palette_view"/>
 <view id="org.talend.designer.core.ui.views.jobsettings.JobSettingsView"/>
 <view id="org.talend.designer.core.ui.views.ContextsView"/>
 <view id="org.talend.designer.core.ui.views.properties.ComponentSettingsView"/>
 <view id="org.talend.designer.core.ui.views.ProblemsView"/>
 <view id="org.talend.designer.runprocess.ui.views.processview"/>
+<view id="org.talend.repository.cnf.view"/>
+<view id="org.eclipse.ui.views.ContentOutline"/>
+<view id="org.talend.designer.core.codeView"/>
+<view id="org.eclipse.gef.ui.palette_view"/>
 <fastViewBars/>
 <layout>
 <mainWindow>
@@ -113,7 +113,7 @@
 </presentation>
 </folder>
 </info>
-<info folder="true" part="bottomLayout" ratio="0.52934664" ratioLeft="478" ratioRight="425" relationship="4" relative="org.eclipse.ui.editorss">
+<info folder="true" part="bottomLayout" ratio="0.6353861" ratioLeft="650" ratioRight="373" relationship="4" relative="org.eclipse.ui.editorss">
 <folder activePageID="org.talend.designer.runprocess.ui.views.processview" appearance="2" expanded="2">
 <page content="org.talend.designer.core.ui.views.jobsettings.JobSettingsView" label="Job"/>
 <page content="org.talend.designer.core.ui.views.ContextsView" label="Contexts"/>
@@ -163,13 +163,7 @@
 </window>
 <mruList>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.talend.designer.core.ui.MultiPageTalendEditor">
-<persistable path="/OPENDAS/temp/tmpPROCESS_IIXJoC6zEeSUstqRnSKZpA"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.talend.designer.core.ui.MultiPageTalendEditor">
 <persistable path="/OPENDAS/temp/tmpPROCESS_Eqsv8C6zEeSUstqRnSKZpA"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.talend.designer.core.ui.MultiPageTalendEditor">
-<persistable path="/OPENDAS/temp/tmpPROCESS_8dtn0Gd4EeGs7-HjDy1x2A"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.talend.designer.core.ui.MultiPageTalendEditor">
 <persistable path="/OPENDAS/temp/tmpPROCESS_3I77gGd4EeGs7-HjDy1x2A"/>

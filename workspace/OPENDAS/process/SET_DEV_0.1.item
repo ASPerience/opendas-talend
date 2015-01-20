@@ -292,20 +292,6 @@
       <column comment="" key="false" name="attachement_out" nullable="true" pattern="" sourceType="" type="id_Object" usefulColumn="true"/>
       <column comment="" key="false" name="station_out" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
-    <metadata connector="FLOW" name="odoo_deleting">
-      <column comment="" key="false" name="title" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" name="sendUrl" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" name="fromUrl" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" name="sendedDate" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" sourceType="" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" name="attachement" nullable="true" pattern="" sourceType="" type="id_Object" usefulColumn="true"/>
-      <column comment="" key="false" name="station" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" name="title_out" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" name="send_out" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" name="from_out" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" name="sendedDate_out" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" sourceType="" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" name="attachement_out" nullable="true" pattern="" sourceType="" type="id_Object" usefulColumn="true"/>
-      <column comment="" key="false" name="station_out" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
-    </metadata>
     <metadata connector="FLOW" name="entrance">
       <column comment="" key="false" name="title" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" name="sendUrl" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
@@ -363,6 +349,20 @@
       <column comment="" key="false" name="station_out" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
     <metadata connector="FLOW" name="workcenter_exit">
+      <column comment="" key="false" name="title" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="sendUrl" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="fromUrl" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="sendedDate" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" name="attachement" nullable="true" pattern="" sourceType="" type="id_Object" usefulColumn="true"/>
+      <column comment="" key="false" name="station" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="title_out" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="send_out" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="from_out" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="sendedDate_out" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" name="attachement_out" nullable="true" pattern="" sourceType="" type="id_Object" usefulColumn="true"/>
+      <column comment="" key="false" name="station_out" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="FLOW" name="odoo_deletion">
       <column comment="" key="false" name="title" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" name="sendUrl" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" name="fromUrl" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
@@ -477,20 +477,6 @@
         <mapperTableEntries name="attachement_out" expression="row2.attachement_out " type="id_Object" nullable="true"/>
         <mapperTableEntries name="station_out" expression="row2.station_out " type="id_String" nullable="true"/>
       </outputTables>
-      <outputTables sizeState="INTERMEDIATE" name="odoo_deleting" minimized="true" expressionFilter="&quot;odoo_deleting&quot;.equals(row2.title)">
-        <mapperTableEntries name="title" expression="row2.title " type="id_String" nullable="true"/>
-        <mapperTableEntries name="sendUrl" expression="row2.sendUrl " type="id_String" nullable="true"/>
-        <mapperTableEntries name="fromUrl" expression="row2.fromUrl " type="id_String" nullable="true"/>
-        <mapperTableEntries name="sendedDate" expression="row2.sendedDate " type="id_Date" nullable="true"/>
-        <mapperTableEntries name="attachement" expression="row2.attachement " type="id_Object" nullable="true"/>
-        <mapperTableEntries name="station" expression="row2.station " type="id_String" nullable="true"/>
-        <mapperTableEntries name="title_out" expression="row2.title_out " type="id_String" nullable="true"/>
-        <mapperTableEntries name="send_out" expression="row2.send_out " type="id_String" nullable="true"/>
-        <mapperTableEntries name="from_out" expression="row2.from_out " type="id_String" nullable="true"/>
-        <mapperTableEntries name="sendedDate_out" expression="row2.sendedDate_out " type="id_Date" nullable="true"/>
-        <mapperTableEntries name="attachement_out" expression="row2.attachement_out " type="id_Object" nullable="true"/>
-        <mapperTableEntries name="station_out" expression="row2.station_out " type="id_String" nullable="true"/>
-      </outputTables>
       <outputTables sizeState="INTERMEDIATE" name="entrance" minimized="true" expressionFilter="&quot;entrance&quot;.equals(row2.title)" activateExpressionFilter="true">
         <mapperTableEntries name="title" expression="row2.title " type="id_String" nullable="true"/>
         <mapperTableEntries name="sendUrl" expression="row2.sendUrl " type="id_String" nullable="true"/>
@@ -548,6 +534,20 @@
         <mapperTableEntries name="station_out" expression="row2.station_out " type="id_String" nullable="true"/>
       </outputTables>
       <outputTables sizeState="INTERMEDIATE" name="workcenter_exit" minimized="true" expressionFilter="&quot;workcenter_exit&quot;.equals(row2.title)" activateExpressionFilter="true" activateCondensedTool="true">
+        <mapperTableEntries name="title" expression="row2.title " type="id_String" nullable="true"/>
+        <mapperTableEntries name="sendUrl" expression="row2.sendUrl " type="id_String" nullable="true"/>
+        <mapperTableEntries name="fromUrl" expression="row2.fromUrl " type="id_String" nullable="true"/>
+        <mapperTableEntries name="sendedDate" expression="row2.sendedDate " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="attachement" expression="row2.attachement " type="id_Object" nullable="true"/>
+        <mapperTableEntries name="station" expression="row2.station " type="id_String" nullable="true"/>
+        <mapperTableEntries name="title_out" expression="row2.title_out " type="id_String" nullable="true"/>
+        <mapperTableEntries name="send_out" expression="row2.send_out " type="id_String" nullable="true"/>
+        <mapperTableEntries name="from_out" expression="row2.from_out " type="id_String" nullable="true"/>
+        <mapperTableEntries name="sendedDate_out" expression="row2.sendedDate_out " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="attachement_out" expression="row2.attachement_out " type="id_Object" nullable="true"/>
+        <mapperTableEntries name="station_out" expression="row2.station_out " type="id_String" nullable="true"/>
+      </outputTables>
+      <outputTables sizeState="INTERMEDIATE" name="odoo_deletion" minimized="true" expressionFilter="&quot;odoo_deletion&quot;.equals(row2.title)" activateExpressionFilter="true">
         <mapperTableEntries name="title" expression="row2.title " type="id_String" nullable="true"/>
         <mapperTableEntries name="sendUrl" expression="row2.sendUrl " type="id_String" nullable="true"/>
         <mapperTableEntries name="fromUrl" expression="row2.fromUrl " type="id_String" nullable="true"/>
@@ -1039,6 +1039,8 @@
       <elementValue elementRef="FIELD" value="&quot;workcenter&quot;"/>
       <elementValue elementRef="NAME" value="&quot;mo&quot;"/>
       <elementValue elementRef="FIELD" value="&quot;production&quot;"/>
+      <elementValue elementRef="NAME" value="&quot;adjustment&quot;"/>
+      <elementValue elementRef="FIELD" value="&quot;adjustment&quot;"/>
     </elementParameter>
     <elementParameter field="TABLE" name="FILTER"/>
     <elementParameter field="TABLE" name="FILTER_CONST"/>
@@ -1313,6 +1315,75 @@
       <column comment="" key="false" name="station_out" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
+  <node componentName="tXMLRPCOpenDAS" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1280" posY="576">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tXMLRPCOpenDAS_6"/>
+    <elementParameter field="TEXT" name="SERVER-HOST" value="context.hostOdoo"/>
+    <elementParameter field="TEXT" name="SERVER-PORT" value="context.portOdoo"/>
+    <elementParameter field="TEXT" name="AUTH_DBNAME" value="context.dbnameOdoo"/>
+    <elementParameter field="TEXT" name="AUTH_USERNAME" value="context.usernameOdoo"/>
+    <elementParameter field="TEXT" name="AUTH_UID" value="context.uid"/>
+    <elementParameter field="TEXT" name="AUTH_PASSWORD" value="context.pwdOdoo"/>
+    <elementParameter field="CLOSED_LIST" name="TYPE" value="odoo"/>
+    <elementParameter field="TEXT" name="MODEL" value="&quot;stock.move.packaging&quot;"/>
+    <elementParameter field="TEXT" name="METHOD" value="&quot;talend_tracking_asperpgi&quot;"/>
+    <elementParameter field="TABLE" name="MAPPING">
+      <elementValue elementRef="NAME" value="&quot;labels&quot;"/>
+      <elementValue elementRef="FIELD" value="&quot;package&quot;"/>
+    </elementParameter>
+    <elementParameter field="TABLE" name="FILTER"/>
+    <elementParameter field="TABLE" name="FILTER_CONST"/>
+    <elementParameter field="TABLE" name="OUT_MAPPING"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+    <elementParameter field="CHECK" name="VALIDATION_RULES" value="false"/>
+    <metadata connector="FLOW" name="tXMLRPCOpenDAS_6">
+      <column comment="" key="false" name="title" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="sendUrl" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="fromUrl" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="sendedDate" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" name="attachement" nullable="true" pattern="" sourceType="" type="id_Object" usefulColumn="true"/>
+      <column comment="" key="false" name="station" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="title_out" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="send_out" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="from_out" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="sendedDate_out" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" name="attachement_out" nullable="true" pattern="" sourceType="" type="id_Object" usefulColumn="true"/>
+      <column comment="" key="false" name="station_out" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMomObjectOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1472" posY="576">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMomObjectOutput_5"/>
+    <elementParameter field="CHECK" name="END_OF_FLOW" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="SERVER" value="ActiveMQ"/>
+    <elementParameter field="TEXT" name="SERVERADDRESS" value="context.addressActiveMQ"/>
+    <elementParameter field="TEXT" name="SERVERPORT" value="context.portActiveMQ"/>
+    <elementParameter field="TEXT" name="MQ_DERVIERS" value="activemq-all-5.1.0.jar"/>
+    <elementParameter field="TEXT" name="TO" value="context.senderActiveMQ"/>
+    <elementParameter field="CLOSED_LIST" name="MSGTYPE" value="Queue"/>
+    <elementParameter field="TEXT" name="CHANNEL" value="&quot;DC.SVRCONN&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="DELIVERY_MODE" value="N_PERSISTENT"/>
+    <elementParameter field="CHECK" name="IS_TRANSACTED" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="ACKNOWLEDGMENT_MODE" value="AUTO_ACKNOWLEDGE"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+    <elementParameter field="CHECK" name="VALIDATION_RULES" value="false"/>
+    <metadata connector="FLOW" name="tMomObjectOutput_5">
+      <column comment="" key="false" name="title" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="sendUrl" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="fromUrl" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="sendedDate" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" name="attachement" nullable="true" pattern="" sourceType="" type="id_Object" usefulColumn="true"/>
+      <column comment="" key="false" name="station" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="title_out" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="send_out" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="from_out" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="sendedDate_out" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" name="attachement_out" nullable="true" pattern="" sourceType="" type="id_Object" usefulColumn="true"/>
+      <column comment="" key="false" name="station_out" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
   <node componentName="tLibraryLoad" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="480" posY="576">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLibraryLoad_1"/>
     <elementParameter field="CHECK" name="START" value="true"/>
@@ -1379,78 +1450,6 @@
     <elementParameter field="MEMO" name="COMMENT" value=""/>
     <elementParameter field="CHECK" name="VALIDATION_RULES" value="false"/>
     <metadata connector="FLOW" name="tMomObjectOutput_1"/>
-  </node>
-  <node componentName="tXMLRPCOpenDAS" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1280" posY="608">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tXMLRPCOpenDAS_6"/>
-    <elementParameter field="CHECK" name="SUBTREE_START" value="true"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
-    <elementParameter field="TEXT" name="SERVER-HOST" value="context.hostOdoo"/>
-    <elementParameter field="TEXT" name="SERVER-PORT" value="context.portOdoo"/>
-    <elementParameter field="TEXT" name="AUTH_DBNAME" value="context.dbnameOdoo"/>
-    <elementParameter field="TEXT" name="AUTH_USERNAME" value="context.usernameOdoo"/>
-    <elementParameter field="TEXT" name="AUTH_UID" value="context.uid"/>
-    <elementParameter field="TEXT" name="AUTH_PASSWORD" value="context.pwdOdoo"/>
-    <elementParameter field="CLOSED_LIST" name="TYPE" value="odoo"/>
-    <elementParameter field="TEXT" name="MODEL" value="&quot;stock.move.packaging&quot;"/>
-    <elementParameter field="TEXT" name="METHOD" value="&quot;talend_delete_odoo&quot;"/>
-    <elementParameter field="TABLE" name="MAPPING">
-      <elementValue elementRef="NAME" value="&quot;etiquettes&quot;"/>
-      <elementValue elementRef="FIELD" value="&quot;package&quot;"/>
-    </elementParameter>
-    <elementParameter field="TABLE" name="FILTER"/>
-    <elementParameter field="TABLE" name="FILTER_CONST"/>
-    <elementParameter field="TABLE" name="OUT_MAPPING"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
-    <elementParameter field="MEMO" name="COMMENT" value=""/>
-    <elementParameter field="CHECK" name="VALIDATION_RULES" value="false"/>
-    <metadata connector="FLOW" name="tXMLRPCOpenDAS_6">
-      <column comment="" key="false" name="title" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" name="sendUrl" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" name="fromUrl" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" name="sendedDate" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" sourceType="" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" name="attachement" nullable="true" pattern="" sourceType="" type="id_Object" usefulColumn="true"/>
-      <column comment="" key="false" name="station" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" name="title_out" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" name="send_out" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" name="from_out" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" name="sendedDate_out" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" sourceType="" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" name="attachement_out" nullable="true" pattern="" sourceType="" type="id_Object" usefulColumn="true"/>
-      <column comment="" key="false" name="station_out" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
-    </metadata>
-  </node>
-  <node componentName="tMomObjectOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1472" posY="608">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMomObjectOutput_5"/>
-    <elementParameter field="CHECK" name="END_OF_FLOW" value="true"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
-    <elementParameter field="CLOSED_LIST" name="SERVER" value="ActiveMQ"/>
-    <elementParameter field="TEXT" name="SERVERADDRESS" value="context.addressActiveMQ"/>
-    <elementParameter field="TEXT" name="SERVERPORT" value="context.portActiveMQ"/>
-    <elementParameter field="TEXT" name="MQ_DERVIERS" value="activemq-all-5.1.0.jar"/>
-    <elementParameter field="TEXT" name="TO" value="context.senderActiveMQ"/>
-    <elementParameter field="CLOSED_LIST" name="MSGTYPE" value="Queue"/>
-    <elementParameter field="TEXT" name="CHANNEL" value="&quot;DC.SVRCONN&quot;"/>
-    <elementParameter field="CLOSED_LIST" name="DELIVERY_MODE" value="N_PERSISTENT"/>
-    <elementParameter field="CHECK" name="IS_TRANSACTED" value="false"/>
-    <elementParameter field="CLOSED_LIST" name="ACKNOWLEDGMENT_MODE" value="AUTO_ACKNOWLEDGE"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
-    <elementParameter field="MEMO" name="COMMENT" value=""/>
-    <elementParameter field="CHECK" name="VALIDATION_RULES" value="false"/>
-    <metadata connector="FLOW" name="tMomObjectOutput_5">
-      <column comment="" key="false" name="title" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" name="sendUrl" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" name="fromUrl" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" name="sendedDate" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" sourceType="" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" name="attachement" nullable="true" pattern="" sourceType="" type="id_Object" usefulColumn="true"/>
-      <column comment="" key="false" name="station" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" name="title_out" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" name="send_out" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" name="from_out" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" name="sendedDate_out" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" sourceType="" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" name="attachement_out" nullable="true" pattern="" sourceType="" type="id_Object" usefulColumn="true"/>
-      <column comment="" key="false" name="station_out" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
-    </metadata>
   </node>
   <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tFileInputDelimited_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_1" target="tContextLoad_1">
     <elementParameter field="CHECK" name="TRACES_CONNECTION_ENABLE" value="true"/>
@@ -2018,6 +2017,55 @@
     <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="workcenter_exit"/>
   </connection>
+  <connection connectorName="FLOW" label="odoo_deletion" lineStyle="0" metaname="odoo_deletion" offsetLabelX="0" offsetLabelY="0" outputId="11" source="tMap_1" target="tXMLRPCOpenDAS_6">
+    <elementParameter field="CHECK" name="TRACES_CONNECTION_ENABLE" value="true"/>
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER">
+      <elementValue elementRef="TRACE_COLUMN" value="title"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="sendUrl"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="fromUrl"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="sendedDate"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="attachement"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="station"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="title_out"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="send_out"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="from_out"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="sendedDate_out"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="attachement_out"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="station_out"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="USEROWLABEL" value="true"/>
+    <elementParameter field="TEXT" name="METTERLABEL" value="&quot;MyLabel&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="ABSOLUTE" value="Absolute"/>
+    <elementParameter field="CONNECTION_LIST" name="CONNECTIONS" value=""/>
+    <elementParameter field="TABLE" name="THRESHLODS"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="odoo_deletion"/>
+  </connection>
   <connection connectorName="FLOW" label="row12" lineStyle="0" metaname="tXMLRPCOpenDAS_10" offsetLabelX="0" offsetLabelY="0" source="tXMLRPCOpenDAS_10" target="tMomObjectOutput_10">
     <elementParameter field="CHECK" name="TRACES_CONNECTION_ENABLE" value="true"/>
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER"/>
@@ -2212,6 +2260,18 @@
     <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row4"/>
   </connection>
+  <connection connectorName="FLOW" label="row7" lineStyle="0" metaname="tXMLRPCOpenDAS_6" offsetLabelX="0" offsetLabelY="0" source="tXMLRPCOpenDAS_6" target="tMomObjectOutput_5">
+    <elementParameter field="CHECK" name="TRACES_CONNECTION_ENABLE" value="true"/>
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER"/>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="USEROWLABEL" value="true"/>
+    <elementParameter field="TEXT" name="METTERLABEL" value="&quot;MyLabel&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="ABSOLUTE" value="Absolute"/>
+    <elementParameter field="CONNECTION_LIST" name="CONNECTIONS" value=""/>
+    <elementParameter field="TABLE" name="THRESHLODS"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row7"/>
+  </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tLibraryLoad_1" offsetLabelX="0" offsetLabelY="0" source="tLibraryLoad_1" target="tMomObjectOutput_SubjectList_1">
     <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk1"/>
@@ -2227,18 +2287,6 @@
     <elementParameter field="TABLE" name="THRESHLODS"/>
     <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row3"/>
-  </connection>
-  <connection connectorName="FLOW" label="row7" lineStyle="0" metaname="tXMLRPCOpenDAS_6" offsetLabelX="0" offsetLabelY="0" source="tXMLRPCOpenDAS_6" target="tMomObjectOutput_5">
-    <elementParameter field="CHECK" name="TRACES_CONNECTION_ENABLE" value="true"/>
-    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER"/>
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="USEROWLABEL" value="true"/>
-    <elementParameter field="TEXT" name="METTERLABEL" value="&quot;MyLabel&quot;"/>
-    <elementParameter field="CLOSED_LIST" name="ABSOLUTE" value="Absolute"/>
-    <elementParameter field="CONNECTION_LIST" name="CONNECTIONS" value=""/>
-    <elementParameter field="TABLE" name="THRESHLODS"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row7"/>
   </connection>
   <note opaque="true" posX="-32" posY="288" sizeHeight="64" sizeWidth="385" text="Chargement des paramètres de contexte">
     <elementParameter field="COLOR" name="NOTE_COLOR" value="255;255;203"/>
@@ -2292,11 +2340,6 @@
   </subjob>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tXMLRPCOpenDAS_1"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
-  </subjob>
-  <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tXMLRPCOpenDAS_6"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
   </subjob>

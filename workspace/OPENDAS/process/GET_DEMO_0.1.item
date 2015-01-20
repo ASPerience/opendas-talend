@@ -851,8 +851,8 @@
     <elementParameter field="TEXT" name="MODEL" value="&quot;mrp.production&quot;"/>
     <elementParameter field="TEXT" name="METHOD" value="&quot;talend_get_report_production&quot;"/>
     <elementParameter field="TABLE" name="MAPPING">
-      <elementValue elementRef="NAME" value="&quot;production_id&quot;"/>
-      <elementValue elementRef="FIELD" value="&quot;production&quot;"/>
+      <elementValue elementRef="NAME" value="&quot;production&quot;"/>
+      <elementValue elementRef="FIELD" value="&quot;production_id&quot;"/>
     </elementParameter>
     <elementParameter field="TABLE" name="FILTER"/>
     <elementParameter field="TABLE" name="FILTER_CONST"/>
@@ -1428,7 +1428,7 @@
     <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="employee"/>
   </connection>
-  <connection connectorName="FLOW" label="product" lineStyle="0" metaname="product" offsetLabelX="0" offsetLabelY="0" outputId="5" source="tMap_179" target="tXMLRPCOpenDAS_4">
+  <connection connectorName="FLOW" label="product" lineStyle="0" metaname="product" offsetLabelX="43" offsetLabelY="-50" outputId="5" source="tMap_179" target="tXMLRPCOpenDAS_4">
     <elementParameter field="CHECK" name="TRACES_CONNECTION_ENABLE" value="true"/>
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER">
       <elementValue elementRef="TRACE_COLUMN" value="title"/>

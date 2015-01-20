@@ -496,7 +496,7 @@
       <column comment="" key="false" name="station_out" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var"/>
       <outputTables sizeState="INTERMEDIATE" name="mrp_production_product_line" minimized="true" expressionFilter="&quot;mrp_production_product_line&quot;.equals(((java.util.Map)getWsGenericsExt.attachement).get(&quot;model&quot;))" activateExpressionFilter="true">
         <mapperTableEntries name="title" expression="getWsGenericsExt.title " type="id_String" nullable="true"/>
@@ -725,7 +725,7 @@
         <mapperTableEntries name="attachement_out" expression="getWsGenericsExt.attachement_out " type="id_Object" nullable="true"/>
         <mapperTableEntries name="station_out" expression="getWsGenericsExt.station_out " type="id_String" nullable="true"/>
       </outputTables>
-      <outputTables sizeState="INTERMEDIATE" name="odoo_products" expressionFilter="&quot;odoo_products&quot;.equals(((java.util.Map)getWsGenericsExt.attachement).get(&quot;model&quot;))" activateExpressionFilter="true">
+      <outputTables sizeState="INTERMEDIATE" name="odoo_products" minimized="true" expressionFilter="&quot;odoo_products&quot;.equals(((java.util.Map)getWsGenericsExt.attachement).get(&quot;model&quot;))" activateExpressionFilter="true">
         <mapperTableEntries name="title" expression="getWsGenericsExt.title " type="id_String" nullable="true"/>
         <mapperTableEntries name="sendUrl" expression="getWsGenericsExt.sendUrl " type="id_String" nullable="true"/>
         <mapperTableEntries name="fromUrl" expression="getWsGenericsExt.fromUrl " type="id_String" nullable="true"/>
@@ -827,11 +827,7 @@
       <elementValue elementRef="FIELD" value="&quot;id&quot;"/>
     </elementParameter>
     <elementParameter field="TABLE" name="FILTER"/>
-    <elementParameter field="TABLE" name="FILTER_CONST">
-      <elementValue elementRef="VALUE" value="&quot;follow&quot;"/>
-      <elementValue elementRef="FIELD" value="&quot;state&quot;"/>
-      <elementValue elementRef="OPERATOR" value="&quot;=&quot;"/>
-    </elementParameter>
+    <elementParameter field="TABLE" name="FILTER_CONST"/>
     <elementParameter field="TABLE" name="OUT_MAPPING">
       <elementValue elementRef="FIELD" value="&quot;id&quot;"/>
       <elementValue elementRef="METHOD" value="setCode"/>
@@ -1688,6 +1684,8 @@
     <elementParameter field="TABLE" name="MAPPING">
       <elementValue elementRef="NAME" value="&quot;job&quot;"/>
       <elementValue elementRef="FIELD" value="&quot;workcenter&quot;"/>
+      <elementValue elementRef="NAME" value="&quot;perso&quot;"/>
+      <elementValue elementRef="FIELD" value="&quot;employee&quot;"/>
     </elementParameter>
     <elementParameter field="TABLE" name="FILTER"/>
     <elementParameter field="TABLE" name="FILTER_CONST"/>

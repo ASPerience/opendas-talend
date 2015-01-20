@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties">
+  <TalendProperties:Property xmi:id="_Eq154C6zEeSUstqRnSKZpA" id="_Eqsv8C6zEeSUstqRnSKZpA" label="SET_DEV" creationDate="2014-08-28T14:58:57.528+0200" modificationDate="2015-01-19T11:16:11.521+0100" version="0.1" statusCode="DEV" item="_Eq154i6zEeSUstqRnSKZpA" maxInformationLevel="ERROR" displayName="SET_DEV">
+    <author href="../talend.project#_isTssnsCEeSMaIXNprqCyw"/>
+    <informations xmi:id="_Gx_pAJ_EEeSUdeokLPac7A" level="ERROR" text="connection_tMomObjectOutput_5 ne peut pas être résolu"/>
+    <informations xmi:id="_Gx_pAZ_EEeSUdeokLPac7A" level="ERROR" text="Erreur de syntaxe, insérez &quot;Finally&quot; pour effectuer TryStatement"/>
+    <informations xmi:id="_Gx_pAp_EEeSUdeokLPac7A" level="ERROR" text="Erreur de syntaxe sur le sème &quot;catch&quot;, Identifier attendu"/>
+    <informations xmi:id="_Gx_pA5_EEeSUdeokLPac7A" level="ERROR" text="Erreur de syntaxe sur le sème &quot;catch&quot;, Identifier attendu"/>
+    <informations xmi:id="_Gx_pBJ_EEeSUdeokLPac7A" level="ERROR" text="Erreur de syntaxe sur le sème &quot;finally&quot;, { attendu"/>
+    <informations xmi:id="_Gx_pBZ_EEeSUdeokLPac7A" level="ERROR" text="resourceMap ne peut pas être résolu en tant que variable"/>
+    <informations xmi:id="_Gx_pBp_EEeSUdeokLPac7A" level="ERROR" text="tos_count_tXMLRPCOpenDAS_6 ne peut pas être résolu en tant que variable"/>
+    <informations xmi:id="_Gx_pB5_EEeSUdeokLPac7A" level="ERROR" text="row7 ne peut pas être résolu en tant que variable"/>
+    <informations xmi:id="_GyAQEJ_EEeSUdeokLPac7A" level="ERROR" text="row7 ne peut pas être résolu en tant que variable"/>
+    <informations xmi:id="_GyAQEZ_EEeSUdeokLPac7A" level="ERROR" text="row7 ne peut pas être résolu en tant que variable"/>
+    <informations xmi:id="_GyAQEp_EEeSUdeokLPac7A" level="ERROR" text="row7 ne peut pas être résolu en tant que variable"/>
+    <informations xmi:id="_GyAQE5_EEeSUdeokLPac7A" level="ERROR" text="row7 ne peut pas être résolu en tant que variable"/>
+    <informations xmi:id="_GyAQFJ_EEeSUdeokLPac7A" level="ERROR" text="row7 ne peut pas être résolu en tant que variable"/>
+    <informations xmi:id="_GyAQFZ_EEeSUdeokLPac7A" level="ERROR" text="row7 ne peut pas être résolu en tant que variable"/>
+    <informations xmi:id="_GyAQFp_EEeSUdeokLPac7A" level="ERROR" text="row7 ne peut pas être résolu en tant que variable"/>
+    <informations xmi:id="_GyAQF5_EEeSUdeokLPac7A" level="ERROR" text="row7 ne peut pas être résolu en tant que variable"/>
+    <informations xmi:id="_GyAQGJ_EEeSUdeokLPac7A" level="ERROR" text="row7 ne peut pas être résolu en tant que variable"/>
+    <informations xmi:id="_GyAQGZ_EEeSUdeokLPac7A" level="ERROR" text="session_tMomObjectOutput_5 ne peut pas être résolu"/>
+    <informations xmi:id="_GyAQGp_EEeSUdeokLPac7A" level="ERROR" text="row7 ne peut pas être résolu en tant que variable"/>
+    <informations xmi:id="_GyAQG5_EEeSUdeokLPac7A" level="ERROR" text="des_tMomObjectOutput_5 ne peut pas être résolu en tant que variable"/>
+    <informations xmi:id="_GyAQHJ_EEeSUdeokLPac7A" level="ERROR" text="session_tMomObjectOutput_5 ne peut pas être résolu"/>
+    <informations xmi:id="_GyAQHZ_EEeSUdeokLPac7A" level="ERROR" text="producer_tMomObjectOutput_5 ne peut pas être résolu en tant que variable"/>
+    <informations xmi:id="_GyAQHp_EEeSUdeokLPac7A" level="ERROR" text="session_tMomObjectOutput_5 ne peut pas être résolu"/>
+    <informations xmi:id="_GyAQH5_EEeSUdeokLPac7A" level="ERROR" text="des_tMomObjectOutput_5 ne peut pas être résolu en tant que variable"/>
+    <informations xmi:id="_GyAQIJ_EEeSUdeokLPac7A" level="ERROR" text="producer_tMomObjectOutput_5 ne peut pas être résolu"/>
+    <informations xmi:id="_GyAQIZ_EEeSUdeokLPac7A" level="ERROR" text="tos_count_tMomObjectOutput_5 ne peut pas être résolu en tant que variable"/>
+    <informations xmi:id="_GyAQIp_EEeSUdeokLPac7A" level="ERROR" text="producer_tMomObjectOutput_5 ne peut pas être résolu"/>
+    <informations xmi:id="_GyAQI5_EEeSUdeokLPac7A" level="ERROR" text="session_tMomObjectOutput_5 ne peut pas être résolu"/>
+  </TalendProperties:Property>
+  <TalendProperties:ItemState xmi:id="_gGJtUHsDEeSIg8meL6g6pQ" path="" locked="true" lockDate="2015-01-19T10:57:35.107+0100">
+    <locker href="../talend.project#_isTssnsCEeSMaIXNprqCyw"/>
+  </TalendProperties:ItemState>
+  <TalendProperties:ProcessItem xmi:id="_Eq154i6zEeSUstqRnSKZpA" property="_Eq154C6zEeSUstqRnSKZpA" state="_gGJtUHsDEeSIg8meL6g6pQ">
+    <process href="SET_DEV_0.1.item#/"/>
+  </TalendProperties:ProcessItem>
+</xmi:XMI>
