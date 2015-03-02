@@ -166,12 +166,6 @@
 <persistable path="/OPENDAS/temp/tmpPROCESS_Eqsv8C6zEeSUstqRnSKZpA"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.talend.designer.core.ui.MultiPageTalendEditor">
-<persistable path="/OPENDAS/temp/tmpPROCESS_3I77gGd4EeGs7-HjDy1x2A"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.talend.designer.core.ui.MultiPageTalendEditor">
-<persistable path="/OPENDAS/temp/tmpPROCESS_Eqsv8C6zEeSUstqRnSKZpA"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.talend.designer.core.ui.MultiPageTalendEditor">
 <persistable path="/OPENDAS/temp/tmpPROCESS_IIXJoC6zEeSUstqRnSKZpA"/>
 </file>
 </mruList>

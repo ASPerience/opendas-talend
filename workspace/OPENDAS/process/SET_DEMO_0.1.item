@@ -207,14 +207,15 @@
       <column comment="" key="false" name="title" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" name="sendUrl" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" name="fromUrl" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="sendedDate" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" sourceType="" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" name="attachement" nullable="true" pattern="" sourceType="" type="id_Object" usefulColumn="true"/>
-      <column comment="" key="false" name="sendedDate" nullable="true" pattern="" sourceType="" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" name="station" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" name="title_out" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" name="send_out" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" name="from_out" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="sendedDate_out" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" sourceType="" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" name="attachement_out" nullable="true" pattern="" sourceType="" type="id_Object" usefulColumn="true"/>
-      <column comment="" key="false" name="sendedDate_out" nullable="true" pattern="" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" name="station_out" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="224" posY="352">
@@ -231,125 +232,134 @@
     <elementParameter field="CHECK" name="INFORMATION" value="false"/>
     <elementParameter field="MEMO" name="COMMENT" value=""/>
     <elementParameter field="CHECK" name="VALIDATION_RULES" value="false"/>
-    <metadata connector="FLOW" name="signinout">
+    <metadata name="signinout">
       <column comment="" key="false" name="title" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" name="sendUrl" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" name="fromUrl" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="sendedDate" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" sourceType="" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" name="attachement" nullable="true" pattern="" sourceType="" type="id_Object" usefulColumn="true"/>
-      <column comment="" key="false" name="sendedDate" nullable="true" pattern="" sourceType="" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" name="station" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" name="title_out" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" name="send_out" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" name="from_out" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="sendedDate_out" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" sourceType="" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" name="attachement_out" nullable="true" pattern="" sourceType="" type="id_Object" usefulColumn="true"/>
-      <column comment="" key="false" name="sendedDate_out" nullable="true" pattern="" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" name="station_out" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
     <metadata connector="FLOW" name="picking_in_valid">
       <column comment="" key="false" name="title" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" name="sendUrl" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" name="fromUrl" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="sendedDate" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" sourceType="" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" name="attachement" nullable="true" pattern="" sourceType="" type="id_Object" usefulColumn="true"/>
-      <column comment="" key="false" name="sendedDate" nullable="true" pattern="" sourceType="" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" name="station" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" name="title_out" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" name="send_out" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" name="from_out" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="sendedDate_out" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" sourceType="" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" name="attachement_out" nullable="true" pattern="" sourceType="" type="id_Object" usefulColumn="true"/>
-      <column comment="" key="false" name="sendedDate_out" nullable="true" pattern="" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" name="station_out" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
-    <metadata connector="FLOW" name="picking_out_valid">
+    <metadata name="picking_out_valid">
       <column comment="" key="false" name="title" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" name="sendUrl" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" name="fromUrl" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="sendedDate" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" sourceType="" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" name="attachement" nullable="true" pattern="" sourceType="" type="id_Object" usefulColumn="true"/>
-      <column comment="" key="false" name="sendedDate" nullable="true" pattern="" sourceType="" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" name="station" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" name="title_out" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" name="send_out" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" name="from_out" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="sendedDate_out" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" sourceType="" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" name="attachement_out" nullable="true" pattern="" sourceType="" type="id_Object" usefulColumn="true"/>
-      <column comment="" key="false" name="sendedDate_out" nullable="true" pattern="" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" name="station_out" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
-    <metadata connector="FLOW" name="picking_out_qty_valid">
+    <metadata name="picking_out_qty_valid">
       <column comment="" key="false" name="title" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" name="sendUrl" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" name="fromUrl" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="sendedDate" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" sourceType="" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" name="attachement" nullable="true" pattern="" sourceType="" type="id_Object" usefulColumn="true"/>
-      <column comment="" key="false" name="sendedDate" nullable="true" pattern="" sourceType="" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" name="station" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" name="title_out" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" name="send_out" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" name="from_out" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="sendedDate_out" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" sourceType="" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" name="attachement_out" nullable="true" pattern="" sourceType="" type="id_Object" usefulColumn="true"/>
-      <column comment="" key="false" name="sendedDate_out" nullable="true" pattern="" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" name="station_out" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
-      <outputTables sizeState="INTERMEDIATE" name="signinout" minimized="true" expressionFilter="&quot;sign&quot;.equals(row6.title)" activateExpressionFilter="true">
+      <outputTables sizeState="INTERMEDIATE" name="signinout" minimized="true" expressionFilter="&quot;signinout&quot;.equals(row6.title)" activateExpressionFilter="true" activateCondensedTool="true">
         <mapperTableEntries name="title" expression="row6.title " type="id_String" nullable="true"/>
         <mapperTableEntries name="sendUrl" expression="row6.sendUrl " type="id_String" nullable="true"/>
         <mapperTableEntries name="fromUrl" expression="row6.fromUrl " type="id_String" nullable="true"/>
-        <mapperTableEntries name="attachement" expression="row6.attachement " type="id_Object" nullable="true"/>
         <mapperTableEntries name="sendedDate" expression="row6.sendedDate " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="attachement" expression="row6.attachement " type="id_Object" nullable="true"/>
         <mapperTableEntries name="station" expression="row6.station " type="id_String" nullable="true"/>
         <mapperTableEntries name="title_out" expression="row6.title_out " type="id_String" nullable="true"/>
         <mapperTableEntries name="send_out" expression="row6.send_out " type="id_String" nullable="true"/>
         <mapperTableEntries name="from_out" expression="row6.from_out " type="id_String" nullable="true"/>
-        <mapperTableEntries name="attachement_out" expression="row6.attachement_out " type="id_Object" nullable="true"/>
         <mapperTableEntries name="sendedDate_out" expression="row6.sendedDate_out " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="attachement_out" expression="row6.attachement_out " type="id_Object" nullable="true"/>
+        <mapperTableEntries name="station_out" expression="row6.station_out " type="id_String" nullable="true"/>
       </outputTables>
-      <outputTables sizeState="INTERMEDIATE" name="picking_in_valid" minimized="true" expressionFilter="&quot;picking_in_valid&quot;.equals(row6.title)" activateExpressionFilter="true" activateCondensedTool="true">
+      <outputTables sizeState="INTERMEDIATE" name="picking_in_valid" expressionFilter="&quot;picking_in_valid&quot;.equals(row6.title)" activateExpressionFilter="true">
         <mapperTableEntries name="title" expression="row6.title " type="id_String" nullable="true"/>
         <mapperTableEntries name="sendUrl" expression="row6.sendUrl " type="id_String" nullable="true"/>
         <mapperTableEntries name="fromUrl" expression="row6.fromUrl " type="id_String" nullable="true"/>
-        <mapperTableEntries name="attachement" expression="row6.attachement " type="id_Object" nullable="true"/>
         <mapperTableEntries name="sendedDate" expression="row6.sendedDate " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="attachement" expression="row6.attachement " type="id_Object" nullable="true"/>
         <mapperTableEntries name="station" expression="row6.station " type="id_String" nullable="true"/>
         <mapperTableEntries name="title_out" expression="row6.title_out " type="id_String" nullable="true"/>
         <mapperTableEntries name="send_out" expression="row6.send_out " type="id_String" nullable="true"/>
         <mapperTableEntries name="from_out" expression="row6.from_out " type="id_String" nullable="true"/>
-        <mapperTableEntries name="attachement_out" expression="row6.attachement_out " type="id_Object" nullable="true"/>
         <mapperTableEntries name="sendedDate_out" expression="row6.sendedDate_out " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="attachement_out" expression="row6.attachement_out " type="id_Object" nullable="true"/>
+        <mapperTableEntries name="station_out" expression="row6.station_out " type="id_String" nullable="true"/>
       </outputTables>
-      <outputTables sizeState="INTERMEDIATE" name="picking_out_valid" minimized="true" expressionFilter="&quot;picking_out_valid&quot;.equals(row6.title)" activateExpressionFilter="true" activateCondensedTool="true">
+      <outputTables sizeState="INTERMEDIATE" name="picking_out_valid" minimized="true" expressionFilter="&quot;picking_out_valid&quot;.equals(row6.title)" activateExpressionFilter="true">
         <mapperTableEntries name="title" expression="row6.title " type="id_String" nullable="true"/>
         <mapperTableEntries name="sendUrl" expression="row6.sendUrl " type="id_String" nullable="true"/>
         <mapperTableEntries name="fromUrl" expression="row6.fromUrl " type="id_String" nullable="true"/>
-        <mapperTableEntries name="attachement" expression="row6.attachement " type="id_Object" nullable="true"/>
         <mapperTableEntries name="sendedDate" expression="row6.sendedDate " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="attachement" expression="row6.attachement " type="id_Object" nullable="true"/>
         <mapperTableEntries name="station" expression="row6.station " type="id_String" nullable="true"/>
         <mapperTableEntries name="title_out" expression="row6.title_out " type="id_String" nullable="true"/>
         <mapperTableEntries name="send_out" expression="row6.send_out " type="id_String" nullable="true"/>
         <mapperTableEntries name="from_out" expression="row6.from_out " type="id_String" nullable="true"/>
-        <mapperTableEntries name="attachement_out" expression="row6.attachement_out " type="id_Object" nullable="true"/>
         <mapperTableEntries name="sendedDate_out" expression="row6.sendedDate_out " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="attachement_out" expression="row6.attachement_out " type="id_Object" nullable="true"/>
+        <mapperTableEntries name="station_out" expression="row6.station_out " type="id_String" nullable="true"/>
       </outputTables>
-      <outputTables sizeState="INTERMEDIATE" name="picking_out_qty_valid" minimized="true" expressionFilter="&quot;picking_out_qty_valid&quot;.equals(row6.title)" activateExpressionFilter="true">
+      <outputTables sizeState="INTERMEDIATE" name="picking_out_qty_valid" expressionFilter="&quot;picking_out_qty_valid&quot;.equals(row6.title)" activateExpressionFilter="true">
         <mapperTableEntries name="title" expression="row6.title " type="id_String" nullable="true"/>
         <mapperTableEntries name="sendUrl" expression="row6.sendUrl " type="id_String" nullable="true"/>
         <mapperTableEntries name="fromUrl" expression="row6.fromUrl " type="id_String" nullable="true"/>
-        <mapperTableEntries name="attachement" expression="row6.attachement " type="id_Object" nullable="true"/>
         <mapperTableEntries name="sendedDate" expression="row6.sendedDate " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="attachement" expression="row6.attachement " type="id_Object" nullable="true"/>
         <mapperTableEntries name="station" expression="row6.station " type="id_String" nullable="true"/>
         <mapperTableEntries name="title_out" expression="row6.title_out " type="id_String" nullable="true"/>
         <mapperTableEntries name="send_out" expression="row6.send_out " type="id_String" nullable="true"/>
         <mapperTableEntries name="from_out" expression="row6.from_out " type="id_String" nullable="true"/>
-        <mapperTableEntries name="attachement_out" expression="row6.attachement_out " type="id_Object" nullable="true"/>
         <mapperTableEntries name="sendedDate_out" expression="row6.sendedDate_out " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="attachement_out" expression="row6.attachement_out " type="id_Object" nullable="true"/>
+        <mapperTableEntries name="station_out" expression="row6.station_out " type="id_String" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row6" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="title" type="id_String" nullable="true"/>
         <mapperTableEntries name="sendUrl" type="id_String" nullable="true"/>
         <mapperTableEntries name="fromUrl" type="id_String" nullable="true"/>
-        <mapperTableEntries name="attachement" type="id_Object" nullable="true"/>
         <mapperTableEntries name="sendedDate" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="attachement" type="id_Object" nullable="true"/>
         <mapperTableEntries name="station" type="id_String" nullable="true"/>
         <mapperTableEntries name="title_out" type="id_String" nullable="true"/>
         <mapperTableEntries name="send_out" type="id_String" nullable="true"/>
         <mapperTableEntries name="from_out" type="id_String" nullable="true"/>
-        <mapperTableEntries name="attachement_out" type="id_Object" nullable="true"/>
         <mapperTableEntries name="sendedDate_out" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="attachement_out" type="id_Object" nullable="true"/>
+        <mapperTableEntries name="station_out" type="id_String" nullable="true"/>
       </inputTables>
     </nodeData>
   </node>
@@ -379,52 +389,15 @@
       <column comment="" key="false" name="title" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" name="sendUrl" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" name="fromUrl" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="sendedDate" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" sourceType="" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" name="attachement" nullable="true" pattern="" sourceType="" type="id_Object" usefulColumn="true"/>
-      <column comment="" key="false" name="sendedDate" nullable="true" pattern="" sourceType="" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" name="station" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" name="title_out" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" name="send_out" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" name="from_out" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="sendedDate_out" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" sourceType="" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" name="attachement_out" nullable="true" pattern="" sourceType="" type="id_Object" usefulColumn="true"/>
-      <column comment="" key="false" name="sendedDate_out" nullable="true" pattern="" sourceType="" type="id_Date" usefulColumn="true"/>
-    </metadata>
-  </node>
-  <node componentName="tXMLRPCOpenDAS" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="576" posY="416">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tXMLRPCOpenDAS_2"/>
-    <elementParameter field="TEXT" name="SERVER-HOST" value="context.hostOdoo"/>
-    <elementParameter field="TEXT" name="SERVER-PORT" value="context.portOdoo"/>
-    <elementParameter field="TEXT" name="AUTH_DBNAME" value="context.dbnameOdoo"/>
-    <elementParameter field="TEXT" name="AUTH_USERNAME" value="context.usernameOdoo"/>
-    <elementParameter field="TEXT" name="AUTH_UID" value="context.uid"/>
-    <elementParameter field="TEXT" name="AUTH_PASSWORD" value="context.pwdOdoo"/>
-    <elementParameter field="CLOSED_LIST" name="TYPE" value="odoo"/>
-    <elementParameter field="TEXT" name="MODEL" value="&quot;stock.picking&quot;"/>
-    <elementParameter field="TEXT" name="METHOD" value="&quot;talend_picking_in&quot;"/>
-    <elementParameter field="TABLE" name="MAPPING">
-      <elementValue elementRef="NAME" value="&quot;picking_in&quot;"/>
-      <elementValue elementRef="FIELD" value="&quot;picking_id&quot;"/>
-      <elementValue elementRef="NAME" value="&quot;product&quot;"/>
-      <elementValue elementRef="FIELD" value="&quot;product_ids&quot;"/>
-    </elementParameter>
-    <elementParameter field="TABLE" name="FILTER"/>
-    <elementParameter field="TABLE" name="FILTER_CONST"/>
-    <elementParameter field="TABLE" name="OUT_MAPPING"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
-    <elementParameter field="MEMO" name="COMMENT" value=""/>
-    <elementParameter field="CHECK" name="VALIDATION_RULES" value="false"/>
-    <metadata connector="FLOW" name="tXMLRPCOpenDAS_2">
-      <column comment="" key="false" name="title" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" name="sendUrl" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" name="fromUrl" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" name="attachement" nullable="true" pattern="" sourceType="" type="id_Object" usefulColumn="true"/>
-      <column comment="" key="false" name="sendedDate" nullable="true" pattern="" sourceType="" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" name="station" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" name="title_out" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" name="send_out" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" name="from_out" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" name="attachement_out" nullable="true" pattern="" sourceType="" type="id_Object" usefulColumn="true"/>
-      <column comment="" key="false" name="sendedDate_out" nullable="true" pattern="" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" name="station_out" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tXMLRPCOpenDAS" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="576" posY="480">
@@ -455,14 +428,15 @@
       <column comment="" key="false" name="title" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" name="sendUrl" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" name="fromUrl" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="sendedDate" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" sourceType="" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" name="attachement" nullable="true" pattern="" sourceType="" type="id_Object" usefulColumn="true"/>
-      <column comment="" key="false" name="sendedDate" nullable="true" pattern="" sourceType="" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" name="station" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" name="title_out" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" name="send_out" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" name="from_out" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="sendedDate_out" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" sourceType="" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" name="attachement_out" nullable="true" pattern="" sourceType="" type="id_Object" usefulColumn="true"/>
-      <column comment="" key="false" name="sendedDate_out" nullable="true" pattern="" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" name="station_out" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tXMLRPCOpenDAS" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="576" posY="544">
@@ -495,14 +469,15 @@
       <column comment="" key="false" name="title" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" name="sendUrl" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" name="fromUrl" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="sendedDate" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" sourceType="" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" name="attachement" nullable="true" pattern="" sourceType="" type="id_Object" usefulColumn="true"/>
-      <column comment="" key="false" name="sendedDate" nullable="true" pattern="" sourceType="" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" name="station" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" name="title_out" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" name="send_out" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" name="from_out" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="sendedDate_out" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" sourceType="" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" name="attachement_out" nullable="true" pattern="" sourceType="" type="id_Object" usefulColumn="true"/>
-      <column comment="" key="false" name="sendedDate_out" nullable="true" pattern="" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" name="station_out" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tMomObjectOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="800" posY="224">
@@ -526,45 +501,15 @@
       <column comment="" key="false" name="title" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" name="sendUrl" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" name="fromUrl" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="sendedDate" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" sourceType="" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" name="attachement" nullable="true" pattern="" sourceType="" type="id_Object" usefulColumn="true"/>
-      <column comment="" key="false" name="sendedDate" nullable="true" pattern="" sourceType="" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" name="station" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" name="title_out" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" name="send_out" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" name="from_out" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="sendedDate_out" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" sourceType="" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" name="attachement_out" nullable="true" pattern="" sourceType="" type="id_Object" usefulColumn="true"/>
-      <column comment="" key="false" name="sendedDate_out" nullable="true" pattern="" sourceType="" type="id_Date" usefulColumn="true"/>
-    </metadata>
-  </node>
-  <node componentName="tMomObjectOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="800" posY="416">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMomObjectOutput_2"/>
-    <elementParameter field="CHECK" name="END_OF_FLOW" value="true"/>
-    <elementParameter field="CLOSED_LIST" name="SERVER" value="ActiveMQ"/>
-    <elementParameter field="TEXT" name="SERVERADDRESS" value="context.addressActiveMQ"/>
-    <elementParameter field="TEXT" name="SERVERPORT" value="context.portActiveMQ"/>
-    <elementParameter field="TEXT" name="MQ_DERVIERS" value="activemq-all-5.1.0.jar"/>
-    <elementParameter field="TEXT" name="TO" value="context.senderActiveMQ"/>
-    <elementParameter field="CLOSED_LIST" name="MSGTYPE" value="Queue"/>
-    <elementParameter field="TEXT" name="CHANNEL" value="&quot;DC.SVRCONN&quot;"/>
-    <elementParameter field="CLOSED_LIST" name="DELIVERY_MODE" value="N_PERSISTENT"/>
-    <elementParameter field="CHECK" name="IS_TRANSACTED" value="false"/>
-    <elementParameter field="CLOSED_LIST" name="ACKNOWLEDGMENT_MODE" value="AUTO_ACKNOWLEDGE"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
-    <elementParameter field="MEMO" name="COMMENT" value=""/>
-    <elementParameter field="CHECK" name="VALIDATION_RULES" value="false"/>
-    <metadata connector="FLOW" name="tMomObjectOutput_2">
-      <column comment="" key="false" name="title" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" name="sendUrl" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" name="fromUrl" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" name="attachement" nullable="true" pattern="" sourceType="" type="id_Object" usefulColumn="true"/>
-      <column comment="" key="false" name="sendedDate" nullable="true" pattern="" sourceType="" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" name="station" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" name="title_out" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" name="send_out" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" name="from_out" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" name="attachement_out" nullable="true" pattern="" sourceType="" type="id_Object" usefulColumn="true"/>
-      <column comment="" key="false" name="sendedDate_out" nullable="true" pattern="" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" name="station_out" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tMomObjectOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="800" posY="480">
@@ -588,14 +533,15 @@
       <column comment="" key="false" name="title" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" name="sendUrl" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" name="fromUrl" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="sendedDate" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" sourceType="" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" name="attachement" nullable="true" pattern="" sourceType="" type="id_Object" usefulColumn="true"/>
-      <column comment="" key="false" name="sendedDate" nullable="true" pattern="" sourceType="" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" name="station" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" name="title_out" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" name="send_out" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" name="from_out" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="sendedDate_out" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" sourceType="" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" name="attachement_out" nullable="true" pattern="" sourceType="" type="id_Object" usefulColumn="true"/>
-      <column comment="" key="false" name="sendedDate_out" nullable="true" pattern="" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" name="station_out" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tMomObjectOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="800" posY="544">
@@ -619,14 +565,86 @@
       <column comment="" key="false" name="title" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" name="sendUrl" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" name="fromUrl" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="sendedDate" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" sourceType="" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" name="attachement" nullable="true" pattern="" sourceType="" type="id_Object" usefulColumn="true"/>
-      <column comment="" key="false" name="sendedDate" nullable="true" pattern="" sourceType="" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" name="station" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" name="title_out" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" name="send_out" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" name="from_out" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="sendedDate_out" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" sourceType="" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" name="attachement_out" nullable="true" pattern="" sourceType="" type="id_Object" usefulColumn="true"/>
-      <column comment="" key="false" name="sendedDate_out" nullable="true" pattern="" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" name="station_out" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tXMLRPCOpenDAS" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="576" posY="416">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tXMLRPCOpenDAS_2"/>
+    <elementParameter field="TEXT" name="SERVER-HOST" value="context.hostOdoo"/>
+    <elementParameter field="TEXT" name="SERVER-PORT" value="context.portOdoo"/>
+    <elementParameter field="TEXT" name="AUTH_DBNAME" value="context.dbnameOdoo"/>
+    <elementParameter field="TEXT" name="AUTH_USERNAME" value="context.usernameOdoo"/>
+    <elementParameter field="TEXT" name="AUTH_UID" value="context.uid"/>
+    <elementParameter field="TEXT" name="AUTH_PASSWORD" value="context.pwdOdoo"/>
+    <elementParameter field="CLOSED_LIST" name="TYPE" value="odoo"/>
+    <elementParameter field="TEXT" name="MODEL" value="&quot;stock.picking&quot;"/>
+    <elementParameter field="TEXT" name="METHOD" value="&quot;talend_picking_in&quot;"/>
+    <elementParameter field="TABLE" name="MAPPING">
+      <elementValue elementRef="NAME" value="&quot;picking_in&quot;"/>
+      <elementValue elementRef="FIELD" value="&quot;picking_id&quot;"/>
+      <elementValue elementRef="NAME" value="&quot;product&quot;"/>
+      <elementValue elementRef="FIELD" value="&quot;product_ids&quot;"/>
+    </elementParameter>
+    <elementParameter field="TABLE" name="FILTER"/>
+    <elementParameter field="TABLE" name="FILTER_CONST"/>
+    <elementParameter field="TABLE" name="OUT_MAPPING"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+    <elementParameter field="CHECK" name="VALIDATION_RULES" value="false"/>
+    <metadata connector="FLOW" name="tXMLRPCOpenDAS_2">
+      <column comment="" key="false" name="title" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="sendUrl" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="fromUrl" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="sendedDate" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" name="attachement" nullable="true" pattern="" sourceType="" type="id_Object" usefulColumn="true"/>
+      <column comment="" key="false" name="station" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="title_out" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="send_out" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="from_out" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="sendedDate_out" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" name="attachement_out" nullable="true" pattern="" sourceType="" type="id_Object" usefulColumn="true"/>
+      <column comment="" key="false" name="station_out" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMomObjectOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="800" posY="416">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMomObjectOutput_2"/>
+    <elementParameter field="CHECK" name="END_OF_FLOW" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="SERVER" value="ActiveMQ"/>
+    <elementParameter field="TEXT" name="SERVERADDRESS" value="context.addressActiveMQ"/>
+    <elementParameter field="TEXT" name="SERVERPORT" value="context.portActiveMQ"/>
+    <elementParameter field="TEXT" name="MQ_DERVIERS" value="activemq-all-5.1.0.jar"/>
+    <elementParameter field="TEXT" name="TO" value="context.senderActiveMQ"/>
+    <elementParameter field="CLOSED_LIST" name="MSGTYPE" value="Queue"/>
+    <elementParameter field="TEXT" name="CHANNEL" value="&quot;DC.SVRCONN&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="DELIVERY_MODE" value="N_PERSISTENT"/>
+    <elementParameter field="CHECK" name="IS_TRANSACTED" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="ACKNOWLEDGMENT_MODE" value="AUTO_ACKNOWLEDGE"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+    <elementParameter field="CHECK" name="VALIDATION_RULES" value="false"/>
+    <metadata connector="FLOW" name="tMomObjectOutput_2">
+      <column comment="" key="false" name="title" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="sendUrl" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="fromUrl" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="sendedDate" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" name="attachement" nullable="true" pattern="" sourceType="" type="id_Object" usefulColumn="true"/>
+      <column comment="" key="false" name="station" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="title_out" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="send_out" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="from_out" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="sendedDate_out" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" name="attachement_out" nullable="true" pattern="" sourceType="" type="id_Object" usefulColumn="true"/>
+      <column comment="" key="false" name="station_out" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
   <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tFileInputDelimited_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_1" target="tContextLoad_1">
@@ -696,6 +714,9 @@
       <elementValue elementRef="TRACE_COLUMN" value="sendedDate_out"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="station_out"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="CHECK" name="USEROWLABEL" value="true"/>
@@ -742,6 +763,9 @@
       <elementValue elementRef="TRACE_COLUMN" value="attachement_out"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="station_out"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="CHECK" name="USEROWLABEL" value="true"/>
@@ -754,41 +778,7 @@
   </connection>
   <connection connectorName="FLOW" label="picking_in_valid" lineStyle="0" metaname="picking_in_valid" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tMap_179" target="tXMLRPCOpenDAS_2">
     <elementParameter field="CHECK" name="TRACES_CONNECTION_ENABLE" value="true"/>
-    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER">
-      <elementValue elementRef="TRACE_COLUMN" value="title"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="sendUrl"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="fromUrl"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="sendedDate"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="attachement"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="station"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="title_out"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="sendedDate_out"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="from_out"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="send_out"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="attachement_out"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-    </elementParameter>
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER"/>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="CHECK" name="USEROWLABEL" value="true"/>
     <elementParameter field="TEXT" name="METTERLABEL" value="&quot;MyLabel&quot;"/>
@@ -832,6 +822,9 @@
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
       <elementValue elementRef="TRACE_COLUMN" value="attachement_out"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="station_out"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
@@ -880,6 +873,9 @@
       <elementValue elementRef="TRACE_COLUMN" value="attachement_out"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="station_out"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="CHECK" name="USEROWLABEL" value="true"/>
@@ -911,6 +907,9 @@
       <elementValue elementRef="TRACE_COLUMN" value="station"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="station_out"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="CHECK" name="USEROWLABEL" value="true"/>
@@ -920,37 +919,6 @@
     <elementParameter field="TABLE" name="THRESHLODS"/>
     <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row2"/>
-  </connection>
-  <connection connectorName="FLOW" label="row3" lineStyle="0" metaname="tXMLRPCOpenDAS_2" offsetLabelX="0" offsetLabelY="0" source="tXMLRPCOpenDAS_2" target="tMomObjectOutput_2">
-    <elementParameter field="CHECK" name="TRACES_CONNECTION_ENABLE" value="true"/>
-    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER">
-      <elementValue elementRef="TRACE_COLUMN" value="title"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="sendUrl"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="fromUrl"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="sendedDate"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="attachement"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="station"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-    </elementParameter>
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="USEROWLABEL" value="true"/>
-    <elementParameter field="TEXT" name="METTERLABEL" value="&quot;MyLabel&quot;"/>
-    <elementParameter field="CLOSED_LIST" name="ABSOLUTE" value="Absolute"/>
-    <elementParameter field="CONNECTION_LIST" name="CONNECTIONS" value=""/>
-    <elementParameter field="TABLE" name="THRESHLODS"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row3"/>
   </connection>
   <connection connectorName="FLOW" label="row4" lineStyle="0" metaname="tXMLRPCOpenDAS_3" offsetLabelX="0" offsetLabelY="0" source="tXMLRPCOpenDAS_3" target="tMomObjectOutput_3">
     <elementParameter field="CHECK" name="TRACES_CONNECTION_ENABLE" value="true"/>
@@ -1013,6 +981,37 @@
     <elementParameter field="TABLE" name="THRESHLODS"/>
     <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row5"/>
+  </connection>
+  <connection connectorName="FLOW" label="row3" lineStyle="0" metaname="tXMLRPCOpenDAS_2" offsetLabelX="0" offsetLabelY="0" source="tXMLRPCOpenDAS_2" target="tMomObjectOutput_2">
+    <elementParameter field="CHECK" name="TRACES_CONNECTION_ENABLE" value="true"/>
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER">
+      <elementValue elementRef="TRACE_COLUMN" value="title"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="sendUrl"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="fromUrl"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="sendedDate"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="attachement"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="station"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="USEROWLABEL" value="true"/>
+    <elementParameter field="TEXT" name="METTERLABEL" value="&quot;MyLabel&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="ABSOLUTE" value="Absolute"/>
+    <elementParameter field="CONNECTION_LIST" name="CONNECTIONS" value=""/>
+    <elementParameter field="TABLE" name="THRESHLODS"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row3"/>
   </connection>
   <note opaque="true" posX="-608" posY="256" sizeHeight="64" sizeWidth="353" text="Chargement des paramètres de contexte">
     <elementParameter field="COLOR" name="NOTE_COLOR" value="255;255;203"/>
