@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties">
+  <TalendProperties:Property xmi:id="_Eq154C6zEeSUstqRnSKZpA" id="_Eqsv8C6zEeSUstqRnSKZpA" label="SET_DEV" creationDate="2014-08-28T14:58:57.528+0200" modificationDate="2015-03-02T14:25:16.564+0100" version="0.1" statusCode="DEV" item="_Eq154i6zEeSUstqRnSKZpA" maxInformationLevel="ERROR" displayName="SET_DEV">
+    <author href="../talend.project#_isTssnsCEeSMaIXNprqCyw"/>
+    <informations xmi:id="_aD7lsMDfEeSFtLgwhvezDw" level="ERROR" text="attachement ne peut pas être résolu ou n'est pas un champ"/>
+    <informations xmi:id="_aD7lscDfEeSFtLgwhvezDw" level="ERROR" text="title ne peut pas être résolu ou n'est pas un champ"/>
+    <informations xmi:id="_aD7lssDfEeSFtLgwhvezDw" level="ERROR" text="sendUrl ne peut pas être résolu ou n'est pas un champ"/>
+    <informations xmi:id="_aD7ls8DfEeSFtLgwhvezDw" level="ERROR" text="fromUrl ne peut pas être résolu ou n'est pas un champ"/>
+    <informations xmi:id="_aD7ltMDfEeSFtLgwhvezDw" level="ERROR" text="sendedDate ne peut pas être résolu ou n'est pas un champ"/>
+    <informations xmi:id="_aD7ltcDfEeSFtLgwhvezDw" level="ERROR" text="attachement ne peut pas être résolu ou n'est pas un champ"/>
+    <informations xmi:id="_aD7ltsDfEeSFtLgwhvezDw" level="ERROR" text="title_out ne peut pas être résolu ou n'est pas un champ"/>
+    <informations xmi:id="_aD7lt8DfEeSFtLgwhvezDw" level="ERROR" text="sendedDate_out ne peut pas être résolu ou n'est pas un champ"/>
+    <informations xmi:id="_aD7luMDfEeSFtLgwhvezDw" level="ERROR" text="attachement_out ne peut pas être résolu ou n'est pas un champ"/>
+    <informations xmi:id="_aD7lucDfEeSFtLgwhvezDw" level="ERROR" text="station ne peut pas être résolu ou n'est pas un champ"/>
+  </TalendProperties:Property>
+  <TalendProperties:ItemState xmi:id="_gGJtUHsDEeSIg8meL6g6pQ" path="" locked="true" lockDate="2015-01-21T09:55:35.690+0100">
+    <locker href="../talend.project#_isTssnsCEeSMaIXNprqCyw"/>
+  </TalendProperties:ItemState>
+  <TalendProperties:ProcessItem xmi:id="_Eq154i6zEeSUstqRnSKZpA" property="_Eq154C6zEeSUstqRnSKZpA" state="_gGJtUHsDEeSIg8meL6g6pQ">
+    <process href="SET_DEV_0.1.item#/"/>
+  </TalendProperties:ProcessItem>
+</xmi:XMI>

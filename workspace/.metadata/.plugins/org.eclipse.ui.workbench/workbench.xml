@@ -113,7 +113,7 @@
 </presentation>
 </folder>
 </info>
-<info folder="true" part="bottomLayout" ratio="0.6353861" ratioLeft="650" ratioRight="373" relationship="4" relative="org.eclipse.ui.editorss">
+<info folder="true" part="bottomLayout" ratio="0.3088954" ratioLeft="316" ratioRight="707" relationship="4" relative="org.eclipse.ui.editorss">
 <folder activePageID="org.talend.designer.runprocess.ui.views.processview" appearance="2" expanded="2">
 <page content="org.talend.designer.core.ui.views.jobsettings.JobSettingsView" label="Job"/>
 <page content="org.talend.designer.core.ui.views.ContextsView" label="Contexts"/>
@@ -166,7 +166,13 @@
 <persistable path="/OPENDAS/temp/tmpPROCESS_Eqsv8C6zEeSUstqRnSKZpA"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.talend.designer.core.ui.MultiPageTalendEditor">
+<persistable path="/OPENDAS/temp/tmpPROCESS_8dtn0Gd4EeGs7-HjDy1x2A"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.talend.designer.core.ui.MultiPageTalendEditor">
 <persistable path="/OPENDAS/temp/tmpPROCESS_IIXJoC6zEeSUstqRnSKZpA"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.talend.designer.core.ui.MultiPageTalendEditor">
+<persistable path="/OPENDAS/temp/tmpPROCESS_3I77gGd4EeGs7-HjDy1x2A"/>
 </file>
 </mruList>
 </workbench>
