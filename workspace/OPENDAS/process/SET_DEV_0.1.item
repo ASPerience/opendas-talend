@@ -377,7 +377,7 @@
       <column comment="" key="false" name="station_out" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var"/>
       <outputTables sizeState="INTERMEDIATE" name="synchro_date_mrp_production_product_line" minimized="true" expressionFilter="&quot;synchro_date_mrp_production_product_line&quot;.equals(row2.title) " activateExpressionFilter="true">
         <mapperTableEntries name="title" expression="row2.title " type="id_String" nullable="true"/>
@@ -1396,13 +1396,13 @@
     <elementParameter field="TEXT" name="MODEL" value="&quot;opendas_shipping_order&quot;"/>
     <elementParameter field="TEXT" name="METHOD" value="&quot;create_shipment&quot;"/>
     <elementParameter field="TABLE" name="MAPPING">
-      <elementValue elementRef="NAME" value="&quot;bl_magento&quot;"/>
+      <elementValue elementRef="NAME" value="&quot;magento_do&quot;"/>
       <elementValue elementRef="FIELD" value="&quot;id&quot;"/>
-      <elementValue elementRef="NAME" value="&quot;produits_magento&quot;"/>
+      <elementValue elementRef="NAME" value="&quot;magento_products&quot;"/>
       <elementValue elementRef="FIELD" value="&quot;item_ids&quot;"/>
     </elementParameter>
     <elementParameter field="TABLE" name="FILTER">
-      <elementValue elementRef="NAME" value="&quot;bl_magento&quot;"/>
+      <elementValue elementRef="NAME" value="&quot;magento_do&quot;"/>
       <elementValue elementRef="FIELD" value="&quot;id&quot;"/>
       <elementValue elementRef="OPERATOR" value="&quot;=&quot;"/>
     </elementParameter>

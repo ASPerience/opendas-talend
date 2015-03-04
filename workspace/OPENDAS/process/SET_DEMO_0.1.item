@@ -232,7 +232,7 @@
     <elementParameter field="CHECK" name="INFORMATION" value="false"/>
     <elementParameter field="MEMO" name="COMMENT" value=""/>
     <elementParameter field="CHECK" name="VALIDATION_RULES" value="false"/>
-    <metadata name="signinout">
+    <metadata connector="FLOW" name="signinout">
       <column comment="" key="false" name="title" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" name="sendUrl" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" name="fromUrl" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
@@ -260,7 +260,7 @@
       <column comment="" key="false" name="attachement_out" nullable="true" pattern="" sourceType="" type="id_Object" usefulColumn="true"/>
       <column comment="" key="false" name="station_out" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
-    <metadata name="picking_out_valid">
+    <metadata connector="FLOW" name="picking_out_valid">
       <column comment="" key="false" name="title" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" name="sendUrl" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" name="fromUrl" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
@@ -274,7 +274,7 @@
       <column comment="" key="false" name="attachement_out" nullable="true" pattern="" sourceType="" type="id_Object" usefulColumn="true"/>
       <column comment="" key="false" name="station_out" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
-    <metadata name="picking_out_qty_valid">
+    <metadata connector="FLOW" name="picking_out_qty_valid">
       <column comment="" key="false" name="title" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" name="sendUrl" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" name="fromUrl" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
@@ -289,7 +289,7 @@
       <column comment="" key="false" name="station_out" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="signinout" minimized="true" expressionFilter="&quot;signinout&quot;.equals(row6.title)" activateExpressionFilter="true" activateCondensedTool="true">
         <mapperTableEntries name="title" expression="row6.title " type="id_String" nullable="true"/>

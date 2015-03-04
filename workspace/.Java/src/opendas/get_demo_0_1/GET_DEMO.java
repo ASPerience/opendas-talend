@@ -5802,16 +5802,16 @@ public class GET_DEMO implements TalendJob {
 			return this.fromUrl;
 		}
 
-		public Object attachement;
-
-		public Object getAttachement() {
-			return this.attachement;
-		}
-
 		public java.util.Date sendedDate;
 
 		public java.util.Date getSendedDate() {
 			return this.sendedDate;
+		}
+
+		public Object attachement;
+
+		public Object getAttachement() {
+			return this.attachement;
 		}
 
 		public String station;
@@ -5838,16 +5838,16 @@ public class GET_DEMO implements TalendJob {
 			return this.from_out;
 		}
 
-		public Object attachement_out;
-
-		public Object getAttachement_out() {
-			return this.attachement_out;
-		}
-
 		public java.util.Date sendedDate_out;
 
 		public java.util.Date getSendedDate_out() {
 			return this.sendedDate_out;
+		}
+
+		public Object attachement_out;
+
+		public Object getAttachement_out() {
+			return this.attachement_out;
 		}
 
 		public String station_out;
@@ -5926,9 +5926,9 @@ public class GET_DEMO implements TalendJob {
 
 					this.fromUrl = readString(dis);
 
-					this.attachement = (Object) dis.readObject();
-
 					this.sendedDate = readDate(dis);
+
+					this.attachement = (Object) dis.readObject();
 
 					this.station = readString(dis);
 
@@ -5938,9 +5938,9 @@ public class GET_DEMO implements TalendJob {
 
 					this.from_out = readString(dis);
 
-					this.attachement_out = (Object) dis.readObject();
-
 					this.sendedDate_out = readDate(dis);
+
+					this.attachement_out = (Object) dis.readObject();
 
 					this.station_out = readString(dis);
 
@@ -5971,13 +5971,13 @@ public class GET_DEMO implements TalendJob {
 
 				writeString(this.fromUrl, dos);
 
-				// Object
-
-				dos.writeObject(this.attachement);
-
 				// java.util.Date
 
 				writeDate(this.sendedDate, dos);
+
+				// Object
+
+				dos.writeObject(this.attachement);
 
 				// String
 
@@ -5995,13 +5995,13 @@ public class GET_DEMO implements TalendJob {
 
 				writeString(this.from_out, dos);
 
-				// Object
-
-				dos.writeObject(this.attachement_out);
-
 				// java.util.Date
 
 				writeDate(this.sendedDate_out, dos);
+
+				// Object
+
+				dos.writeObject(this.attachement_out);
 
 				// String
 
@@ -6021,14 +6021,14 @@ public class GET_DEMO implements TalendJob {
 			sb.append("title=" + title);
 			sb.append(",sendUrl=" + sendUrl);
 			sb.append(",fromUrl=" + fromUrl);
-			sb.append(",attachement=" + String.valueOf(attachement));
 			sb.append(",sendedDate=" + String.valueOf(sendedDate));
+			sb.append(",attachement=" + String.valueOf(attachement));
 			sb.append(",station=" + station);
 			sb.append(",title_out=" + title_out);
 			sb.append(",send_out=" + send_out);
 			sb.append(",from_out=" + from_out);
-			sb.append(",attachement_out=" + String.valueOf(attachement_out));
 			sb.append(",sendedDate_out=" + String.valueOf(sendedDate_out));
+			sb.append(",attachement_out=" + String.valueOf(attachement_out));
 			sb.append(",station_out=" + station_out);
 			sb.append("]");
 
@@ -7655,11 +7655,6 @@ public class GET_DEMO implements TalendJob {
 
 								java.util.List<Object[]> context_search_tmp = new java.util.ArrayList<Object[]>();
 
-								context_search_tmp.add(new Object[] { "state",
-										"=", "assigned" });
-								context_search_tmp.add(new Object[] { "type",
-										"=", "in" });
-
 								Object[] context_search = new Object[context_search_tmp
 										.size()];
 								for (int i = 0; i < context_search_tmp.size(); ++i) {
@@ -7669,11 +7664,12 @@ public class GET_DEMO implements TalendJob {
 
 								consoleOut_tXMLRPCOpenDAS_5
 										.println("tXMLRPCOpenDAS_5"
-												+ " XMLRpc : " + "hr.employee"
-												+ " " + "talend_get_picking");
+												+ " XMLRpc : "
+												+ "stock.picking" + " "
+												+ "talend_get_picking");
 								consoleOut_tXMLRPCOpenDAS_5.flush();
 								redstone.xmlrpc.XmlRpcStruct responsetXMLRPCOpenDAS_5 = (redstone.xmlrpc.XmlRpcStruct) connexiontXMLRPCOpenDAS_5
-										.exec("hr.employee",
+										.exec("stock.picking",
 												"talend_get_picking", vals,
 												context_search);
 								if (responsetXMLRPCOpenDAS_5 != null) {
@@ -8053,8 +8049,6 @@ public class GET_DEMO implements TalendJob {
 
 								context_search_tmp.add(new Object[] { "state",
 										"=", "assigned" });
-								context_search_tmp.add(new Object[] { "type",
-										"=", "out" });
 
 								Object[] context_search = new Object[context_search_tmp
 										.size()];
@@ -8065,11 +8059,12 @@ public class GET_DEMO implements TalendJob {
 
 								consoleOut_tXMLRPCOpenDAS_6
 										.println("tXMLRPCOpenDAS_6"
-												+ " XMLRpc : " + "hr.employee"
-												+ " " + "talend_get_picking");
+												+ " XMLRpc : "
+												+ "stock.picking" + " "
+												+ "talend_get_picking");
 								consoleOut_tXMLRPCOpenDAS_6.flush();
 								redstone.xmlrpc.XmlRpcStruct responsetXMLRPCOpenDAS_6 = (redstone.xmlrpc.XmlRpcStruct) connexiontXMLRPCOpenDAS_6
-										.exec("hr.employee",
+										.exec("stock.picking",
 												"talend_get_picking", vals,
 												context_search);
 								if (responsetXMLRPCOpenDAS_6 != null) {
@@ -8825,6 +8820,10 @@ public class GET_DEMO implements TalendJob {
 								}
 								if ("picking_out".equals(tab[i])) {
 									vals.put("picking", checkingMap.get(tab[i]));
+								}
+								if ("product".equals(tab[i])) {
+									vals.put("product_id",
+											checkingMap.get(tab[i]));
 								}
 							}
 							// Initialization output parameters
@@ -11150,6 +11149,6 @@ public class GET_DEMO implements TalendJob {
 	ResumeUtil resumeUtil = null;
 }
 /************************************************************************************************
- * 292283 characters generated by Talend Open Studio for Data Integration on the
- * 2 mars 2015 15:44:57 CET
+ * 292203 characters generated by Talend Open Studio for Data Integration on the
+ * 4 mars 2015 09:08:52 CET
  ************************************************************************************************/
