@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties">
+  <TalendProperties:Property xmi:id="_IIaM8C6zEeSUstqRnSKZpA" id="_IIXJoC6zEeSUstqRnSKZpA" label="GET_DEV" creationDate="2014-08-28T14:59:20.765+0200" modificationDate="2015-03-18T14:25:02.657+0100" version="0.1" statusCode="DEV" item="_IIaM8i6zEeSUstqRnSKZpA" maxInformationLevel="ERROR" displayName="GET_DEV">
+    <author href="../talend.project#_isTssnsCEeSMaIXNprqCyw"/>
+    <informations xmi:id="_f-L40M1wEeSi1dIMqUu2Vw" level="ERROR" text="org.apache.activemq n'est pas reconnu comme type valide"/>
+    <informations xmi:id="_f-L40c1wEeSi1dIMqUu2Vw" level="ERROR" text="org.apache.activemq n'est pas reconnu comme type valide"/>
+    <informations xmi:id="_f-L40s1wEeSi1dIMqUu2Vw" level="ERROR" text="org.apache.activemq.ActiveMQConnection ne peut pas être résolu en tant que variable"/>
+    <informations xmi:id="_f-L4081wEeSi1dIMqUu2Vw" level="ERROR" text="org.apache.activemq.ActiveMQConnection ne peut pas être résolu en tant que variable"/>
+    <informations xmi:id="_f-L41M1wEeSi1dIMqUu2Vw" level="ERROR" text="javax.jms n'est pas reconnu comme type valide"/>
+    <informations xmi:id="_f-L41c1wEeSi1dIMqUu2Vw" level="ERROR" text="javax.jms n'est pas reconnu comme type valide"/>
+    <informations xmi:id="_f-L41s1wEeSi1dIMqUu2Vw" level="ERROR" text="javax.jms.Session n'est pas reconnu comme type valide"/>
+    <informations xmi:id="_f-L4181wEeSi1dIMqUu2Vw" level="ERROR" text="javax.jms n'est pas reconnu comme type valide"/>
+    <informations xmi:id="_f-L42M1wEeSi1dIMqUu2Vw" level="ERROR" text="javax.jms n'est pas reconnu comme type valide"/>
+    <informations xmi:id="_f-L42c1wEeSi1dIMqUu2Vw" level="ERROR" text="javax.jms.DeliveryMode ne peut pas être résolu en tant que variable"/>
+    <informations xmi:id="_f-L42s1wEeSi1dIMqUu2Vw" level="ERROR" text="org.opendas n'est pas reconnu comme type valide"/>
+    <informations xmi:id="_f-L4281wEeSi1dIMqUu2Vw" level="ERROR" text="org.opendas n'est pas reconnu comme type valide"/>
+    <informations xmi:id="_f-L43M1wEeSi1dIMqUu2Vw" level="ERROR" text="javax.jms n'est pas reconnu comme type valide"/>
+    <informations xmi:id="_f-L43c1wEeSi1dIMqUu2Vw" level="ERROR" text="org.apache.activemq n'est pas reconnu comme type valide"/>
+    <informations xmi:id="_f-L43s1wEeSi1dIMqUu2Vw" level="ERROR" text="javax.jms n'est pas reconnu comme type valide"/>
+    <informations xmi:id="_f-L4381wEeSi1dIMqUu2Vw" level="ERROR" text="javax.jms.DeliveryMode ne peut pas être résolu en tant que variable"/>
+    <informations xmi:id="_f-Mf4M1wEeSi1dIMqUu2Vw" level="ERROR" text="org.apache.activemq n'est pas reconnu comme type valide"/>
+    <informations xmi:id="_f-Mf4c1wEeSi1dIMqUu2Vw" level="ERROR" text="org.apache.activemq n'est pas reconnu comme type valide"/>
+    <informations xmi:id="_f-Mf4s1wEeSi1dIMqUu2Vw" level="ERROR" text="org.apache.activemq.ActiveMQConnection ne peut pas être résolu en tant que variable"/>
+    <informations xmi:id="_f-Mf481wEeSi1dIMqUu2Vw" level="ERROR" text="org.apache.activemq.ActiveMQConnection ne peut pas être résolu en tant que variable"/>
+    <informations xmi:id="_f-Mf5M1wEeSi1dIMqUu2Vw" level="ERROR" text="javax.jms n'est pas reconnu comme type valide"/>
+    <informations xmi:id="_f-Mf5c1wEeSi1dIMqUu2Vw" level="ERROR" text="javax.jms n'est pas reconnu comme type valide"/>
+    <informations xmi:id="_f-Mf5s1wEeSi1dIMqUu2Vw" level="ERROR" text="javax.jms.Session n'est pas reconnu comme type valide"/>
+    <informations xmi:id="_f-Mf581wEeSi1dIMqUu2Vw" level="ERROR" text="javax.jms n'est pas reconnu comme type valide"/>
+    <informations xmi:id="_f-Mf6M1wEeSi1dIMqUu2Vw" level="ERROR" text="javax.jms n'est pas reconnu comme type valide"/>
+    <informations xmi:id="_f-Mf6c1wEeSi1dIMqUu2Vw" level="ERROR" text="javax.jms.DeliveryMode ne peut pas être résolu en tant que variable"/>
+    <informations xmi:id="_f-Mf6s1wEeSi1dIMqUu2Vw" level="ERROR" text="org.apache.activemq n'est pas reconnu comme type valide"/>
+    <informations xmi:id="_f-Mf681wEeSi1dIMqUu2Vw" level="ERROR" text="org.apache.activemq n'est pas reconnu comme type valide"/>
+    <informations xmi:id="_f-Mf7M1wEeSi1dIMqUu2Vw" level="ERROR" text="org.apache.activemq.ActiveMQConnection ne peut pas être résolu en tant que variable"/>
+    <informations xmi:id="_f-Mf7c1wEeSi1dIMqUu2Vw" level="ERROR" text="org.apache.activemq.ActiveMQConnection ne peut pas être résolu en tant que variable"/>
+    <informations xmi:id="_f-Mf7s1wEeSi1dIMqUu2Vw" level="ERROR" text="javax.jms n'est pas reconnu comme type valide"/>
+    <informations xmi:id="_f-Mf781wEeSi1dIMqUu2Vw" level="ERROR" text="javax.jms n'est pas reconnu comme type valide"/>
+    <informations xmi:id="_f-Mf8M1wEeSi1dIMqUu2Vw" level="ERROR" text="javax.jms.Session n'est pas reconnu comme type valide"/>
+    <informations xmi:id="_f-Mf8c1wEeSi1dIMqUu2Vw" level="ERROR" text="javax.jms n'est pas reconnu comme type valide"/>
+    <informations xmi:id="_f-Mf8s1wEeSi1dIMqUu2Vw" level="ERROR" text="javax.jms n'est pas reconnu comme type valide"/>
+    <informations xmi:id="_f-Mf881wEeSi1dIMqUu2Vw" level="ERROR" text="javax.jms.DeliveryMode ne peut pas être résolu en tant que variable"/>
+    <informations xmi:id="_f-Mf9M1wEeSi1dIMqUu2Vw" level="ERROR" text="org.apache.activemq n'est pas reconnu comme type valide"/>
+    <informations xmi:id="_f-Mf9c1wEeSi1dIMqUu2Vw" level="ERROR" text="org.apache.activemq n'est pas reconnu comme type valide"/>
+    <informations xmi:id="_f-Mf9s1wEeSi1dIMqUu2Vw" level="ERROR" text="org.apache.activemq.ActiveMQConnection ne peut pas être résolu en tant que variable"/>
+    <informations xmi:id="_f-Mf981wEeSi1dIMqUu2Vw" level="ERROR" text="org.apache.activemq.ActiveMQConnection ne peut pas être résolu en tant que variable"/>
+    <informations xmi:id="_f-Mf-M1wEeSi1dIMqUu2Vw" level="ERROR" text="javax.jms n'est pas reconnu comme type valide"/>
+    <informations xmi:id="_f-Mf-c1wEeSi1dIMqUu2Vw" level="ERROR" text="javax.jms n'est pas reconnu comme type valide"/>
+    <informations xmi:id="_f-Mf-s1wEeSi1dIMqUu2Vw" level="ERROR" text="javax.jms.Session n'est pas reconnu comme type valide"/>
+    <informations xmi:id="_f-Mf-81wEeSi1dIMqUu2Vw" level="ERROR" text="javax.jms n'est pas reconnu comme type valide"/>
+    <informations xmi:id="_f-Mf_M1wEeSi1dIMqUu2Vw" level="ERROR" text="javax.jms n'est pas reconnu comme type valide"/>
+    <informations xmi:id="_f-Mf_c1wEeSi1dIMqUu2Vw" level="ERROR" text="javax.jms.DeliveryMode ne peut pas être résolu en tant que variable"/>
+    <informations xmi:id="_f-Mf_s1wEeSi1dIMqUu2Vw" level="ERROR" text="org.apache.activemq n'est pas reconnu comme type valide"/>
+    <informations xmi:id="_f-Mf_81wEeSi1dIMqUu2Vw" level="ERROR" text="org.opendas n'est pas reconnu comme type valide"/>
+    <informations xmi:id="_f-MgAM1wEeSi1dIMqUu2Vw" level="ERROR" text="org.opendas n'est pas reconnu comme type valide"/>
+    <informations xmi:id="_f-MgAc1wEeSi1dIMqUu2Vw" level="ERROR" text="org.opendas n'est pas reconnu comme type valide"/>
+    <informations xmi:id="_f-MgAs1wEeSi1dIMqUu2Vw" level="ERROR" text="org.opendas n'est pas reconnu comme type valide"/>
+    <informations xmi:id="_f-MgA81wEeSi1dIMqUu2Vw" level="ERROR" text="org.opendas n'est pas reconnu comme type valide"/>
+    <informations xmi:id="_f-MgBM1wEeSi1dIMqUu2Vw" level="ERROR" text="org.opendas n'est pas reconnu comme type valide"/>
+    <informations xmi:id="_f-MgBc1wEeSi1dIMqUu2Vw" level="ERROR" text="org.opendas n'est pas reconnu comme type valide"/>
+    <informations xmi:id="_f-MgBs1wEeSi1dIMqUu2Vw" level="ERROR" text="org.opendas n'est pas reconnu comme type valide"/>
+    <informations xmi:id="_f-NG8M1wEeSi1dIMqUu2Vw" level="ERROR" text="javax.jms n'est pas reconnu comme type valide"/>
+    <informations xmi:id="_f-NG8c1wEeSi1dIMqUu2Vw" level="ERROR" text="org.opendas n'est pas reconnu comme type valide"/>
+    <informations xmi:id="_f-NG8s1wEeSi1dIMqUu2Vw" level="ERROR" text="org.opendas n'est pas reconnu comme type valide"/>
+    <informations xmi:id="_f-NG881wEeSi1dIMqUu2Vw" level="ERROR" text="org.opendas n'est pas reconnu comme type valide"/>
+    <informations xmi:id="_f-NG9M1wEeSi1dIMqUu2Vw" level="ERROR" text="org.opendas n'est pas reconnu comme type valide"/>
+    <informations xmi:id="_f-NG9c1wEeSi1dIMqUu2Vw" level="ERROR" text="org.opendas n'est pas reconnu comme type valide"/>
+    <informations xmi:id="_f-NG9s1wEeSi1dIMqUu2Vw" level="ERROR" text="org.opendas n'est pas reconnu comme type valide"/>
+    <informations xmi:id="_f-NG981wEeSi1dIMqUu2Vw" level="ERROR" text="org.opendas n'est pas reconnu comme type valide"/>
+    <informations xmi:id="_f-NG-M1wEeSi1dIMqUu2Vw" level="ERROR" text="org.opendas n'est pas reconnu comme type valide"/>
+    <informations xmi:id="_f-NG-c1wEeSi1dIMqUu2Vw" level="ERROR" text="org.opendas n'est pas reconnu comme type valide"/>
+    <informations xmi:id="_f-NG-s1wEeSi1dIMqUu2Vw" level="ERROR" text="org.opendas n'est pas reconnu comme type valide"/>
+    <informations xmi:id="_f-NG-81wEeSi1dIMqUu2Vw" level="ERROR" text="javax.jms n'est pas reconnu comme type valide"/>
+    <informations xmi:id="_f-NG_M1wEeSi1dIMqUu2Vw" level="ERROR" text="org.opendas n'est pas reconnu comme type valide"/>
+    <informations xmi:id="_f-NG_c1wEeSi1dIMqUu2Vw" level="ERROR" text="org.opendas n'est pas reconnu comme type valide"/>
+    <informations xmi:id="_f-NG_s1wEeSi1dIMqUu2Vw" level="ERROR" text="org.opendas n'est pas reconnu comme type valide"/>
+    <informations xmi:id="_f-NG_81wEeSi1dIMqUu2Vw" level="ERROR" text="org.opendas n'est pas reconnu comme type valide"/>
+    <informations xmi:id="_f-NHAM1wEeSi1dIMqUu2Vw" level="ERROR" text="org.opendas n'est pas reconnu comme type valide"/>
+    <informations xmi:id="_f-NHAc1wEeSi1dIMqUu2Vw" level="ERROR" text="org.opendas n'est pas reconnu comme type valide"/>
+    <informations xmi:id="_f-NHAs1wEeSi1dIMqUu2Vw" level="ERROR" text="org.opendas n'est pas reconnu comme type valide"/>
+    <informations xmi:id="_f-NHA81wEeSi1dIMqUu2Vw" level="ERROR" text="org.opendas n'est pas reconnu comme type valide"/>
+    <informations xmi:id="_f-NHBM1wEeSi1dIMqUu2Vw" level="ERROR" text="org.opendas n'est pas reconnu comme type valide"/>
+    <informations xmi:id="_f-NHBc1wEeSi1dIMqUu2Vw" level="ERROR" text="org.opendas n'est pas reconnu comme type valide"/>
+    <informations xmi:id="_f-NHBs1wEeSi1dIMqUu2Vw" level="ERROR" text="javax.jms n'est pas reconnu comme type valide"/>
+    <informations xmi:id="_f-NHB81wEeSi1dIMqUu2Vw" level="ERROR" text="org.opendas n'est pas reconnu comme type valide"/>
+    <informations xmi:id="_f-NHCM1wEeSi1dIMqUu2Vw" level="ERROR" text="org.opendas n'est pas reconnu comme type valide"/>
+    <informations xmi:id="_f-NHCc1wEeSi1dIMqUu2Vw" level="ERROR" text="org.opendas n'est pas reconnu comme type valide"/>
+    <informations xmi:id="_f-NHCs1wEeSi1dIMqUu2Vw" level="ERROR" text="org.opendas n'est pas reconnu comme type valide"/>
+    <informations xmi:id="_f-NHC81wEeSi1dIMqUu2Vw" level="ERROR" text="org.opendas n'est pas reconnu comme type valide"/>
+    <informations xmi:id="_f-NHDM1wEeSi1dIMqUu2Vw" level="ERROR" text="org.opendas n'est pas reconnu comme type valide"/>
+    <informations xmi:id="_f-NHDc1wEeSi1dIMqUu2Vw" level="ERROR" text="org.opendas n'est pas reconnu comme type valide"/>
+    <informations xmi:id="_f-NHDs1wEeSi1dIMqUu2Vw" level="ERROR" text="org.opendas n'est pas reconnu comme type valide"/>
+    <informations xmi:id="_f-NHD81wEeSi1dIMqUu2Vw" level="ERROR" text="org.opendas n'est pas reconnu comme type valide"/>
+    <informations xmi:id="_f-NHEM1wEeSi1dIMqUu2Vw" level="ERROR" text="org.opendas n'est pas reconnu comme type valide"/>
+    <informations xmi:id="_f-NHEc1wEeSi1dIMqUu2Vw" level="ERROR" text="javax.jms n'est pas reconnu comme type valide"/>
+    <informations xmi:id="_f-NHEs1wEeSi1dIMqUu2Vw" level="ERROR" text="org.opendas n'est pas reconnu comme type valide"/>
+    <informations xmi:id="_f-NHE81wEeSi1dIMqUu2Vw" level="ERROR" text="org.opendas n'est pas reconnu comme type valide"/>
+    <informations xmi:id="_f-NHFM1wEeSi1dIMqUu2Vw" level="ERROR" text="org.opendas n'est pas reconnu comme type valide"/>
+    <informations xmi:id="_f-NHFc1wEeSi1dIMqUu2Vw" level="ERROR" text="org.opendas n'est pas reconnu comme type valide"/>
+    <informations xmi:id="_f-NuAM1wEeSi1dIMqUu2Vw" level="ERROR" text="org.opendas n'est pas reconnu comme type valide"/>
+    <informations xmi:id="_f-NuAc1wEeSi1dIMqUu2Vw" level="ERROR" text="org.opendas n'est pas reconnu comme type valide"/>
+    <informations xmi:id="_f-NuAs1wEeSi1dIMqUu2Vw" level="ERROR" text="org.opendas n'est pas reconnu comme type valide"/>
+    <informations xmi:id="_f-NuA81wEeSi1dIMqUu2Vw" level="ERROR" text="org.opendas n'est pas reconnu comme type valide"/>
+    <informations xmi:id="_f-NuBM1wEeSi1dIMqUu2Vw" level="ERROR" text="org.opendas n'est pas reconnu comme type valide"/>
+    <informations xmi:id="_f-NuBc1wEeSi1dIMqUu2Vw" level="ERROR" text="org.opendas n'est pas reconnu comme type valide"/>
+    <informations xmi:id="_f-NuBs1wEeSi1dIMqUu2Vw" level="ERROR" text="javax.jms n'est pas reconnu comme type valide"/>
+  </TalendProperties:Property>
+  <TalendProperties:ItemState xmi:id="_R5I1AHsDEeSIg8meL6g6pQ" path="" locked="true" lockDate="2015-03-11T11:53:49.718+0100">
+    <locker href="../talend.project#_isTssnsCEeSMaIXNprqCyw"/>
+  </TalendProperties:ItemState>
+  <TalendProperties:ProcessItem xmi:id="_IIaM8i6zEeSUstqRnSKZpA" property="_IIaM8C6zEeSUstqRnSKZpA" state="_R5I1AHsDEeSIg8meL6g6pQ">
+    <process href="GET_DEV_0.1.item#/"/>
+  </TalendProperties:ProcessItem>
+</xmi:XMI>
